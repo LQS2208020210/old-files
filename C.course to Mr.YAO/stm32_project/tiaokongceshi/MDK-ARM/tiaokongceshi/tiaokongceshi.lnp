@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tiaokongceshi\startup_stm32f103xb.o"
+"tiaokongceshi\main.o"
+"tiaokongceshi\gpio.o"
+"tiaokongceshi\tim.o"
+"tiaokongceshi\usart.o"
+"tiaokongceshi\stm32f1xx_it.o"
+"tiaokongceshi\stm32f1xx_hal_msp.o"
+"tiaokongceshi\stm32f1xx_hal_gpio_ex.o"
+"tiaokongceshi\stm32f1xx_hal_tim.o"
+"tiaokongceshi\stm32f1xx_hal_tim_ex.o"
+"tiaokongceshi\stm32f1xx_hal.o"
+"tiaokongceshi\stm32f1xx_hal_rcc.o"
+"tiaokongceshi\stm32f1xx_hal_rcc_ex.o"
+"tiaokongceshi\stm32f1xx_hal_gpio.o"
+"tiaokongceshi\stm32f1xx_hal_dma.o"
+"tiaokongceshi\stm32f1xx_hal_cortex.o"
+"tiaokongceshi\stm32f1xx_hal_pwr.o"
+"tiaokongceshi\stm32f1xx_hal_flash.o"
+"tiaokongceshi\stm32f1xx_hal_flash_ex.o"
+"tiaokongceshi\stm32f1xx_hal_exti.o"
+"tiaokongceshi\stm32f1xx_hal_uart.o"
+"tiaokongceshi\system_stm32f1xx.o"
+--strict --scatter "tiaokongceshi\tiaokongceshi.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tiaokongceshi.map" -o tiaokongceshi\tiaokongceshi.axf

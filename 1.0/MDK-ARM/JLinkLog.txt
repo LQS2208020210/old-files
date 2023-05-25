@@ -1,0 +1,2328 @@
+T28A4 000:010.270   SEGGER J-Link V6.60c Log File
+T28A4 000:010.396   DLL Compiled: Dec 23 2019 16:14:31
+T28A4 000:010.405   Logging started @ 2023-03-19 12:17
+T28A4 000:010.417 JLINK_SetWarnOutHandler(...)
+T28A4 000:010.428 - 0.015ms
+T28A4 000:010.439 JLINK_OpenEx(...)
+T28A4 000:030.357   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T28A4 000:041.721   Hardware: V9.40
+T28A4 000:041.772   S/N: 69405494
+T28A4 000:041.796   OEM: SEGGER
+T28A4 000:041.820   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T28A4 000:042.773   TELNET listener socket opened on port 19021
+T28A4 000:042.873   WEBSRV Starting webserver
+T28A4 000:043.014   WEBSRV Webserver running on local port 19080
+T28A4 000:043.030 - 32.594ms returns "O.K."
+T28A4 000:043.050 JLINK_GetEmuCaps()
+T28A4 000:043.058 - 0.012ms returns 0xB9FF7BBF
+T28A4 000:043.071 JLINK_TIF_GetAvailable(...)
+T28A4 000:043.192 - 0.127ms
+T28A4 000:043.207 JLINK_SetErrorOutHandler(...)
+T28A4 000:043.218 - 0.014ms
+T28A4 000:043.238 JLINK_ExecCommand("ProjectFile = "D:\stm32\1.0\MDK-ARM\JLinkSettings.ini"", ...). 
+T28A4 000:047.200   Ref file found at: D:\keil\ARM\Segger\JLinkDevices.ref
+T28A4 000:047.551   XML referenced by ref file: C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml
+T28A4 000:048.829   C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml evaluated successfully.
+T28A4 000:243.380 - 200.161ms returns 0x00
+T28A4 000:246.027 JLINK_ExecCommand("Device = STM32F103C8", ...). 
+T28A4 000:248.420   Device "STM32F103C8" selected.
+T28A4 000:248.753 - 2.714ms returns 0x00
+T28A4 000:248.770 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T28A4 000:248.783 - 0.006ms returns 0x01
+T28A4 000:248.793 JLINK_GetHardwareVersion()
+T28A4 000:248.802 - 0.012ms returns 0x16F30
+T28A4 000:248.811 JLINK_GetDLLVersion()  returns 66003
+T28A4 000:248.826 JLINK_GetFirmwareString(...)
+T28A4 000:248.834 - 0.012ms
+T28A4 000:255.357 JLINK_GetDLLVersion()  returns 66003
+T28A4 000:255.379 JLINK_GetCompileDateTime()
+T28A4 000:255.388 - 0.012ms
+T28A4 000:257.552 JLINK_GetFirmwareString(...)
+T28A4 000:257.573 - 0.025ms
+T28A4 000:259.700 JLINK_GetHardwareVersion()
+T28A4 000:259.720 - 0.024ms returns 0x16F30
+T28A4 000:268.234 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T28A4 000:268.766 - 0.545ms returns 0x00
+T28A4 000:268.801 JLINK_SetSpeed(5000)
+T28A4 000:268.889 - 0.099ms
+T28A4 000:268.913 JLINK_GetId()
+T28A4 000:271.943   Found SW-DP with ID 0x1BA01477
+T28A4 000:283.751   Active write protected STM32 device detected.
+This could cause problems during flash download.
+Note: Unsecuring will trigger a mass erase of the internal flash.
+T28A4 000:286.735   Executing default behavior previously saved in the registry.
+T28A4 000:289.548   Device will be unsecured now.
+T28A4 000:354.383   Found SW-DP with ID 0x1BA01477
+T28A4 000:359.373   Scanning AP map to find all available APs
+T28A4 000:364.721   AP[1]: Stopped AP scan as end of AP map has been reached
+T28A4 000:367.419   AP[0]: AHB-AP (IDR: 0x14770011)
+T28A4 000:369.594   Iterating through AP map to find AHB-AP to use
+T28A4 000:375.072   AP[0]: Core found
+T28A4 000:377.548   AP[0]: AHB-AP ROM base: 0xE00FF000
+T28A4 000:381.708   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T28A4 000:383.791   Found Cortex-M3 r1p1, Little endian.
+T28A4 000:484.998    -- Max. mem block: 0x00011028
+T28A4 000:485.056    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:485.539    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T28A4 000:485.850    -- CPU_ReadMem(4 bytes @ 0xE0002000)
+T28A4 000:489.441   FPUnit: 6 code (BP) slots and 2 literal slots
+T28A4 000:489.469    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T28A4 000:489.765    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T28A4 000:490.096    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 000:490.380    -- CPU_WriteMem(4 bytes @ 0xE0001000)
+T28A4 000:490.689    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T28A4 000:491.058    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T28A4 000:491.384    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T28A4 000:491.692    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T28A4 000:494.888   CoreSight components:
+T28A4 000:497.831   ROMTbl[0] @ E00FF000
+T28A4 000:497.858    -- CPU_ReadMem(16 bytes @ 0xE00FF000)
+T28A4 000:498.256    -- CPU_ReadMem(16 bytes @ 0xE000EFF0)
+T28A4 000:498.605    -- CPU_ReadMem(16 bytes @ 0xE000EFE0)
+T28A4 000:502.409   ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 001BB000 SCS
+T28A4 000:502.461    -- CPU_ReadMem(16 bytes @ 0xE0001FF0)
+T28A4 000:502.864    -- CPU_ReadMem(16 bytes @ 0xE0001FE0)
+T28A4 000:506.497   ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 001BB002 DWT
+T28A4 000:506.540    -- CPU_ReadMem(16 bytes @ 0xE0002FF0)
+T28A4 000:507.060    -- CPU_ReadMem(16 bytes @ 0xE0002FE0)
+T28A4 000:509.980   ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB003 FPB
+T28A4 000:510.011    -- CPU_ReadMem(16 bytes @ 0xE0000FF0)
+T28A4 000:510.370    -- CPU_ReadMem(16 bytes @ 0xE0000FE0)
+T28A4 000:513.204   ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 001BB001 ITM
+T28A4 000:513.245    -- CPU_ReadMem(16 bytes @ 0xE00FF010)
+T28A4 000:513.615    -- CPU_ReadMem(16 bytes @ 0xE0040FF0)
+T28A4 000:514.024    -- CPU_ReadMem(16 bytes @ 0xE0040FE0)
+T28A4 000:517.147   ROMTbl[0][4]: E0040000, CID: B105900D, PID: 001BB923 TPIU-Lite
+T28A4 000:517.536 - 248.634ms   returns 0x1BA01477
+T28A4 000:517.561 JLINK_GetDLLVersion()  returns 66003
+T28A4 000:517.606 JLINK_CORE_GetFound()
+T28A4 000:517.614 - 0.012ms returns 0x30000FF
+T28A4 000:517.624 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T28A4 000:517.634   Value=0xE00FF000
+T28A4 000:517.645 - 0.025ms returns 0x00
+T28A4 000:520.681 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T28A4 000:520.705   Value=0xE00FF000
+T28A4 000:520.717 - 0.040ms returns 0x00
+T28A4 000:520.728 JLINK_GetDebugInfo(0x101 = JLINKARM_DEBUG_INFO_ETM_ADDR_INDEX)
+T28A4 000:520.736   Value=0x00000000
+T28A4 000:520.747 - 0.023ms returns 0x00
+T28A4 000:520.764   JLINK_ReadMemEx(0xE0041FF0, 0x0010 Bytes, ..., Flags = 0x02000004)
+T28A4 000:520.793    -- CPU_ReadMem(16 bytes @ 0xE0041FF0)
+T28A4 000:521.157   Data:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T28A4 000:521.179 - 0.421ms returns 0x10
+T28A4 000:521.191 JLINK_GetDebugInfo(0x102 = JLINKARM_DEBUG_INFO_MTB_ADDR_INDEX)
+T28A4 000:521.199   Value=0x00000000
+T28A4 000:521.211 - 0.024ms returns 0x00
+T28A4 000:521.220 JLINK_GetDebugInfo(0x103 = JLINKARM_DEBUG_INFO_TPIU_ADDR_INDEX)
+T28A4 000:521.228   Value=0xE0040000
+T28A4 000:521.239 - 0.022ms returns 0x00
+T28A4 000:521.248 JLINK_GetDebugInfo(0x104 = JLINKARM_DEBUG_INFO_ITM_ADDR_INDEX)
+T28A4 000:521.256   Value=0xE0000000
+T28A4 000:521.268 - 0.023ms returns 0x00
+T28A4 000:521.277 JLINK_GetDebugInfo(0x105 = JLINKARM_DEBUG_INFO_DWT_ADDR_INDEX)
+T28A4 000:521.285   Value=0xE0001000
+T28A4 000:521.296 - 0.023ms returns 0x00
+T28A4 000:521.305 JLINK_GetDebugInfo(0x106 = JLINKARM_DEBUG_INFO_FPB_ADDR_INDEX)
+T28A4 000:521.313   Value=0xE0002000
+T28A4 000:521.324 - 0.023ms returns 0x00
+T28A4 000:521.333 JLINK_GetDebugInfo(0x107 = JLINKARM_DEBUG_INFO_NVIC_ADDR_INDEX)
+T28A4 000:521.341   Value=0xE000E000
+T28A4 000:521.352 - 0.022ms returns 0x00
+T28A4 000:521.361 JLINK_GetDebugInfo(0x10C = JLINKARM_DEBUG_INFO_DBG_ADDR_INDEX)
+T28A4 000:521.369   Value=0xE000EDF0
+T28A4 000:521.381 - 0.023ms returns 0x00
+T28A4 000:521.390 JLINK_GetDebugInfo(0x01 = Unknown)
+T28A4 000:521.400   Value=0x00000000
+T28A4 000:521.411 - 0.025ms returns 0x00
+T28A4 000:521.422   JLINK_ReadMemU32(0xE000ED00, 0x0001 Items, ...)
+T28A4 000:521.438    -- CPU_ReadMem(4 bytes @ 0xE000ED00)
+T28A4 000:521.729   Data:  31 C2 1F 41
+T28A4 000:521.747    - CPUID
+T28A4 000:521.758 - 0.340ms returns 1
+T28A4 000:521.769 JLINK_GetDebugInfo(0x10F = JLINKARM_DEBUG_INFO_HAS_CORTEX_M_SECURITY_EXT_INDEX)
+T28A4 000:521.779   Value=0x00000000
+T28A4 000:521.791 - 0.025ms returns 0x00
+T28A4 000:521.804 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T28A4 000:521.814 - 0.014ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T28A4 000:521.825 JLINK_Reset()
+T28A4 000:521.846   CPU is running
+T28A4 000:521.862    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T28A4 000:522.148   CPU is running
+T28A4 000:522.172    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T28A4 000:524.805   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T28A4 000:527.247   Reset: Reset device via AIRCR.SYSRESETREQ.
+T28A4 000:527.267   CPU is running
+T28A4 000:527.280    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T28A4 000:580.274    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:580.589    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:580.877    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:581.214    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:581.561    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:581.896    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:582.225    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:582.518    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:582.804    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:583.097    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:583.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:583.681    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:584.013    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:584.296    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:584.579    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:584.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:585.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:585.417    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:585.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:586.062    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:586.347    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:586.630    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:586.908    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:587.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:587.516    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:587.850    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:588.229    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:588.590    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:588.918    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:589.227    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:589.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:589.810    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:590.106    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:590.413    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:590.726    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:591.034    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:591.324    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:591.606    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:591.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:592.197    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:592.474    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:592.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:593.028    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:593.309    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:593.591    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:593.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:594.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:594.435    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:594.771    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:595.057    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:595.335    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:595.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:595.913    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:596.198    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:596.481    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:596.789    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:597.106    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:597.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:597.680    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:598.036    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:598.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:598.687    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:599.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:599.295    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:599.591    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:599.896    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:600.199    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:600.481    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:600.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:601.045    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:601.323    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:601.603    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:601.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:602.197    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:602.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:602.818    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:603.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:603.437    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:603.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:604.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:604.329    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:604.608    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:604.891    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:605.185    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:605.471    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:605.760    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:606.042    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:606.320    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:606.605    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:606.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:607.186    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:607.470    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:607.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:608.020    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:608.354    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:608.710    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:609.037    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:609.347    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:609.619    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:609.895    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:610.185    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:610.464    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:610.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:611.063    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:611.355    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:611.678    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:612.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:612.308    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:612.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:612.928    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:613.227    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:613.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:613.792    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:614.077    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:614.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:614.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:615.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:615.294    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:615.590    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:615.897    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:616.189    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:616.470    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:616.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:617.033    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:617.311    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:617.590    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:617.876    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:618.196    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:618.481    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:618.761    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:619.054    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:619.329    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:619.608    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:619.893    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:620.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:620.524    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:620.805    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:621.088    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:621.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:621.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:622.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:622.311    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:622.589    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:622.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:623.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:623.430    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:623.707    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:624.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:624.285    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:624.559    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:624.840    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:625.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:625.395    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:625.697    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:626.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:626.287    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:626.572    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:626.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:627.168    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:627.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:627.811    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:628.100    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:628.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:628.684    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:629.022    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:629.337    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:629.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:630.023    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:630.395    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:630.710    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:631.092    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:631.456    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:631.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:632.032    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:632.329    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:632.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:633.002    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:633.287    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:633.573    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:633.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:634.190    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:634.469    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:634.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:635.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:635.328    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:635.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:635.918    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:636.229    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:636.523    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:636.817    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:637.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:637.408    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:637.692    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:638.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:638.353    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:638.662    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:639.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:639.313    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:639.601    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:639.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:640.185    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:640.462    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:640.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:641.039    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:641.329    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:641.626    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:641.921    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:642.209    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:642.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:642.779    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:643.066    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:643.360    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:643.646    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:644.031    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:644.408    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:644.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:645.073    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:645.397    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:645.692    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:646.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:646.285    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:646.563    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:646.841    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:647.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:647.409    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:647.686    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:648.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:648.291    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:648.574    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:648.851    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:649.133    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:649.409    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:649.693    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:650.000    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:650.286    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:650.571    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:650.845    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:651.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:651.403    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:651.687    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:652.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:652.288    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:652.566    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:652.841    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:653.127    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:653.408    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:653.689    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:654.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:654.289    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:654.564    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:654.848    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:655.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:655.399    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:655.682    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:656.017    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:656.328    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:656.622    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:656.915    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:657.208    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:657.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:657.767    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:658.061    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:658.347    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:658.626    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:658.919    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:659.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:659.552    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:659.858    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:660.198    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:660.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:660.776    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:661.105    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:661.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:661.850    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:662.198    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:662.502    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:662.799    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:663.091    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:663.377    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:663.665    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:664.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:664.319    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:664.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:664.900    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:665.197    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:665.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:665.810    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:666.101    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:666.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:666.688    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:667.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:667.335    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:667.624    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:667.914    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:668.211    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:668.485    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:668.768    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:669.055    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:669.345    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:669.629    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:670.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:670.285    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:670.593    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:670.894    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:671.205    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:671.523    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:671.808    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:672.087    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:672.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:672.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:673.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:673.286    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:673.563    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:673.851    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:674.192    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:674.477    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:674.770    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:675.059    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:675.352    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:675.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:676.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:676.335    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:676.620    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:676.911    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:677.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:677.473    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:677.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:678.041    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:678.327    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:678.610    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:678.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:679.192    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:679.471    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:679.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:680.039    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:680.322    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:680.600    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:680.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:681.197    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:681.483    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:681.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:682.047    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:682.343    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:682.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:682.901    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:683.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:683.526    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:683.803    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:684.086    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:684.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:684.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:685.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:685.286    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:685.591    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:685.893    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:686.211    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:686.529    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:686.827    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:687.112    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:687.389    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:687.672    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:688.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:688.291    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:688.591    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:688.896    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:689.197    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:689.547    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:689.841    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:690.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:690.410    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:690.728    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:691.049    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:691.346    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:691.633    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:691.934    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:692.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:692.586    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:692.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:693.200    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:693.519    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:693.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:694.194    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:694.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:694.797    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:695.076    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:695.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:695.641    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:695.920    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:696.221    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:696.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:696.795    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:697.082    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:697.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:697.671    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:698.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:698.294    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:698.622    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:698.913    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:699.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:699.522    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:699.806    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:700.085    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:700.358    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:700.633    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:700.905    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:701.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:701.476    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:701.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:702.043    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:702.357    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:702.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:703.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:703.402    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:703.689    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:704.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:704.290    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:704.571    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:704.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:705.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:705.463    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:705.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:706.045    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:706.331    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:706.635    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:706.924    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:707.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:707.528    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:707.811    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:708.099    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:708.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:708.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:709.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:709.295    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:709.599    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:709.922    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:710.226    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:710.524    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:710.803    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:711.085    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:711.357    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:711.634    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:711.918    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:712.192    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:712.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:712.777    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:713.062    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:713.335    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:713.622    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:713.905    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:714.185    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:714.467    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:714.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:715.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:715.327    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:715.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:715.925    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:716.255    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:716.548    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:716.822    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:717.104    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:717.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:717.668    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:718.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:718.283    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:718.561    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:718.843    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:719.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:719.455    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:719.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:720.015    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:720.299    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:720.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:720.908    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:721.200    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:721.483    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:721.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:722.052    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:722.340    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:722.641    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:723.051    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:723.331    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:723.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:723.929    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:724.286    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:724.642    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:725.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:725.340    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:725.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:726.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:726.304    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:726.593    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:726.905    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:727.191    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:727.485    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:727.768    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:728.060    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:728.339    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:728.625    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:728.906    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:729.183    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:729.464    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:729.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:730.071    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:730.357    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:730.643    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:731.051    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:731.340    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:731.631    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:731.922    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:732.213    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:732.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:732.777    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:733.064    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:733.348    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:733.626    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:733.912    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:734.231    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:734.575    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:734.908    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:735.217    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:735.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:735.817    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:736.098    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:736.396    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:736.679    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:737.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:737.290    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:737.562    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:737.839    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:738.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:738.400    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:738.677    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:739.053    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:739.333    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:739.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:739.916    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:740.193    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:740.476    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:740.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:741.041    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:741.319    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:741.598    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:741.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:742.187    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:742.463    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:742.734    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:743.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:743.302    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:743.579    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:743.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:744.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:744.430    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:744.707    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:745.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:745.287    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:745.571    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:745.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:746.179    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:746.467    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:746.771    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:747.078    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:747.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:747.703    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:748.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:748.287    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:748.564    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:748.843    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:749.126    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:749.398    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:749.679    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:750.023    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:750.381    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:750.712    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:751.017    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:751.293    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:751.581    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:751.877    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:752.191    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:752.475    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:752.752    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:753.027    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:753.302    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:753.578    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:753.856    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:754.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:754.434    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:754.717    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:755.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:755.334    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:755.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:755.924    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:756.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:756.539    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:756.820    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:757.106    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:757.396    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:757.686    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:758.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:758.325    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:758.610    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:758.907    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:759.205    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:759.557    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:759.847    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:760.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:760.440    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:760.774    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:761.085    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:761.381    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:761.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:762.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:762.303    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:762.591    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:762.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:763.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:763.526    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:763.814    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:764.130    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:764.431    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:764.718    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:765.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:765.316    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:765.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:766.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:766.314    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:766.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:766.895    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:767.190    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:767.466    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:767.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:768.025    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:768.334    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:768.638    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:769.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:769.323    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:769.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:770.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:770.302    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:770.592    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:770.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:771.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:771.526    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:771.812    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:772.088    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:772.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:772.657    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:773.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:773.289    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:773.619    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:774.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:774.308    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:774.604    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:774.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:775.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:775.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:775.824    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:776.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:776.401    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:776.681    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:777.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:777.292    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:777.564    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:777.849    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:778.135    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:778.418    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:778.692    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:779.051    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:779.323    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:779.606    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:779.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:780.185    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:780.468    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:780.769    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:781.079    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:781.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:781.708    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:782.046    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:782.352    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:782.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:783.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:783.285    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:783.571    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:783.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:784.199    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:784.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:784.792    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:785.096    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:785.405    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:785.724    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:786.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:786.294    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:786.575    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:786.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:787.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:787.547    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:787.849    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:788.200    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:788.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:788.783    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:789.080    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:789.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:789.645    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:790.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:790.287    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:790.577    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:790.854    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:791.215    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:791.599    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:791.912    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:792.215    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:792.534    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:792.827    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:793.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:793.426    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:793.708    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:794.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:794.302    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:794.583    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:794.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:795.233    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:795.519    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:795.804    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:796.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:796.414    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:796.701    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:797.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:797.300    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:797.584    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:797.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:798.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:798.424    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:798.707    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:799.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:799.284    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:799.567    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:799.850    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:800.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:800.401    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:800.686    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:801.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:801.289    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:801.574    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:801.853    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:802.134    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:802.413    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:802.692    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:803.052    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:803.334    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:803.606    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:803.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:804.191    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:804.475    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:804.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:805.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:805.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:805.669    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:806.000    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:806.278    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:806.562    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:806.858    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:807.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:807.428    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:807.718    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:808.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:808.310    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:808.602    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:808.912    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:809.218    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:809.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:809.804    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:810.095    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:810.382    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:810.674    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:811.055    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:811.343    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:811.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:812.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:812.322    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:812.625    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:812.917    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:813.210    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:813.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:813.800    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:814.102    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:814.407    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:814.698    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:815.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:815.281    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:815.567    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:815.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:816.192    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:816.462    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:816.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:817.045    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:817.323    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:817.601    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:817.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:818.190    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:818.475    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:818.754    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:819.052    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:819.332    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:819.610    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:819.893    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:820.191    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:820.469    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:820.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:821.034    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:821.312    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:821.595    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:821.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:822.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:822.530    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:822.892    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:823.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:823.570    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:823.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:824.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:824.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:824.770    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:825.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:825.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:825.715    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:826.053    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:826.356    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:826.665    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:827.053    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:827.349    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:827.656    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:828.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:828.309    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:828.619    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:829.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:829.300    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:829.593    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:829.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:830.191    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:830.474    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:834.107   Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.
+T28A4 000:837.156   Reset: Using fallback: Reset pin.
+T28A4 000:837.184   CPU is running
+T28A4 000:837.202    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T28A4 000:837.507   CPU is running
+T28A4 000:837.528    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T28A4 000:840.721   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T28A4 000:843.812   Reset: Reset device via reset pin
+T28A4 000:968.264    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T28A4 000:973.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:974.027    -- CPU_WriteMem(4 bytes @ 0xE0002000)
+T28A4 000:974.393    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T28A4 000:974.764    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 000:975.115 - 453.299ms
+T28A4 000:975.141 JLINK_Halt()
+T28A4 000:975.153 - 0.017ms returns 0x00
+T28A4 000:975.214   JLINK_ReadMemU32(0xE000EDF0, 0x0001 Items, ...)
+T28A4 000:975.259    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T28A4 000:975.542   Data:  03 00 03 00
+T28A4 000:975.561    - DHCSR
+T28A4 000:975.577 - 0.368ms returns 1
+T28A4 000:975.593   JLINK_WriteU32(0xE000EDF0, 0xA05F0003)
+T28A4 000:975.608    - DHCSR
+T28A4 000:975.637    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T28A4 000:976.013 - 0.439ms returns 0
+T28A4 000:976.048   JLINK_WriteU32(0xE000EDFC, 0x01000000)
+T28A4 000:976.068    - DEMCR
+T28A4 000:976.096    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T28A4 000:976.407 - 0.377ms returns 0
+T28A4 000:988.382 JLINK_GetHWStatus(...)
+T28A4 000:988.551 - 0.200ms returns 0x00
+T28A4 000:995.598 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T28A4 000:995.621 - 0.028ms returns 0x06
+T28A4 000:995.637 JLINK_GetNumBPUnits(Type = 0xF0)
+T28A4 000:995.645 - 0.012ms returns 0x2000
+T28A4 000:995.655 JLINK_GetNumWPUnits()
+T28A4 000:995.663 - 0.011ms returns 0x04
+T28A4 001:002.204 JLINK_GetSpeed()
+T28A4 001:002.227 - 0.027ms returns 0xFA0
+T28A4 001:006.516   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T28A4 001:006.552    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T28A4 001:006.860   Data:  01 00 00 00
+T28A4 001:006.880 - 0.368ms returns 1
+T28A4 001:006.893   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T28A4 001:006.909    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T28A4 001:007.188   Data:  01 00 00 00
+T28A4 001:007.203 - 0.314ms returns 1
+T28A4 001:007.214 JLINK_WriteMemEx(0xE0001000, 0x001C Bytes, ..., Flags = 0x02000004)
+T28A4 001:007.223   Data:  01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ...
+T28A4 001:007.439    -- CPU_WriteMem(28 bytes @ 0xE0001000)
+T28A4 001:007.853 - 0.645ms returns 0x1C
+T28A4 001:007.871 JLINK_Halt()
+T28A4 001:007.880 - 0.012ms returns 0x00
+T28A4 001:007.890 JLINK_IsHalted()
+T28A4 001:007.899 - 0.013ms returns TRUE
+T28A4 001:011.010 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T28A4 001:011.027   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T28A4 001:011.218    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T28A4 001:013.382 - 2.384ms returns 0x164
+T28A4 001:013.474 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:013.494 - 0.028ms returns 0x00
+T28A4 001:013.510 JLINK_WriteReg(R1, 0x007A1200)
+T28A4 001:013.524 - 0.020ms returns 0x00
+T28A4 001:013.540 JLINK_WriteReg(R2, 0x00000001)
+T28A4 001:013.553 - 0.020ms returns 0x00
+T28A4 001:013.569 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:013.582 - 0.020ms returns 0x00
+T28A4 001:013.597 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:013.611 - 0.019ms returns 0x00
+T28A4 001:013.626 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:013.646 - 0.026ms returns 0x00
+T28A4 001:013.661 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:013.675 - 0.020ms returns 0x00
+T28A4 001:013.690 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:013.703 - 0.019ms returns 0x00
+T28A4 001:013.718 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:013.732 - 0.020ms returns 0x00
+T28A4 001:013.747 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:013.760 - 0.020ms returns 0x00
+T28A4 001:013.776 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:013.793 - 0.023ms returns 0x00
+T28A4 001:013.808 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:013.821 - 0.020ms returns 0x00
+T28A4 001:013.838 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:013.851 - 0.019ms returns 0x00
+T28A4 001:013.867 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:013.881 - 0.021ms returns 0x00
+T28A4 001:013.896 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:013.910 - 0.019ms returns 0x00
+T28A4 001:013.925 JLINK_WriteReg(R15 (PC), 0x20000038)
+T28A4 001:013.939 - 0.020ms returns 0x00
+T28A4 001:013.954 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:013.967 - 0.019ms returns 0x00
+T28A4 001:013.983 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:013.996 - 0.020ms returns 0x00
+T28A4 001:014.011 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:014.025 - 0.019ms returns 0x00
+T28A4 001:014.040 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:014.054 - 0.020ms returns 0x00
+T28A4 001:014.071   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:014.094    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:014.397 - 0.338ms returns 0x00000001
+T28A4 001:014.420 JLINK_Go()
+T28A4 001:014.438    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T28A4 001:014.796    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:015.120    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T28A4 001:015.138    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T28A4 001:015.150    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T28A4 001:015.161    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T28A4 001:015.173    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T28A4 001:015.185    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T28A4 001:016.435    -- CPU_WriteMem(4 bytes @ 0xE0001004)
+T28A4 001:019.204 - 4.801ms
+T28A4 001:019.231 JLINK_IsHalted()
+T28A4 001:021.710    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:022.008 - 2.786ms returns TRUE
+T28A4 001:022.027 JLINK_ReadReg(R15 (PC))
+T28A4 001:022.039 - 0.016ms returns 0x20000000
+T28A4 001:022.049 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T28A4 001:022.058 - 0.013ms returns 0x00
+T28A4 001:022.068 JLINK_ReadReg(R0)
+T28A4 001:022.076 - 0.012ms returns 0x00000000
+T28A4 001:022.820 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:022.838 - 0.022ms returns 0x00
+T28A4 001:022.847 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:022.856 - 0.012ms returns 0x00
+T28A4 001:022.866 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:022.874 - 0.012ms returns 0x00
+T28A4 001:022.884 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:022.892 - 0.012ms returns 0x00
+T28A4 001:022.902 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:022.910 - 0.012ms returns 0x00
+T28A4 001:022.920 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:022.928 - 0.012ms returns 0x00
+T28A4 001:022.937 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:022.945 - 0.012ms returns 0x00
+T28A4 001:022.955 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:022.963 - 0.012ms returns 0x00
+T28A4 001:022.972 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:022.980 - 0.012ms returns 0x00
+T28A4 001:022.990 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:022.999 - 0.012ms returns 0x00
+T28A4 001:023.008 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:023.016 - 0.012ms returns 0x00
+T28A4 001:023.026 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:023.034 - 0.012ms returns 0x00
+T28A4 001:023.043 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:023.051 - 0.012ms returns 0x00
+T28A4 001:023.061 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:023.069 - 0.012ms returns 0x00
+T28A4 001:023.079 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:023.087 - 0.012ms returns 0x00
+T28A4 001:023.096 JLINK_WriteReg(R15 (PC), 0x20000020)
+T28A4 001:023.104 - 0.012ms returns 0x00
+T28A4 001:023.113 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:023.174 - 0.068ms returns 0x00
+T28A4 001:023.188 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:023.196 - 0.012ms returns 0x00
+T28A4 001:023.205 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:023.213 - 0.012ms returns 0x00
+T28A4 001:023.223 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:023.231 - 0.012ms returns 0x00
+T28A4 001:023.241   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:023.254 - 0.017ms returns 0x00000002
+T28A4 001:023.263 JLINK_Go()
+T28A4 001:023.279    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:026.062 - 2.816ms
+T28A4 001:026.098 JLINK_IsHalted()
+T28A4 001:028.580    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:028.887 - 2.800ms returns TRUE
+T28A4 001:028.914 JLINK_ReadReg(R15 (PC))
+T28A4 001:028.931 - 0.023ms returns 0x20000000
+T28A4 001:028.949 JLINK_ClrBPEx(BPHandle = 0x00000002)
+T28A4 001:028.964 - 0.021ms returns 0x00
+T28A4 001:028.981 JLINK_ReadReg(R0)
+T28A4 001:028.994 - 0.020ms returns 0x00000001
+T28A4 001:029.015 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:029.030 - 0.021ms returns 0x00
+T28A4 001:029.047 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:029.060 - 0.020ms returns 0x00
+T28A4 001:029.078 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:029.091 - 0.020ms returns 0x00
+T28A4 001:029.108 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:029.122 - 0.020ms returns 0x00
+T28A4 001:029.139 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:029.152 - 0.020ms returns 0x00
+T28A4 001:029.169 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:029.183 - 0.020ms returns 0x00
+T28A4 001:029.200 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:029.213 - 0.020ms returns 0x00
+T28A4 001:029.231 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:029.244 - 0.019ms returns 0x00
+T28A4 001:029.261 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:029.274 - 0.019ms returns 0x00
+T28A4 001:029.291 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:029.305 - 0.019ms returns 0x00
+T28A4 001:029.322 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:029.335 - 0.020ms returns 0x00
+T28A4 001:029.352 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:029.366 - 0.020ms returns 0x00
+T28A4 001:029.384 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:029.397 - 0.020ms returns 0x00
+T28A4 001:029.414 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:029.428 - 0.020ms returns 0x00
+T28A4 001:029.445 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:029.459 - 0.020ms returns 0x00
+T28A4 001:029.476 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T28A4 001:029.489 - 0.020ms returns 0x00
+T28A4 001:029.507 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:029.520 - 0.020ms returns 0x00
+T28A4 001:029.537 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:029.551 - 0.020ms returns 0x00
+T28A4 001:029.568 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:029.581 - 0.020ms returns 0x00
+T28A4 001:029.598 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:029.612 - 0.020ms returns 0x00
+T28A4 001:029.630   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:029.650 - 0.030ms returns 0x00000003
+T28A4 001:029.672 JLINK_Go()
+T28A4 001:029.701    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:032.526 - 2.871ms
+T28A4 001:032.556 JLINK_IsHalted()
+T28A4 001:032.827 - 0.283ms returns FALSE
+T28A4 001:054.885 JLINK_IsHalted()
+T28A4 001:057.477    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:057.803 - 2.940ms returns TRUE
+T28A4 001:057.844 JLINK_ReadReg(R15 (PC))
+T28A4 001:057.867 - 0.032ms returns 0x20000000
+T28A4 001:057.888 JLINK_ClrBPEx(BPHandle = 0x00000003)
+T28A4 001:057.905 - 0.025ms returns 0x00
+T28A4 001:057.925 JLINK_ReadReg(R0)
+T28A4 001:057.942 - 0.025ms returns 0x00000000
+T28A4 001:058.789 JLINK_WriteReg(R0, 0x08000400)
+T28A4 001:058.810 - 0.026ms returns 0x00
+T28A4 001:058.823 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:058.833 - 0.015ms returns 0x00
+T28A4 001:058.843 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:058.852 - 0.012ms returns 0x00
+T28A4 001:058.861 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:058.869 - 0.012ms returns 0x00
+T28A4 001:058.879 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:058.887 - 0.012ms returns 0x00
+T28A4 001:058.896 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:058.904 - 0.016ms returns 0x00
+T28A4 001:058.920 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:058.929 - 0.012ms returns 0x00
+T28A4 001:058.938 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:058.947 - 0.012ms returns 0x00
+T28A4 001:058.956 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:058.965 - 0.012ms returns 0x00
+T28A4 001:058.974 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:058.982 - 0.012ms returns 0x00
+T28A4 001:058.991 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:059.000 - 0.012ms returns 0x00
+T28A4 001:059.009 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:059.017 - 0.012ms returns 0x00
+T28A4 001:059.026 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:059.034 - 0.012ms returns 0x00
+T28A4 001:059.044 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:059.052 - 0.013ms returns 0x00
+T28A4 001:059.063 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:059.071 - 0.012ms returns 0x00
+T28A4 001:059.080 JLINK_WriteReg(R15 (PC), 0x20000020)
+T28A4 001:059.089 - 0.012ms returns 0x00
+T28A4 001:059.098 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:059.106 - 0.012ms returns 0x00
+T28A4 001:059.116 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:059.124 - 0.012ms returns 0x00
+T28A4 001:059.134 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:059.142 - 0.012ms returns 0x00
+T28A4 001:059.151 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:059.160 - 0.012ms returns 0x00
+T28A4 001:059.170   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:059.183 - 0.017ms returns 0x00000004
+T28A4 001:059.193 JLINK_Go()
+T28A4 001:059.208    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:062.003 - 2.822ms
+T28A4 001:062.025 JLINK_IsHalted()
+T28A4 001:064.484    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:064.768 - 2.754ms returns TRUE
+T28A4 001:064.790 JLINK_ReadReg(R15 (PC))
+T28A4 001:064.803 - 0.018ms returns 0x20000000
+T28A4 001:064.816 JLINK_ClrBPEx(BPHandle = 0x00000004)
+T28A4 001:064.826 - 0.015ms returns 0x00
+T28A4 001:064.838 JLINK_ReadReg(R0)
+T28A4 001:064.849 - 0.015ms returns 0x00000001
+T28A4 001:064.864 JLINK_WriteReg(R0, 0x08000400)
+T28A4 001:064.876 - 0.017ms returns 0x00
+T28A4 001:064.888 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:064.898 - 0.015ms returns 0x00
+T28A4 001:064.910 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:064.921 - 0.015ms returns 0x00
+T28A4 001:064.933 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:064.943 - 0.015ms returns 0x00
+T28A4 001:064.954 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:064.965 - 0.015ms returns 0x00
+T28A4 001:064.976 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:064.986 - 0.014ms returns 0x00
+T28A4 001:064.997 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:065.007 - 0.014ms returns 0x00
+T28A4 001:065.018 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:065.028 - 0.014ms returns 0x00
+T28A4 001:065.040 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:065.050 - 0.014ms returns 0x00
+T28A4 001:065.061 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:065.071 - 0.015ms returns 0x00
+T28A4 001:065.083 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:065.093 - 0.014ms returns 0x00
+T28A4 001:065.104 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:065.114 - 0.014ms returns 0x00
+T28A4 001:065.126 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:065.136 - 0.015ms returns 0x00
+T28A4 001:065.148 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:065.158 - 0.015ms returns 0x00
+T28A4 001:065.169 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:065.179 - 0.014ms returns 0x00
+T28A4 001:065.191 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T28A4 001:065.201 - 0.014ms returns 0x00
+T28A4 001:065.212 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:065.222 - 0.015ms returns 0x00
+T28A4 001:065.234 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:065.244 - 0.014ms returns 0x00
+T28A4 001:065.255 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:065.265 - 0.014ms returns 0x00
+T28A4 001:065.276 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:065.286 - 0.014ms returns 0x00
+T28A4 001:065.298   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:065.313 - 0.020ms returns 0x00000005
+T28A4 001:065.325 JLINK_Go()
+T28A4 001:065.340    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:068.139 - 2.829ms
+T28A4 001:068.171 JLINK_IsHalted()
+T28A4 001:068.459 - 0.298ms returns FALSE
+T28A4 001:070.456 JLINK_IsHalted()
+T28A4 001:070.757 - 0.312ms returns FALSE
+T28A4 001:072.549 JLINK_IsHalted()
+T28A4 001:072.860 - 0.323ms returns FALSE
+T28A4 001:074.855 JLINK_IsHalted()
+T28A4 001:075.242 - 0.399ms returns FALSE
+T28A4 001:076.793 JLINK_IsHalted()
+T28A4 001:077.110 - 0.328ms returns FALSE
+T28A4 001:078.793 JLINK_IsHalted()
+T28A4 001:079.124 - 0.346ms returns FALSE
+T28A4 001:080.795 JLINK_IsHalted()
+T28A4 001:081.094 - 0.313ms returns FALSE
+T28A4 001:082.799 JLINK_IsHalted()
+T28A4 001:083.114 - 0.329ms returns FALSE
+T28A4 001:084.825 JLINK_IsHalted()
+T28A4 001:085.141 - 0.330ms returns FALSE
+T28A4 001:086.461 JLINK_IsHalted()
+T28A4 001:086.797 - 0.349ms returns FALSE
+T28A4 001:088.789 JLINK_IsHalted()
+T28A4 001:089.120 - 0.342ms returns FALSE
+T28A4 001:091.106 JLINK_IsHalted()
+T28A4 001:093.613    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:094.031 - 2.951ms returns TRUE
+T28A4 001:094.079 JLINK_ReadReg(R15 (PC))
+T28A4 001:094.104 - 0.035ms returns 0x20000000
+T28A4 001:094.128 JLINK_ClrBPEx(BPHandle = 0x00000005)
+T28A4 001:094.148 - 0.029ms returns 0x00
+T28A4 001:094.170 JLINK_ReadReg(R0)
+T28A4 001:094.190 - 0.028ms returns 0x00000000
+T28A4 001:095.414 JLINK_WriteReg(R0, 0x08000800)
+T28A4 001:095.436 - 0.028ms returns 0x00
+T28A4 001:095.449 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:095.461 - 0.017ms returns 0x00
+T28A4 001:095.474 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:095.485 - 0.016ms returns 0x00
+T28A4 001:095.497 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:095.508 - 0.016ms returns 0x00
+T28A4 001:095.521 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:095.532 - 0.016ms returns 0x00
+T28A4 001:095.545 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:095.556 - 0.016ms returns 0x00
+T28A4 001:095.568 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:095.579 - 0.016ms returns 0x00
+T28A4 001:095.592 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:095.603 - 0.016ms returns 0x00
+T28A4 001:095.615 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:095.626 - 0.016ms returns 0x00
+T28A4 001:095.639 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:095.650 - 0.016ms returns 0x00
+T28A4 001:095.663 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:095.674 - 0.016ms returns 0x00
+T28A4 001:095.686 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:095.698 - 0.016ms returns 0x00
+T28A4 001:095.710 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:095.721 - 0.016ms returns 0x00
+T28A4 001:095.734 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:095.753 - 0.031ms returns 0x00
+T28A4 001:095.773 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:095.783 - 0.016ms returns 0x00
+T28A4 001:095.796 JLINK_WriteReg(R15 (PC), 0x20000020)
+T28A4 001:095.807 - 0.016ms returns 0x00
+T28A4 001:095.824 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:095.835 - 0.016ms returns 0x00
+T28A4 001:095.849 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:095.877 - 0.034ms returns 0x00
+T28A4 001:095.890 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:095.901 - 0.016ms returns 0x00
+T28A4 001:095.914 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:095.925 - 0.016ms returns 0x00
+T28A4 001:095.938   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:095.966 - 0.042ms returns 0x00000006
+T28A4 001:095.989 JLINK_Go()
+T28A4 001:096.007    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:098.789 - 2.818ms
+T28A4 001:098.823 JLINK_IsHalted()
+T28A4 001:101.299    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:101.604 - 2.794ms returns TRUE
+T28A4 001:101.631 JLINK_ReadReg(R15 (PC))
+T28A4 001:101.650 - 0.027ms returns 0x20000000
+T28A4 001:101.669 JLINK_ClrBPEx(BPHandle = 0x00000006)
+T28A4 001:101.686 - 0.025ms returns 0x00
+T28A4 001:101.705 JLINK_ReadReg(R0)
+T28A4 001:101.722 - 0.024ms returns 0x00000001
+T28A4 001:101.745 JLINK_WriteReg(R0, 0x08000800)
+T28A4 001:101.762 - 0.025ms returns 0x00
+T28A4 001:101.780 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:101.796 - 0.024ms returns 0x00
+T28A4 001:101.815 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:101.831 - 0.023ms returns 0x00
+T28A4 001:101.849 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:101.870 - 0.032ms returns 0x00
+T28A4 001:101.892 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:101.908 - 0.024ms returns 0x00
+T28A4 001:101.927 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:101.942 - 0.023ms returns 0x00
+T28A4 001:101.961 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:101.977 - 0.024ms returns 0x00
+T28A4 001:101.996 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:102.012 - 0.024ms returns 0x00
+T28A4 001:102.028 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:102.042 - 0.019ms returns 0x00
+T28A4 001:102.057 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:102.070 - 0.019ms returns 0x00
+T28A4 001:102.086 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:102.099 - 0.020ms returns 0x00
+T28A4 001:102.114 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:102.127 - 0.020ms returns 0x00
+T28A4 001:102.143 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:102.156 - 0.019ms returns 0x00
+T28A4 001:102.171 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:102.185 - 0.020ms returns 0x00
+T28A4 001:102.200 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:102.213 - 0.019ms returns 0x00
+T28A4 001:102.229 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T28A4 001:102.242 - 0.020ms returns 0x00
+T28A4 001:102.257 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:102.270 - 0.019ms returns 0x00
+T28A4 001:102.286 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:102.299 - 0.020ms returns 0x00
+T28A4 001:102.314 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:102.328 - 0.019ms returns 0x00
+T28A4 001:102.343 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:102.356 - 0.019ms returns 0x00
+T28A4 001:102.381   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:102.402 - 0.037ms returns 0x00000007
+T28A4 001:102.417 JLINK_Go()
+T28A4 001:102.437    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:105.191 - 2.789ms
+T28A4 001:105.221 JLINK_IsHalted()
+T28A4 001:105.539 - 0.355ms returns FALSE
+T28A4 001:106.842 JLINK_IsHalted()
+T28A4 001:107.137 - 0.308ms returns FALSE
+T28A4 001:108.437 JLINK_IsHalted()
+T28A4 001:108.760 - 0.341ms returns FALSE
+T28A4 001:112.467 JLINK_IsHalted()
+T28A4 001:112.793 - 0.342ms returns FALSE
+T28A4 001:114.496 JLINK_IsHalted()
+T28A4 001:114.828 - 0.344ms returns FALSE
+T28A4 001:116.656 JLINK_IsHalted()
+T28A4 001:117.020 - 0.380ms returns FALSE
+T28A4 001:118.925 JLINK_IsHalted()
+T28A4 001:119.240 - 0.326ms returns FALSE
+T28A4 001:120.923 JLINK_IsHalted()
+T28A4 001:121.211 - 0.301ms returns FALSE
+T28A4 001:123.207 JLINK_IsHalted()
+T28A4 001:123.533 - 0.340ms returns FALSE
+T28A4 001:124.710 JLINK_IsHalted()
+T28A4 001:125.025 - 0.325ms returns FALSE
+T28A4 001:126.939 JLINK_IsHalted()
+T28A4 001:129.440    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:129.754 - 2.827ms returns TRUE
+T28A4 001:129.781 JLINK_ReadReg(R15 (PC))
+T28A4 001:129.801 - 0.028ms returns 0x20000000
+T28A4 001:129.821 JLINK_ClrBPEx(BPHandle = 0x00000007)
+T28A4 001:129.837 - 0.024ms returns 0x00
+T28A4 001:129.856 JLINK_ReadReg(R0)
+T28A4 001:129.872 - 0.024ms returns 0x00000000
+T28A4 001:130.926 JLINK_WriteReg(R0, 0x08000C00)
+T28A4 001:130.953 - 0.036ms returns 0x00
+T28A4 001:130.971 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:130.985 - 0.020ms returns 0x00
+T28A4 001:131.001 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:131.014 - 0.019ms returns 0x00
+T28A4 001:131.029 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:131.043 - 0.020ms returns 0x00
+T28A4 001:131.058 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:131.072 - 0.020ms returns 0x00
+T28A4 001:131.087 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:131.099 - 0.017ms returns 0x00
+T28A4 001:131.112 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:131.123 - 0.016ms returns 0x00
+T28A4 001:131.135 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:131.146 - 0.016ms returns 0x00
+T28A4 001:131.159 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:131.170 - 0.016ms returns 0x00
+T28A4 001:131.183 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:131.193 - 0.016ms returns 0x00
+T28A4 001:131.206 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:131.217 - 0.016ms returns 0x00
+T28A4 001:131.230 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:131.241 - 0.016ms returns 0x00
+T28A4 001:131.258 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:131.272 - 0.019ms returns 0x00
+T28A4 001:131.284 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:131.296 - 0.017ms returns 0x00
+T28A4 001:131.309 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:131.320 - 0.016ms returns 0x00
+T28A4 001:131.332 JLINK_WriteReg(R15 (PC), 0x20000020)
+T28A4 001:131.343 - 0.016ms returns 0x00
+T28A4 001:131.356 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:131.367 - 0.016ms returns 0x00
+T28A4 001:131.380 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:131.391 - 0.017ms returns 0x00
+T28A4 001:131.404 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:131.415 - 0.016ms returns 0x00
+T28A4 001:131.428 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:131.439 - 0.017ms returns 0x00
+T28A4 001:131.453   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:131.469 - 0.023ms returns 0x00000008
+T28A4 001:131.483 JLINK_Go()
+T28A4 001:131.501    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:134.226 - 2.755ms
+T28A4 001:134.250 JLINK_IsHalted()
+T28A4 001:136.714    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:137.019 - 2.779ms returns TRUE
+T28A4 001:137.045 JLINK_ReadReg(R15 (PC))
+T28A4 001:137.061 - 0.023ms returns 0x20000000
+T28A4 001:137.080 JLINK_ClrBPEx(BPHandle = 0x00000008)
+T28A4 001:137.094 - 0.020ms returns 0x00
+T28A4 001:137.116 JLINK_ReadReg(R0)
+T28A4 001:137.131 - 0.021ms returns 0x00000001
+T28A4 001:137.154 JLINK_WriteReg(R0, 0x08000C00)
+T28A4 001:137.168 - 0.021ms returns 0x00
+T28A4 001:137.192 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:137.205 - 0.020ms returns 0x00
+T28A4 001:137.223 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:137.236 - 0.020ms returns 0x00
+T28A4 001:137.253 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:137.267 - 0.020ms returns 0x00
+T28A4 001:137.284 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:137.298 - 0.020ms returns 0x00
+T28A4 001:137.315 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:137.329 - 0.020ms returns 0x00
+T28A4 001:137.346 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:137.359 - 0.020ms returns 0x00
+T28A4 001:137.376 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:137.390 - 0.020ms returns 0x00
+T28A4 001:137.407 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:137.420 - 0.020ms returns 0x00
+T28A4 001:137.438 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:137.451 - 0.020ms returns 0x00
+T28A4 001:137.468 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:137.481 - 0.020ms returns 0x00
+T28A4 001:137.499 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:137.512 - 0.020ms returns 0x00
+T28A4 001:137.529 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:137.543 - 0.020ms returns 0x00
+T28A4 001:137.560 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:137.574 - 0.020ms returns 0x00
+T28A4 001:137.591 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:137.605 - 0.020ms returns 0x00
+T28A4 001:137.622 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T28A4 001:137.636 - 0.020ms returns 0x00
+T28A4 001:137.653 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:137.666 - 0.020ms returns 0x00
+T28A4 001:137.683 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:137.697 - 0.019ms returns 0x00
+T28A4 001:137.714 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:137.727 - 0.020ms returns 0x00
+T28A4 001:137.744 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:137.758 - 0.020ms returns 0x00
+T28A4 001:137.776   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:137.802 - 0.033ms returns 0x00000009
+T28A4 001:137.819 JLINK_Go()
+T28A4 001:137.842    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:140.667 - 2.863ms
+T28A4 001:140.719 JLINK_IsHalted()
+T28A4 001:141.045 - 0.346ms returns FALSE
+T28A4 001:144.668 JLINK_IsHalted()
+T28A4 001:145.000 - 0.347ms returns FALSE
+T28A4 001:146.626 JLINK_IsHalted()
+T28A4 001:147.083 - 0.474ms returns FALSE
+T28A4 001:149.025 JLINK_IsHalted()
+T28A4 001:149.371 - 0.356ms returns FALSE
+T28A4 001:151.019 JLINK_IsHalted()
+T28A4 001:151.321 - 0.314ms returns FALSE
+T28A4 001:153.316 JLINK_IsHalted()
+T28A4 001:153.618 - 0.313ms returns FALSE
+T28A4 001:154.818 JLINK_IsHalted()
+T28A4 001:155.120 - 0.314ms returns FALSE
+T28A4 001:156.384 JLINK_IsHalted()
+T28A4 001:156.692 - 0.320ms returns FALSE
+T28A4 001:158.692 JLINK_IsHalted()
+T28A4 001:159.041 - 0.361ms returns FALSE
+T28A4 001:161.036 JLINK_IsHalted()
+T28A4 001:161.335 - 0.311ms returns FALSE
+T28A4 001:163.389 JLINK_IsHalted()
+T28A4 001:165.927    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:166.275 - 2.901ms returns TRUE
+T28A4 001:166.306 JLINK_ReadReg(R15 (PC))
+T28A4 001:166.323 - 0.022ms returns 0x20000000
+T28A4 001:166.338 JLINK_ClrBPEx(BPHandle = 0x00000009)
+T28A4 001:166.351 - 0.018ms returns 0x00
+T28A4 001:166.366 JLINK_ReadReg(R0)
+T28A4 001:166.383 - 0.024ms returns 0x00000000
+T28A4 001:166.986 JLINK_WriteReg(R0, 0x00000001)
+T28A4 001:167.008 - 0.028ms returns 0x00
+T28A4 001:167.021 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:167.033 - 0.017ms returns 0x00
+T28A4 001:167.046 JLINK_WriteReg(R2, 0x000000FF)
+T28A4 001:167.057 - 0.016ms returns 0x00
+T28A4 001:167.070 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:167.081 - 0.016ms returns 0x00
+T28A4 001:167.094 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:167.105 - 0.016ms returns 0x00
+T28A4 001:167.118 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:167.129 - 0.016ms returns 0x00
+T28A4 001:167.142 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:167.153 - 0.016ms returns 0x00
+T28A4 001:167.165 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:167.176 - 0.016ms returns 0x00
+T28A4 001:167.189 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:167.201 - 0.016ms returns 0x00
+T28A4 001:167.213 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:167.224 - 0.016ms returns 0x00
+T28A4 001:167.237 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:167.248 - 0.016ms returns 0x00
+T28A4 001:167.261 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:167.272 - 0.016ms returns 0x00
+T28A4 001:167.285 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:167.296 - 0.016ms returns 0x00
+T28A4 001:167.309 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:167.320 - 0.017ms returns 0x00
+T28A4 001:167.333 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:167.344 - 0.016ms returns 0x00
+T28A4 001:167.357 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T28A4 001:167.370 - 0.021ms returns 0x00
+T28A4 001:167.385 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:167.396 - 0.016ms returns 0x00
+T28A4 001:167.410 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:167.421 - 0.016ms returns 0x00
+T28A4 001:167.433 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:167.444 - 0.016ms returns 0x00
+T28A4 001:167.457 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:167.468 - 0.016ms returns 0x00
+T28A4 001:167.482   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:167.499 - 0.023ms returns 0x0000000A
+T28A4 001:167.513 JLINK_Go()
+T28A4 001:167.531    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:170.308 - 2.808ms
+T28A4 001:170.333 JLINK_IsHalted()
+T28A4 001:172.814    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:173.212 - 2.914ms returns TRUE
+T28A4 001:173.267 JLINK_ReadReg(R15 (PC))
+T28A4 001:173.300 - 0.041ms returns 0x20000000
+T28A4 001:173.317 JLINK_ClrBPEx(BPHandle = 0x0000000A)
+T28A4 001:173.331 - 0.021ms returns 0x00
+T28A4 001:173.347 JLINK_ReadReg(R0)
+T28A4 001:173.361 - 0.021ms returns 0x00000000
+T28A4 001:233.561 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T28A4 001:233.586   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T28A4 001:233.619    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T28A4 001:235.890 - 2.350ms returns 0x164
+T28A4 001:235.968 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:235.990 - 0.030ms returns 0x00
+T28A4 001:236.006 JLINK_WriteReg(R1, 0x007A1200)
+T28A4 001:236.021 - 0.021ms returns 0x00
+T28A4 001:236.037 JLINK_WriteReg(R2, 0x00000002)
+T28A4 001:236.050 - 0.020ms returns 0x00
+T28A4 001:236.066 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:236.079 - 0.020ms returns 0x00
+T28A4 001:236.095 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:236.108 - 0.020ms returns 0x00
+T28A4 001:236.124 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:236.137 - 0.020ms returns 0x00
+T28A4 001:236.153 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:236.166 - 0.020ms returns 0x00
+T28A4 001:236.182 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:236.195 - 0.024ms returns 0x00
+T28A4 001:236.218 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:236.231 - 0.018ms returns 0x00
+T28A4 001:236.244 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:236.254 - 0.015ms returns 0x00
+T28A4 001:236.266 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:236.277 - 0.015ms returns 0x00
+T28A4 001:236.289 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:236.299 - 0.015ms returns 0x00
+T28A4 001:236.311 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:236.322 - 0.016ms returns 0x00
+T28A4 001:236.334 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:236.346 - 0.016ms returns 0x00
+T28A4 001:236.358 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:236.368 - 0.015ms returns 0x00
+T28A4 001:236.381 JLINK_WriteReg(R15 (PC), 0x20000038)
+T28A4 001:236.391 - 0.016ms returns 0x00
+T28A4 001:236.403 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:236.414 - 0.015ms returns 0x00
+T28A4 001:236.426 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:236.437 - 0.017ms returns 0x00
+T28A4 001:236.450 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:236.461 - 0.016ms returns 0x00
+T28A4 001:236.473 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:236.484 - 0.016ms returns 0x00
+T28A4 001:236.497   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:236.518    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:236.816 - 0.336ms returns 0x0000000B
+T28A4 001:236.847 JLINK_Go()
+T28A4 001:236.866    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T28A4 001:237.211    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:240.008 - 3.188ms
+T28A4 001:240.055 JLINK_IsHalted()
+T28A4 001:242.580    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:242.869 - 2.825ms returns TRUE
+T28A4 001:242.892 JLINK_ReadReg(R15 (PC))
+T28A4 001:242.903 - 0.016ms returns 0x20000000
+T28A4 001:242.915 JLINK_ClrBPEx(BPHandle = 0x0000000B)
+T28A4 001:242.924 - 0.013ms returns 0x00
+T28A4 001:242.934 JLINK_ReadReg(R0)
+T28A4 001:242.943 - 0.012ms returns 0x00000000
+T28A4 001:243.425 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T28A4 001:243.443   Data:  70 06 00 20 89 01 00 08 97 0B 00 08 AD 0A 00 08 ...
+T28A4 001:243.466    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T28A4 001:247.043 - 3.630ms returns 0x29C
+T28A4 001:247.066 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T28A4 001:247.077   Data:  05 46 60 1C 02 D0 04 48 00 78 04 44 00 F0 00 F9 ...
+T28A4 001:247.099    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T28A4 001:249.251 - 2.203ms returns 0x164
+T28A4 001:249.287 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:249.307 - 0.027ms returns 0x00
+T28A4 001:249.324 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:249.339 - 0.023ms returns 0x00
+T28A4 001:249.356 JLINK_WriteReg(R2, 0x20000164)
+T28A4 001:249.367 - 0.015ms returns 0x00
+T28A4 001:249.378 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:249.389 - 0.015ms returns 0x00
+T28A4 001:249.400 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:249.410 - 0.014ms returns 0x00
+T28A4 001:249.421 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:249.431 - 0.014ms returns 0x00
+T28A4 001:249.442 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:249.452 - 0.014ms returns 0x00
+T28A4 001:249.463 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:249.473 - 0.014ms returns 0x00
+T28A4 001:249.484 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:249.494 - 0.014ms returns 0x00
+T28A4 001:249.506 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:249.515 - 0.014ms returns 0x00
+T28A4 001:249.528 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:249.538 - 0.015ms returns 0x00
+T28A4 001:249.549 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:249.559 - 0.014ms returns 0x00
+T28A4 001:249.570 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:249.580 - 0.014ms returns 0x00
+T28A4 001:249.592 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:249.602 - 0.015ms returns 0x00
+T28A4 001:249.615 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:249.624 - 0.014ms returns 0x00
+T28A4 001:249.636 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T28A4 001:249.646 - 0.015ms returns 0x00
+T28A4 001:249.658 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:249.668 - 0.014ms returns 0x00
+T28A4 001:249.679 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:249.689 - 0.014ms returns 0x00
+T28A4 001:249.700 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:249.716 - 0.020ms returns 0x00
+T28A4 001:249.728 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:249.738 - 0.015ms returns 0x00
+T28A4 001:249.750   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:249.765 - 0.020ms returns 0x0000000C
+T28A4 001:249.777 JLINK_Go()
+T28A4 001:249.794    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:252.558 - 2.800ms
+T28A4 001:252.592 JLINK_IsHalted()
+T28A4 001:252.891 - 0.313ms returns FALSE
+T28A4 001:256.501 JLINK_IsHalted()
+T28A4 001:256.786 - 0.291ms returns FALSE
+T28A4 001:258.574 JLINK_IsHalted()
+T28A4 001:258.883 - 0.319ms returns FALSE
+T28A4 001:260.665 JLINK_IsHalted()
+T28A4 001:261.000 - 0.341ms returns FALSE
+T28A4 001:263.038 JLINK_IsHalted()
+T28A4 001:263.363 - 0.336ms returns FALSE
+T28A4 001:264.538 JLINK_IsHalted()
+T28A4 001:264.821 - 0.290ms returns FALSE
+T28A4 001:266.518 JLINK_IsHalted()
+T28A4 001:266.821 - 0.315ms returns FALSE
+T28A4 001:268.852 JLINK_IsHalted()
+T28A4 001:269.190 - 0.349ms returns FALSE
+T28A4 001:270.861 JLINK_IsHalted()
+T28A4 001:271.194 - 0.349ms returns FALSE
+T28A4 001:272.868 JLINK_IsHalted()
+T28A4 001:273.194 - 0.338ms returns FALSE
+T28A4 001:274.693 JLINK_IsHalted()
+T28A4 001:275.049 - 0.368ms returns FALSE
+T28A4 001:276.206 JLINK_IsHalted()
+T28A4 001:276.532 - 0.334ms returns FALSE
+T28A4 001:277.621 JLINK_IsHalted()
+T28A4 001:278.002 - 0.394ms returns FALSE
+T28A4 001:279.787 JLINK_IsHalted()
+T28A4 001:280.075 - 0.296ms returns FALSE
+T28A4 001:281.825 JLINK_IsHalted()
+T28A4 001:282.194 - 0.379ms returns FALSE
+T28A4 001:284.693 JLINK_IsHalted()
+T28A4 001:287.216    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:287.524 - 2.842ms returns TRUE
+T28A4 001:287.547 JLINK_ReadReg(R15 (PC))
+T28A4 001:287.564 - 0.024ms returns 0x20000000
+T28A4 001:287.580 JLINK_ClrBPEx(BPHandle = 0x0000000C)
+T28A4 001:287.594 - 0.020ms returns 0x00
+T28A4 001:287.610 JLINK_ReadReg(R0)
+T28A4 001:287.623 - 0.020ms returns 0x00000000
+T28A4 001:288.896 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T28A4 001:288.921   Data:  4F F0 03 08 01 E0 4F F0 04 08 08 FA 06 F8 48 EA ...
+T28A4 001:288.950    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T28A4 001:292.552 - 3.678ms returns 0x29C
+T28A4 001:292.591 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T28A4 001:292.608   Data:  E5 E7 28 78 40 07 05 D5 60 68 E9 68 20 F4 E0 60 ...
+T28A4 001:292.674    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T28A4 001:294.907 - 2.363ms returns 0x164
+T28A4 001:294.987 JLINK_WriteReg(R0, 0x08000400)
+T28A4 001:295.014 - 0.037ms returns 0x00
+T28A4 001:295.046 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:295.067 - 0.030ms returns 0x00
+T28A4 001:295.093 JLINK_WriteReg(R2, 0x20000164)
+T28A4 001:295.112 - 0.028ms returns 0x00
+T28A4 001:295.136 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:295.155 - 0.028ms returns 0x00
+T28A4 001:295.180 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:295.199 - 0.028ms returns 0x00
+T28A4 001:295.223 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:295.242 - 0.028ms returns 0x00
+T28A4 001:295.267 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:295.286 - 0.028ms returns 0x00
+T28A4 001:295.310 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:295.329 - 0.028ms returns 0x00
+T28A4 001:295.353 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:295.372 - 0.028ms returns 0x00
+T28A4 001:295.396 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:295.414 - 0.025ms returns 0x00
+T28A4 001:295.435 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:295.450 - 0.021ms returns 0x00
+T28A4 001:295.467 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:295.481 - 0.020ms returns 0x00
+T28A4 001:295.498 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:295.511 - 0.020ms returns 0x00
+T28A4 001:295.529 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:295.543 - 0.021ms returns 0x00
+T28A4 001:295.561 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:295.574 - 0.020ms returns 0x00
+T28A4 001:295.591 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T28A4 001:295.605 - 0.020ms returns 0x00
+T28A4 001:295.622 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:295.636 - 0.020ms returns 0x00
+T28A4 001:295.659 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:295.682 - 0.029ms returns 0x00
+T28A4 001:295.699 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:295.713 - 0.020ms returns 0x00
+T28A4 001:295.735 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:295.749 - 0.020ms returns 0x00
+T28A4 001:295.775   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:295.802 - 0.037ms returns 0x0000000D
+T28A4 001:295.822 JLINK_Go()
+T28A4 001:295.849    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:298.667 - 2.862ms
+T28A4 001:298.700 JLINK_IsHalted()
+T28A4 001:299.058 - 0.377ms returns FALSE
+T28A4 001:302.294 JLINK_IsHalted()
+T28A4 001:302.622 - 0.344ms returns FALSE
+T28A4 001:304.787 JLINK_IsHalted()
+T28A4 001:305.104 - 0.330ms returns FALSE
+T28A4 001:306.652 JLINK_IsHalted()
+T28A4 001:307.049 - 0.410ms returns FALSE
+T28A4 001:308.739 JLINK_IsHalted()
+T28A4 001:309.044 - 0.317ms returns FALSE
+T28A4 001:310.738 JLINK_IsHalted()
+T28A4 001:311.055 - 0.330ms returns FALSE
+T28A4 001:313.051 JLINK_IsHalted()
+T28A4 001:313.403 - 0.363ms returns FALSE
+T28A4 001:314.582 JLINK_IsHalted()
+T28A4 001:315.049 - 0.479ms returns FALSE
+T28A4 001:317.042 JLINK_IsHalted()
+T28A4 001:317.347 - 0.318ms returns FALSE
+T28A4 001:319.167 JLINK_IsHalted()
+T28A4 001:319.468 - 0.315ms returns FALSE
+T28A4 001:321.465 JLINK_IsHalted()
+T28A4 001:321.768 - 0.316ms returns FALSE
+T28A4 001:323.764 JLINK_IsHalted()
+T28A4 001:324.073 - 0.321ms returns FALSE
+T28A4 001:325.823 JLINK_IsHalted()
+T28A4 001:326.142 - 0.335ms returns FALSE
+T28A4 001:327.884 JLINK_IsHalted()
+T28A4 001:328.242 - 0.403ms returns FALSE
+T28A4 001:332.005 JLINK_IsHalted()
+T28A4 001:334.545    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:334.854 - 2.861ms returns TRUE
+T28A4 001:334.878 JLINK_ReadReg(R15 (PC))
+T28A4 001:334.896 - 0.025ms returns 0x20000000
+T28A4 001:334.912 JLINK_ClrBPEx(BPHandle = 0x0000000D)
+T28A4 001:334.926 - 0.021ms returns 0x00
+T28A4 001:334.942 JLINK_ReadReg(R0)
+T28A4 001:334.956 - 0.020ms returns 0x00000000
+T28A4 001:336.011 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T28A4 001:336.032   Data:  F0 D8 28 68 80 03 F7 D4 20 78 9A 4E 80 07 4F F0 ...
+T28A4 001:336.056    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T28A4 001:339.637 - 3.643ms returns 0x29C
+T28A4 001:339.670 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T28A4 001:339.686   Data:  00 F0 AB F8 00 20 A0 61 07 20 20 61 00 20 10 BD ...
+T28A4 001:339.716    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T28A4 001:341.889 - 2.234ms returns 0x164
+T28A4 001:341.929 JLINK_WriteReg(R0, 0x08000800)
+T28A4 001:341.953 - 0.033ms returns 0x00
+T28A4 001:341.977 JLINK_WriteReg(R1, 0x00000400)
+T28A4 001:342.005 - 0.036ms returns 0x00
+T28A4 001:342.024 JLINK_WriteReg(R2, 0x20000164)
+T28A4 001:342.040 - 0.089ms returns 0x00
+T28A4 001:342.153 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:342.182 - 0.046ms returns 0x00
+T28A4 001:342.220 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:342.277 - 0.068ms returns 0x00
+T28A4 001:342.303 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:342.323 - 0.033ms returns 0x00
+T28A4 001:342.351 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:342.367 - 0.028ms returns 0x00
+T28A4 001:342.391 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:342.413 - 0.030ms returns 0x00
+T28A4 001:342.436 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:342.463 - 0.036ms returns 0x00
+T28A4 001:342.484 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:342.501 - 0.025ms returns 0x00
+T28A4 001:342.518 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:342.532 - 0.022ms returns 0x00
+T28A4 001:342.551 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:342.565 - 0.027ms returns 0x00
+T28A4 001:342.588 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:342.604 - 0.023ms returns 0x00
+T28A4 001:342.623 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:342.637 - 0.021ms returns 0x00
+T28A4 001:342.653 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:342.666 - 0.020ms returns 0x00
+T28A4 001:342.682 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T28A4 001:342.695 - 0.020ms returns 0x00
+T28A4 001:342.711 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:342.724 - 0.024ms returns 0x00
+T28A4 001:342.747 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:342.761 - 0.020ms returns 0x00
+T28A4 001:342.776 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:342.789 - 0.020ms returns 0x00
+T28A4 001:342.805 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:342.818 - 0.020ms returns 0x00
+T28A4 001:342.834   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:342.856 - 0.029ms returns 0x0000000E
+T28A4 001:342.872 JLINK_Go()
+T28A4 001:342.894    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:345.707 - 2.852ms
+T28A4 001:345.737 JLINK_IsHalted()
+T28A4 001:346.028 - 0.302ms returns FALSE
+T28A4 001:347.403 JLINK_IsHalted()
+T28A4 001:347.706 - 0.315ms returns FALSE
+T28A4 001:349.703 JLINK_IsHalted()
+T28A4 001:350.003 - 0.312ms returns FALSE
+T28A4 001:351.705 JLINK_IsHalted()
+T28A4 001:352.001 - 0.304ms returns FALSE
+T28A4 001:354.505 JLINK_IsHalted()
+T28A4 001:354.830 - 0.336ms returns FALSE
+T28A4 001:356.393 JLINK_IsHalted()
+T28A4 001:356.682 - 0.297ms returns FALSE
+T28A4 001:358.471 JLINK_IsHalted()
+T28A4 001:358.806 - 0.354ms returns FALSE
+T28A4 001:363.550 JLINK_IsHalted()
+T28A4 001:363.881 - 0.345ms returns FALSE
+T28A4 001:365.581 JLINK_IsHalted()
+T28A4 001:365.890 - 0.325ms returns FALSE
+T28A4 001:367.528 JLINK_IsHalted()
+T28A4 001:367.917 - 0.402ms returns FALSE
+T28A4 001:369.876 JLINK_IsHalted()
+T28A4 001:370.189 - 0.325ms returns FALSE
+T28A4 001:371.877 JLINK_IsHalted()
+T28A4 001:372.190 - 0.325ms returns FALSE
+T28A4 001:373.902 JLINK_IsHalted()
+T28A4 001:374.244 - 0.364ms returns FALSE
+T28A4 001:375.383 JLINK_IsHalted()
+T28A4 001:375.720 - 0.362ms returns FALSE
+T28A4 001:377.652 JLINK_IsHalted()
+T28A4 001:380.198    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:380.507 - 2.866ms returns TRUE
+T28A4 001:380.531 JLINK_ReadReg(R15 (PC))
+T28A4 001:380.549 - 0.025ms returns 0x20000000
+T28A4 001:380.566 JLINK_ClrBPEx(BPHandle = 0x0000000E)
+T28A4 001:380.580 - 0.020ms returns 0x00
+T28A4 001:380.596 JLINK_ReadReg(R0)
+T28A4 001:380.610 - 0.020ms returns 0x00000000
+T28A4 001:382.042 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T28A4 001:382.063   Data:  E0 20 80 F8 00 14 70 47 00 F0 0F 00 00 F1 E0 20 ...
+T28A4 001:382.088    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T28A4 001:385.658 - 3.630ms returns 0x29C
+T28A4 001:385.687 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T28A4 001:385.704   Data:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF ...
+T28A4 001:385.733    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T28A4 001:387.879 - 2.211ms returns 0x164
+T28A4 001:387.921 JLINK_WriteReg(R0, 0x08000C00)
+T28A4 001:387.948 - 0.037ms returns 0x00
+T28A4 001:387.971 JLINK_WriteReg(R1, 0x000000B8)
+T28A4 001:387.991 - 0.029ms returns 0x00
+T28A4 001:388.013 JLINK_WriteReg(R2, 0x20000164)
+T28A4 001:388.032 - 0.028ms returns 0x00
+T28A4 001:388.053 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:388.072 - 0.028ms returns 0x00
+T28A4 001:388.094 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:388.113 - 0.028ms returns 0x00
+T28A4 001:388.134 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:388.153 - 0.027ms returns 0x00
+T28A4 001:388.174 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:388.193 - 0.028ms returns 0x00
+T28A4 001:388.215 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:388.233 - 0.028ms returns 0x00
+T28A4 001:388.255 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:388.274 - 0.028ms returns 0x00
+T28A4 001:388.295 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:388.314 - 0.028ms returns 0x00
+T28A4 001:388.336 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:388.355 - 0.028ms returns 0x00
+T28A4 001:388.376 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:388.395 - 0.028ms returns 0x00
+T28A4 001:388.416 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:388.435 - 0.028ms returns 0x00
+T28A4 001:388.457 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:388.477 - 0.028ms returns 0x00
+T28A4 001:388.498 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:388.517 - 0.028ms returns 0x00
+T28A4 001:388.538 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T28A4 001:388.557 - 0.028ms returns 0x00
+T28A4 001:388.579 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:388.605 - 0.039ms returns 0x00
+T28A4 001:388.630 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:388.645 - 0.025ms returns 0x00
+T28A4 001:388.663 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:388.681 - 0.027ms returns 0x00
+T28A4 001:388.700 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:388.727 - 0.038ms returns 0x00
+T28A4 001:388.752   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:388.770 - 0.023ms returns 0x0000000F
+T28A4 001:388.783 JLINK_Go()
+T28A4 001:388.801    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:391.683 - 2.919ms
+T28A4 001:391.718 JLINK_IsHalted()
+T28A4 001:392.031 - 0.327ms returns FALSE
+T28A4 001:396.732 JLINK_IsHalted()
+T28A4 001:397.080 - 0.364ms returns FALSE
+T28A4 001:398.945 JLINK_IsHalted()
+T28A4 001:401.441    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:401.750 - 2.817ms returns TRUE
+T28A4 001:401.777 JLINK_ReadReg(R15 (PC))
+T28A4 001:401.798 - 0.029ms returns 0x20000000
+T28A4 001:401.817 JLINK_ClrBPEx(BPHandle = 0x0000000F)
+T28A4 001:401.834 - 0.024ms returns 0x00
+T28A4 001:401.853 JLINK_ReadReg(R0)
+T28A4 001:401.869 - 0.024ms returns 0x00000000
+T28A4 001:401.893 JLINK_WriteReg(R0, 0x00000002)
+T28A4 001:401.910 - 0.025ms returns 0x00
+T28A4 001:401.929 JLINK_WriteReg(R1, 0x000000B8)
+T28A4 001:401.945 - 0.023ms returns 0x00
+T28A4 001:401.963 JLINK_WriteReg(R2, 0x20000164)
+T28A4 001:401.979 - 0.024ms returns 0x00
+T28A4 001:401.997 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:402.013 - 0.024ms returns 0x00
+T28A4 001:402.032 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:402.048 - 0.024ms returns 0x00
+T28A4 001:402.067 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:402.083 - 0.024ms returns 0x00
+T28A4 001:402.101 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:402.117 - 0.023ms returns 0x00
+T28A4 001:402.135 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:402.151 - 0.023ms returns 0x00
+T28A4 001:402.169 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:402.185 - 0.024ms returns 0x00
+T28A4 001:402.203 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:402.219 - 0.023ms returns 0x00
+T28A4 001:402.238 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:402.253 - 0.024ms returns 0x00
+T28A4 001:402.272 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:402.288 - 0.024ms returns 0x00
+T28A4 001:402.307 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:402.322 - 0.023ms returns 0x00
+T28A4 001:402.340 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:402.357 - 0.024ms returns 0x00
+T28A4 001:402.375 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:402.391 - 0.024ms returns 0x00
+T28A4 001:402.409 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T28A4 001:402.425 - 0.023ms returns 0x00
+T28A4 001:402.443 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:402.459 - 0.024ms returns 0x00
+T28A4 001:402.478 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:402.494 - 0.024ms returns 0x00
+T28A4 001:402.521 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:402.538 - 0.025ms returns 0x00
+T28A4 001:402.559 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:402.576 - 0.025ms returns 0x00
+T28A4 001:402.598   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:402.621 - 0.030ms returns 0x00000010
+T28A4 001:402.635 JLINK_Go()
+T28A4 001:402.651    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:405.552 - 2.934ms
+T28A4 001:405.588 JLINK_IsHalted()
+T28A4 001:408.093    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:408.411 - 2.832ms returns TRUE
+T28A4 001:408.434 JLINK_ReadReg(R15 (PC))
+T28A4 001:408.453 - 0.025ms returns 0x20000000
+T28A4 001:408.468 JLINK_ClrBPEx(BPHandle = 0x00000010)
+T28A4 001:408.480 - 0.016ms returns 0x00
+T28A4 001:408.494 JLINK_ReadReg(R0)
+T28A4 001:408.505 - 0.016ms returns 0x00000000
+T28A4 001:467.996 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T28A4 001:468.020   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T28A4 001:468.054    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T28A4 001:470.235 - 2.257ms returns 0x164
+T28A4 001:470.311 JLINK_WriteReg(R0, 0x08000000)
+T28A4 001:470.332 - 0.028ms returns 0x00
+T28A4 001:470.348 JLINK_WriteReg(R1, 0x007A1200)
+T28A4 001:470.362 - 0.021ms returns 0x00
+T28A4 001:470.378 JLINK_WriteReg(R2, 0x00000003)
+T28A4 001:470.400 - 0.028ms returns 0x00
+T28A4 001:470.415 JLINK_WriteReg(R3, 0x00000000)
+T28A4 001:470.429 - 0.020ms returns 0x00
+T28A4 001:470.444 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:470.458 - 0.019ms returns 0x00
+T28A4 001:470.473 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:470.486 - 0.019ms returns 0x00
+T28A4 001:470.502 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:470.515 - 0.020ms returns 0x00
+T28A4 001:470.530 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:470.544 - 0.020ms returns 0x00
+T28A4 001:470.559 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:470.573 - 0.020ms returns 0x00
+T28A4 001:470.588 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:470.602 - 0.021ms returns 0x00
+T28A4 001:470.619 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:470.632 - 0.020ms returns 0x00
+T28A4 001:470.648 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:470.662 - 0.020ms returns 0x00
+T28A4 001:470.677 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:470.690 - 0.020ms returns 0x00
+T28A4 001:470.705 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:470.720 - 0.021ms returns 0x00
+T28A4 001:470.735 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:470.748 - 0.019ms returns 0x00
+T28A4 001:470.764 JLINK_WriteReg(R15 (PC), 0x20000038)
+T28A4 001:470.778 - 0.020ms returns 0x00
+T28A4 001:470.793 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:470.806 - 0.020ms returns 0x00
+T28A4 001:470.822 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:470.835 - 0.020ms returns 0x00
+T28A4 001:470.850 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:470.864 - 0.020ms returns 0x00
+T28A4 001:470.879 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:470.893 - 0.020ms returns 0x00
+T28A4 001:470.909   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:470.933    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:471.243 - 0.346ms returns 0x00000011
+T28A4 001:471.266 JLINK_Go()
+T28A4 001:471.284    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T28A4 001:471.599    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:474.637 - 3.398ms
+T28A4 001:474.679 JLINK_IsHalted()
+T28A4 001:477.230    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:477.520 - 2.853ms returns TRUE
+T28A4 001:477.543 JLINK_ReadReg(R15 (PC))
+T28A4 001:477.556 - 0.017ms returns 0x20000000
+T28A4 001:477.566 JLINK_ClrBPEx(BPHandle = 0x00000011)
+T28A4 001:477.575 - 0.014ms returns 0x00
+T28A4 001:477.586 JLINK_ReadReg(R0)
+T28A4 001:477.595 - 0.013ms returns 0x00000000
+T28A4 001:477.609 JLINK_WriteReg(R0, 0xFFFFFFFF)
+T28A4 001:477.618 - 0.013ms returns 0x00
+T28A4 001:477.628 JLINK_WriteReg(R1, 0x08000000)
+T28A4 001:477.637 - 0.012ms returns 0x00
+T28A4 001:477.647 JLINK_WriteReg(R2, 0x00000CB8)
+T28A4 001:477.657 - 0.015ms returns 0x00
+T28A4 001:477.669 JLINK_WriteReg(R3, 0x04C11DB7)
+T28A4 001:477.679 - 0.015ms returns 0x00
+T28A4 001:477.691 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:477.701 - 0.015ms returns 0x00
+T28A4 001:477.713 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:477.723 - 0.014ms returns 0x00
+T28A4 001:477.734 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:477.744 - 0.015ms returns 0x00
+T28A4 001:477.756 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:477.766 - 0.015ms returns 0x00
+T28A4 001:477.778 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:477.788 - 0.015ms returns 0x00
+T28A4 001:477.799 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:477.809 - 0.014ms returns 0x00
+T28A4 001:477.820 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:477.830 - 0.015ms returns 0x00
+T28A4 001:477.843 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:477.869 - 0.035ms returns 0x00
+T28A4 001:477.887 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:477.897 - 0.016ms returns 0x00
+T28A4 001:477.910 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:477.920 - 0.015ms returns 0x00
+T28A4 001:477.932 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:477.942 - 0.015ms returns 0x00
+T28A4 001:477.953 JLINK_WriteReg(R15 (PC), 0x20000002)
+T28A4 001:477.963 - 0.014ms returns 0x00
+T28A4 001:477.975 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:477.985 - 0.015ms returns 0x00
+T28A4 001:477.996 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:478.006 - 0.014ms returns 0x00
+T28A4 001:478.022 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:478.035 - 0.017ms returns 0x00
+T28A4 001:478.046 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:478.056 - 0.015ms returns 0x00
+T28A4 001:478.069   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:478.084 - 0.021ms returns 0x00000012
+T28A4 001:478.096 JLINK_Go()
+T28A4 001:478.114    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:480.859 - 2.781ms
+T28A4 001:480.892 JLINK_IsHalted()
+T28A4 001:481.196 - 0.325ms returns FALSE
+T28A4 001:485.494 JLINK_IsHalted()
+T28A4 001:485.814 - 0.331ms returns FALSE
+T28A4 001:487.400 JLINK_IsHalted()
+T28A4 001:487.709 - 0.320ms returns FALSE
+T28A4 001:489.707 JLINK_IsHalted()
+T28A4 001:490.018 - 0.328ms returns FALSE
+T28A4 001:491.821 JLINK_IsHalted()
+T28A4 001:492.100 - 0.292ms returns FALSE
+T28A4 001:493.832 JLINK_IsHalted()
+T28A4 001:494.152 - 0.334ms returns FALSE
+T28A4 001:495.345 JLINK_IsHalted()
+T28A4 001:495.614 - 0.282ms returns FALSE
+T28A4 001:497.298 JLINK_IsHalted()
+T28A4 001:497.592 - 0.304ms returns FALSE
+T28A4 001:499.359 JLINK_IsHalted()
+T28A4 001:499.635 - 0.284ms returns FALSE
+T28A4 001:500.822 JLINK_IsHalted()
+T28A4 001:501.120 - 0.309ms returns FALSE
+T28A4 001:503.015 JLINK_IsHalted()
+T28A4 001:503.353 - 0.347ms returns FALSE
+T28A4 001:504.517 JLINK_IsHalted()
+T28A4 001:504.813 - 0.308ms returns FALSE
+T28A4 001:506.695 JLINK_IsHalted()
+T28A4 001:507.049 - 0.366ms returns FALSE
+T28A4 001:508.833 JLINK_IsHalted()
+T28A4 001:509.142 - 0.320ms returns FALSE
+T28A4 001:511.138 JLINK_IsHalted()
+T28A4 001:511.445 - 0.319ms returns FALSE
+T28A4 001:513.530 JLINK_IsHalted()
+T28A4 001:513.883 - 0.366ms returns FALSE
+T28A4 001:515.542 JLINK_IsHalted()
+T28A4 001:515.853 - 0.330ms returns FALSE
+T28A4 001:517.432 JLINK_IsHalted()
+T28A4 001:519.929    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:520.240 - 2.821ms returns TRUE
+T28A4 001:520.267 JLINK_ReadReg(R15 (PC))
+T28A4 001:520.287 - 0.028ms returns 0x20000000
+T28A4 001:520.307 JLINK_ClrBPEx(BPHandle = 0x00000012)
+T28A4 001:520.324 - 0.024ms returns 0x00
+T28A4 001:520.343 JLINK_ReadReg(R0)
+T28A4 001:520.359 - 0.024ms returns 0x71718997
+T28A4 001:521.534 JLINK_WriteReg(R0, 0x00000003)
+T28A4 001:521.556 - 0.028ms returns 0x00
+T28A4 001:521.570 JLINK_WriteReg(R1, 0x08000000)
+T28A4 001:521.581 - 0.017ms returns 0x00
+T28A4 001:521.594 JLINK_WriteReg(R2, 0x00000CB8)
+T28A4 001:521.606 - 0.017ms returns 0x00
+T28A4 001:521.619 JLINK_WriteReg(R3, 0x04C11DB7)
+T28A4 001:521.630 - 0.016ms returns 0x00
+T28A4 001:521.642 JLINK_WriteReg(R4, 0x00000000)
+T28A4 001:521.653 - 0.016ms returns 0x00
+T28A4 001:521.666 JLINK_WriteReg(R5, 0x00000000)
+T28A4 001:521.677 - 0.016ms returns 0x00
+T28A4 001:521.690 JLINK_WriteReg(R6, 0x00000000)
+T28A4 001:521.701 - 0.016ms returns 0x00
+T28A4 001:521.713 JLINK_WriteReg(R7, 0x00000000)
+T28A4 001:521.724 - 0.016ms returns 0x00
+T28A4 001:521.737 JLINK_WriteReg(R8, 0x00000000)
+T28A4 001:521.748 - 0.016ms returns 0x00
+T28A4 001:521.760 JLINK_WriteReg(R9, 0x20000160)
+T28A4 001:521.771 - 0.016ms returns 0x00
+T28A4 001:521.784 JLINK_WriteReg(R10, 0x00000000)
+T28A4 001:521.795 - 0.016ms returns 0x00
+T28A4 001:521.808 JLINK_WriteReg(R11, 0x00000000)
+T28A4 001:521.819 - 0.016ms returns 0x00
+T28A4 001:521.831 JLINK_WriteReg(R12, 0x00000000)
+T28A4 001:521.842 - 0.016ms returns 0x00
+T28A4 001:521.855 JLINK_WriteReg(R13 (SP), 0x20001000)
+T28A4 001:521.866 - 0.016ms returns 0x00
+T28A4 001:521.879 JLINK_WriteReg(R14, 0x20000001)
+T28A4 001:521.890 - 0.016ms returns 0x00
+T28A4 001:521.903 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T28A4 001:521.913 - 0.016ms returns 0x00
+T28A4 001:521.926 JLINK_WriteReg(XPSR, 0x01000000)
+T28A4 001:521.937 - 0.016ms returns 0x00
+T28A4 001:521.949 JLINK_WriteReg(MSP, 0x20001000)
+T28A4 001:521.960 - 0.016ms returns 0x00
+T28A4 001:521.973 JLINK_WriteReg(PSP, 0x20001000)
+T28A4 001:521.984 - 0.016ms returns 0x00
+T28A4 001:521.996 JLINK_WriteReg(CFBP, 0x00000000)
+T28A4 001:522.007 - 0.016ms returns 0x00
+T28A4 001:522.020   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T28A4 001:522.045 - 0.030ms returns 0x00000013
+T28A4 001:522.058 JLINK_Go()
+T28A4 001:522.077    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:524.865 - 2.833ms
+T28A4 001:524.913 JLINK_IsHalted()
+T28A4 001:527.520    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T28A4 001:527.852 - 2.952ms returns TRUE
+T28A4 001:527.878 JLINK_ReadReg(R15 (PC))
+T28A4 001:527.895 - 0.023ms returns 0x20000000
+T28A4 001:527.911 JLINK_ClrBPEx(BPHandle = 0x00000013)
+T28A4 001:527.925 - 0.020ms returns 0x00
+T28A4 001:527.940 JLINK_ReadReg(R0)
+T28A4 001:527.954 - 0.020ms returns 0x00000000
+T28A4 001:583.682 JLINK_WriteMemEx(0x20000000, 0x0002 Bytes, ..., Flags = 0x02000000)
+T28A4 001:583.720   Data:  FE E7
+T28A4 001:583.754    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T28A4 001:584.092 - 0.420ms returns 0x02
+T28A4 001:597.701 JLINK_Close()
+T28A4 001:598.236    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T28A4 001:610.702 - 13.022ms
+T28A4 001:610.733   
+T28A4 001:610.750   Closed

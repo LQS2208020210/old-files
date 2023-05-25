@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dingshi\startup_stm32f103xb.o"
+"dingshi\main.o"
+"dingshi\gpio.o"
+"dingshi\tim.o"
+"dingshi\stm32f1xx_it.o"
+"dingshi\stm32f1xx_hal_msp.o"
+"dingshi\stm32f1xx_hal_gpio_ex.o"
+"dingshi\stm32f1xx_hal_tim.o"
+"dingshi\stm32f1xx_hal_tim_ex.o"
+"dingshi\stm32f1xx_hal.o"
+"dingshi\stm32f1xx_hal_rcc.o"
+"dingshi\stm32f1xx_hal_rcc_ex.o"
+"dingshi\stm32f1xx_hal_gpio.o"
+"dingshi\stm32f1xx_hal_dma.o"
+"dingshi\stm32f1xx_hal_cortex.o"
+"dingshi\stm32f1xx_hal_pwr.o"
+"dingshi\stm32f1xx_hal_flash.o"
+"dingshi\stm32f1xx_hal_flash_ex.o"
+"dingshi\stm32f1xx_hal_exti.o"
+"dingshi\system_stm32f1xx.o"
+--strict --scatter "dingshi\dingshi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dingshi.map" -o dingshi\dingshi.axf

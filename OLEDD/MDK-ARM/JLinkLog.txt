@@ -1,0 +1,3811 @@
+T4518 000:008.645   SEGGER J-Link V6.60c Log File
+T4518 000:008.786   DLL Compiled: Dec 23 2019 16:14:31
+T4518 000:008.795   Logging started @ 2023-04-13 13:05
+T4518 000:008.806 JLINK_SetWarnOutHandler(...)
+T4518 000:008.816 - 0.014ms
+T4518 000:008.830 JLINK_OpenEx(...)
+T4518 000:024.155   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T4518 000:035.740   Hardware: V9.40
+T4518 000:035.778   S/N: 69405494
+T4518 000:035.797   OEM: SEGGER
+T4518 000:035.816   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T4518 000:037.455   TELNET listener socket opened on port 19021
+T4518 000:037.565   WEBSRV Starting webserver
+T4518 000:037.722   WEBSRV Webserver running on local port 19080
+T4518 000:037.743 - 28.918ms returns "O.K."
+T4518 000:037.770 JLINK_GetEmuCaps()
+T4518 000:037.779 - 0.013ms returns 0xB9FF7BBF
+T4518 000:037.792 JLINK_TIF_GetAvailable(...)
+T4518 000:037.969 - 0.188ms
+T4518 000:037.993 JLINK_SetErrorOutHandler(...)
+T4518 000:038.003 - 0.015ms
+T4518 000:038.036 JLINK_ExecCommand("ProjectFile = "D:\stm32\OLEDD\MDK-ARM\JLinkSettings.ini"", ...). 
+T4518 000:039.920   Ref file found at: D:\keil\ARM\Segger\JLinkDevices.ref
+T4518 000:040.252   XML referenced by ref file: C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml
+T4518 000:041.621   C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml evaluated successfully.
+T4518 000:240.170 - 202.158ms returns 0x00
+T4518 000:247.928 JLINK_ExecCommand("Device = STM32F103C8", ...). 
+T4518 000:254.829   Device "STM32F103C8" selected.
+T4518 000:255.266 - 7.319ms returns 0x00
+T4518 000:255.289 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T4518 000:255.302 - 0.006ms returns 0x01
+T4518 000:255.312 JLINK_GetHardwareVersion()
+T4518 000:255.321 - 0.012ms returns 0x16F30
+T4518 000:255.331 JLINK_GetDLLVersion()  returns 66003
+T4518 000:255.346 JLINK_GetFirmwareString(...)
+T4518 000:255.354 - 0.012ms
+T4518 000:275.267 JLINK_GetDLLVersion()  returns 66003
+T4518 000:275.297 JLINK_GetCompileDateTime()
+T4518 000:275.305 - 0.012ms
+T4518 000:282.175 JLINK_GetFirmwareString(...)
+T4518 000:282.204 - 0.033ms
+T4518 000:288.654 JLINK_GetHardwareVersion()
+T4518 000:288.678 - 0.029ms returns 0x16F30
+T4518 000:314.639 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T4518 000:315.849 - 1.227ms returns 0x00
+T4518 000:315.933 JLINK_SetSpeed(5000)
+T4518 000:316.299 - 0.377ms
+T4518 000:316.321 JLINK_GetId()
+T4518 000:324.078   Found SW-DP with ID 0x1BA01477
+T4518 000:345.873   Active write protected STM32 device detected.
+This could cause problems during flash download.
+Note: Unsecuring will trigger a mass erase of the internal flash.
+T4518 000:352.873   Executing default behavior previously saved in the registry.
+T4518 000:360.052   Device will be unsecured now.
+T4518 000:438.486   Found SW-DP with ID 0x1BA01477
+T4518 000:449.754   Scanning AP map to find all available APs
+T4518 000:459.937   AP[1]: Stopped AP scan as end of AP map has been reached
+T4518 000:466.551   AP[0]: AHB-AP (IDR: 0x14770011)
+T4518 000:473.100   Iterating through AP map to find AHB-AP to use
+T4518 000:485.457   AP[0]: Core found
+T4518 000:491.951   AP[0]: AHB-AP ROM base: 0xE00FF000
+T4518 000:502.121   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T4518 000:508.517   Found Cortex-M3 r1p1, Little endian.
+T4518 000:609.979    -- Max. mem block: 0x00011028
+T4518 000:610.052    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:610.895    -- CPU_ReadMem(4 bytes @ 0xE0002000)
+T4518 000:620.106   FPUnit: 6 code (BP) slots and 2 literal slots
+T4518 000:620.215    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4518 000:620.657    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 000:621.000    -- CPU_WriteMem(4 bytes @ 0xE0001000)
+T4518 000:621.386    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T4518 000:621.749    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T4518 000:622.154    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T4518 000:622.669    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T4518 000:631.584   CoreSight components:
+T4518 000:638.273   ROMTbl[0] @ E00FF000
+T4518 000:638.327    -- CPU_ReadMem(16 bytes @ 0xE00FF000)
+T4518 000:638.817    -- CPU_ReadMem(16 bytes @ 0xE000EFF0)
+T4518 000:639.311    -- CPU_ReadMem(16 bytes @ 0xE000EFE0)
+T4518 000:646.586   ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 001BB000 SCS
+T4518 000:646.609    -- CPU_ReadMem(16 bytes @ 0xE0001FF0)
+T4518 000:647.068    -- CPU_ReadMem(16 bytes @ 0xE0001FE0)
+T4518 000:654.407   ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 001BB002 DWT
+T4518 000:654.438    -- CPU_ReadMem(16 bytes @ 0xE0002FF0)
+T4518 000:654.954    -- CPU_ReadMem(16 bytes @ 0xE0002FE0)
+T4518 000:661.417   ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB003 FPB
+T4518 000:661.442    -- CPU_ReadMem(16 bytes @ 0xE0000FF0)
+T4518 000:661.939    -- CPU_ReadMem(16 bytes @ 0xE0000FE0)
+T4518 000:669.445   ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 001BB001 ITM
+T4518 000:669.484    -- CPU_ReadMem(16 bytes @ 0xE00FF010)
+T4518 000:669.936    -- CPU_ReadMem(16 bytes @ 0xE0040FF0)
+T4518 000:670.423    -- CPU_ReadMem(16 bytes @ 0xE0040FE0)
+T4518 000:677.118   ROMTbl[0][4]: E0040000, CID: B105900D, PID: 001BB923 TPIU-Lite
+T4518 000:677.646 - 361.340ms   returns 0x1BA01477
+T4518 000:677.685 JLINK_GetDLLVersion()  returns 66003
+T4518 000:677.707 JLINK_CORE_GetFound()
+T4518 000:677.722 - 0.023ms returns 0x30000FF
+T4518 000:677.744 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T4518 000:677.761   Value=0xE00FF000
+T4518 000:677.785 - 0.048ms returns 0x00
+T4518 000:684.229 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T4518 000:684.247   Value=0xE00FF000
+T4518 000:684.260 - 0.035ms returns 0x00
+T4518 000:684.270 JLINK_GetDebugInfo(0x101 = JLINKARM_DEBUG_INFO_ETM_ADDR_INDEX)
+T4518 000:684.278   Value=0x00000000
+T4518 000:684.289 - 0.023ms returns 0x00
+T4518 000:684.313   JLINK_ReadMemEx(0xE0041FF0, 0x0010 Bytes, ..., Flags = 0x02000004)
+T4518 000:684.351    -- CPU_ReadMem(16 bytes @ 0xE0041FF0)
+T4518 000:684.819   Data:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T4518 000:684.834 - 0.528ms returns 0x10
+T4518 000:684.845 JLINK_GetDebugInfo(0x102 = JLINKARM_DEBUG_INFO_MTB_ADDR_INDEX)
+T4518 000:684.854   Value=0x00000000
+T4518 000:684.865 - 0.023ms returns 0x00
+T4518 000:684.874 JLINK_GetDebugInfo(0x103 = JLINKARM_DEBUG_INFO_TPIU_ADDR_INDEX)
+T4518 000:684.882   Value=0xE0040000
+T4518 000:684.894 - 0.023ms returns 0x00
+T4518 000:684.903 JLINK_GetDebugInfo(0x104 = JLINKARM_DEBUG_INFO_ITM_ADDR_INDEX)
+T4518 000:684.911   Value=0xE0000000
+T4518 000:684.922 - 0.022ms returns 0x00
+T4518 000:684.931 JLINK_GetDebugInfo(0x105 = JLINKARM_DEBUG_INFO_DWT_ADDR_INDEX)
+T4518 000:684.939   Value=0xE0001000
+T4518 000:684.951 - 0.023ms returns 0x00
+T4518 000:684.960 JLINK_GetDebugInfo(0x106 = JLINKARM_DEBUG_INFO_FPB_ADDR_INDEX)
+T4518 000:684.968   Value=0xE0002000
+T4518 000:684.979 - 0.022ms returns 0x00
+T4518 000:684.988 JLINK_GetDebugInfo(0x107 = JLINKARM_DEBUG_INFO_NVIC_ADDR_INDEX)
+T4518 000:684.998   Value=0xE000E000
+T4518 000:685.009 - 0.025ms returns 0x00
+T4518 000:685.018 JLINK_GetDebugInfo(0x10C = JLINKARM_DEBUG_INFO_DBG_ADDR_INDEX)
+T4518 000:685.026   Value=0xE000EDF0
+T4518 000:685.037 - 0.022ms returns 0x00
+T4518 000:685.046 JLINK_GetDebugInfo(0x01 = Unknown)
+T4518 000:685.058   Value=0x00000000
+T4518 000:685.069 - 0.027ms returns 0x00
+T4518 000:685.083   JLINK_ReadMemU32(0xE000ED00, 0x0001 Items, ...)
+T4518 000:685.098    -- CPU_ReadMem(4 bytes @ 0xE000ED00)
+T4518 000:685.491   Data:  31 C2 1F 41
+T4518 000:685.514    - CPUID
+T4518 000:685.527 - 0.448ms returns 1
+T4518 000:685.538 JLINK_GetDebugInfo(0x10F = JLINKARM_DEBUG_INFO_HAS_CORTEX_M_SECURITY_EXT_INDEX)
+T4518 000:685.550   Value=0x00000000
+T4518 000:685.561 - 0.027ms returns 0x00
+T4518 000:685.573 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T4518 000:685.582 - 0.012ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T4518 000:685.591 JLINK_Reset()
+T4518 000:685.618   CPU is running
+T4518 000:685.631    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 000:686.010   CPU is running
+T4518 000:686.036    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 000:692.451   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 000:699.230   Reset: Reset device via AIRCR.SYSRESETREQ.
+T4518 000:699.265   CPU is running
+T4518 000:699.282    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4518 000:752.024    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:752.377    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:752.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:753.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:753.505    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:753.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:754.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:754.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:754.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:755.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:755.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:756.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:756.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:756.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:757.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:757.656    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:757.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:758.413    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:758.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:759.177    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:759.697    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:760.166    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:760.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:760.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:761.400    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:761.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:762.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:762.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:762.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:763.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:763.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:764.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:764.377    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:764.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:765.132    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:765.523    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:766.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:766.396    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:766.770    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:767.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:767.500    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:767.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:768.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:768.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:768.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:769.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:769.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:770.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:770.547    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:770.889    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:771.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:771.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:772.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:772.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:772.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:773.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:773.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:773.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:774.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:774.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:775.013    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:775.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:775.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:776.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:776.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:776.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:777.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:777.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:777.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:778.386    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:778.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:779.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:779.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:779.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:780.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:780.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:780.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:781.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:781.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:782.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:782.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:782.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:783.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:783.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:784.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:784.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:784.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:785.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:785.659    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:785.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:786.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:786.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:787.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:787.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:787.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:788.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:788.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:788.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:789.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:789.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:790.154    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:790.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:790.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:791.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:791.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:791.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:792.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:792.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:793.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:793.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:793.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:794.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:794.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:795.013    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:795.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:795.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:796.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:796.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:796.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:797.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:797.646    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:797.985    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:798.402    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:798.767    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:799.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:799.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:799.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:800.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:800.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:801.000    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:801.393    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:801.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:802.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:802.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:802.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:803.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:803.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:804.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:804.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:804.877    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:805.264    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:805.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:805.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:806.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:806.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:807.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:807.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:807.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:808.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:808.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:808.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:809.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:809.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:810.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:810.502    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:810.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:811.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:811.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:812.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:812.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:812.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:813.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:813.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:813.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:814.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:814.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:815.019    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:815.377    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:815.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:816.138    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:816.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:816.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:817.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:817.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:817.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:818.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:818.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:819.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:819.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:819.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:820.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:820.664    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:821.033    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:821.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:821.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:822.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:822.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:822.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:823.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:823.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:823.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:824.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:824.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:825.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:825.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:825.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:826.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:826.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:826.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:827.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:827.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:828.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:828.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:828.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:829.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:829.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:830.015    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:830.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:830.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:831.132    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:831.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:831.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:832.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:832.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:833.140    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:833.514    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:833.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:834.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:834.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:834.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:835.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:835.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:836.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:836.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:836.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:837.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:837.656    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:837.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:838.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:838.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:839.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:839.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:839.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:840.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:840.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:840.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:841.360    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:841.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:842.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:842.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:842.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:843.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:843.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:844.026    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:844.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:844.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:845.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:845.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:845.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:846.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:846.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:847.028    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:847.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:847.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:848.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:848.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:848.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:849.267    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:849.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:850.017    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:850.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:850.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:851.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:851.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:851.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:852.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:852.657    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:853.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:853.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:853.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:854.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:854.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:855.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:855.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:855.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:856.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:856.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:856.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:857.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:857.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:857.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:858.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:858.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:859.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:859.500    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:859.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:860.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:860.663    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:861.134    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:861.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:861.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:862.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:862.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:862.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:863.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:863.749    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:864.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:864.500    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:864.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:865.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:865.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:865.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:866.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:866.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:867.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:867.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:867.891    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:868.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:868.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:868.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:869.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:869.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:870.140    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:870.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:870.894    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:871.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:871.642    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:871.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:872.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:872.749    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:873.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:873.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:873.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:874.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:874.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:874.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:875.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:875.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:876.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:876.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:876.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:877.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:877.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:877.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:878.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:878.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:879.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:879.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:879.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:880.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:880.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:880.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:881.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:881.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:882.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:882.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:882.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:883.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:883.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:884.132    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:884.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:884.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:885.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:885.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:885.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:886.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:886.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:887.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:887.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:887.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:888.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:888.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:889.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:889.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:889.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:890.135    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:890.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:890.889    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:891.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:891.646    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:892.023    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:892.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:892.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:893.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:893.643    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:893.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:894.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:894.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:895.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:895.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:895.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:896.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:896.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:896.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:897.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:897.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:898.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:898.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:898.895    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:899.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:899.674    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:900.168    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:900.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:900.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:901.375    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:901.767    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:902.128    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:902.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:902.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:903.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:903.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:903.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:904.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:904.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:905.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:905.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:905.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:906.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:906.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:906.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:907.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:907.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:908.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:908.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:908.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:909.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:909.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:910.140    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:910.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:910.894    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:911.264    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:911.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:911.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:912.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:912.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:913.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:913.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:913.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:914.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:914.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:914.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:915.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:915.767    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:916.134    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:916.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:916.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:917.252    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:917.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:917.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:918.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:918.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:919.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:919.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:919.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:920.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:920.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:920.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:921.379    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:921.761    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:922.127    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:922.519    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:922.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:923.251    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:923.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:924.030    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:924.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:924.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:925.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:925.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:925.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:926.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:926.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:926.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:927.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:927.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:928.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:928.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:928.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:929.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:929.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:929.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:930.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:930.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:931.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:931.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:931.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:932.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:932.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:933.015    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:933.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:933.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:934.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:934.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:934.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:935.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:935.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:935.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:936.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:936.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:937.124    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:937.510    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:937.893    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:938.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:938.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:938.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:939.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:939.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:940.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:940.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:940.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:941.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:941.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:941.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:942.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:942.769    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:943.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:943.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:944.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:944.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:944.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:945.264    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:945.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:945.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:946.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:946.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:947.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:947.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:947.908    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:948.420    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:948.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:949.267    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:949.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:950.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:950.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:950.774    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:951.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:951.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:951.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:952.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:952.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:953.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:953.527    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:953.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:954.397    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:954.920    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:955.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:955.749    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:956.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:956.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:956.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:957.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:957.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:957.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:958.387    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:958.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:959.126    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:959.517    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:959.900    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:960.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:960.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:961.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:961.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:961.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:962.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:962.657    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:962.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:963.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:963.761    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:964.116    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:964.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:964.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:965.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:965.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:965.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:966.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:966.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:967.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:967.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:967.876    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:968.259    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:968.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:968.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:969.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:969.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:970.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:970.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:970.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:971.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:971.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:972.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:972.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:972.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:973.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:973.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:973.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:974.251    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:974.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:974.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:975.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:975.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:976.277    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:976.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:976.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:977.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:977.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:978.116    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:978.504    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:978.889    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:979.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:979.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:980.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:980.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:980.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:981.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:981.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:981.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:982.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:982.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:982.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:983.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:983.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:984.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:984.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:984.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:985.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:985.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:986.001    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:986.394    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:986.892    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:987.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:987.664    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:988.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:988.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:988.876    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:989.264    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:989.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:990.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:990.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:990.749    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:991.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:991.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:991.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:992.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:992.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:992.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:993.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:993.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:994.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:994.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:994.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:995.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:995.640    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:996.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:996.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:996.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:997.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:997.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:997.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:998.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:998.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:999.140    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:999.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 000:999.873    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:000.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:000.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:001.005    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:001.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:001.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:002.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:011.471   Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.
+T4518 001:019.162   Reset: Using fallback: Reset pin.
+T4518 001:019.197   CPU is running
+T4518 001:019.215    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 001:019.654   CPU is running
+T4518 001:019.682    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 001:027.903   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 001:034.287   Reset: Reset device via reset pin
+T4518 001:165.678   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T4518 001:173.314   Reset: Reconnecting and manually halting CPU.
+T4518 001:180.960   Found SW-DP with ID 0x1BA01477
+T4518 001:190.417   AP map detection skipped. Manually configured AP map found.
+T4518 001:196.335   AP[0]: AHB-AP (IDR: Not set)
+T4518 001:208.480   AP[0]: Core found
+T4518 001:215.359   AP[0]: AHB-AP ROM base: 0xE00FF000
+T4518 001:224.844   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T4518 001:232.279   Found Cortex-M3 r1p1, Little endian.
+T4518 001:345.254   CPU could not be halted
+T4518 001:345.297   CPU is running
+T4518 001:345.319    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 001:351.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:361.014   Reset: Core did not halt after reset, trying to disable WDT.
+T4518 001:361.058   CPU is running
+T4518 001:361.079    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 001:361.535   CPU is running
+T4518 001:361.569    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 001:369.040   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 001:375.616   Reset: Reset device via reset pin
+T4518 001:508.525   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T4518 001:514.398   Reset: Reconnecting and manually halting CPU.
+T4518 001:522.844   Found SW-DP with ID 0x1BA01477
+T4518 001:532.937   AP map detection skipped. Manually configured AP map found.
+T4518 001:539.303   AP[0]: AHB-AP (IDR: Not set)
+T4518 001:551.362   AP[0]: Core found
+T4518 001:557.518   AP[0]: AHB-AP ROM base: 0xE00FF000
+T4518 001:567.097   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T4518 001:574.136   Found Cortex-M3 r1p1, Little endian.
+T4518 001:686.627   CPU could not be halted
+T4518 001:686.674    -- CPU_ReadMem(4 bytes @ 0x400F2000)
+T4518 001:687.163    -- CPU_ReadMem(4 bytes @ 0x40040000)
+T4518 001:687.654   CPU is running
+T4518 001:687.690    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 001:696.933   Reset: Failed. Toggling reset pin and trying reset strategy again.
+T4518 001:704.773   Found SW-DP with ID 0x1BA01477
+T4518 001:714.272   AP map detection skipped. Manually configured AP map found.
+T4518 001:720.423   AP[0]: AHB-AP (IDR: Not set)
+T4518 001:732.730   AP[0]: Core found
+T4518 001:738.799   AP[0]: AHB-AP ROM base: 0xE00FF000
+T4518 001:748.045   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T4518 001:754.567   Found Cortex-M3 r1p1, Little endian.
+T4518 001:855.654   CPU is running
+T4518 001:855.705    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 001:856.153   CPU is running
+T4518 001:856.180    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 001:865.681   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 001:874.458   Reset: Reset device via AIRCR.SYSRESETREQ.
+T4518 001:874.495   CPU is running
+T4518 001:874.515    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4518 001:927.410    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:927.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:928.387    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:928.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:929.136    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:929.516    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:929.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:930.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:930.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:931.134    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:931.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:931.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:932.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:932.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:933.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:933.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:933.731    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:934.136    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:934.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:934.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:935.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:935.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:936.001    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:936.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:936.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:937.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:937.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:937.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:938.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:938.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:938.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:939.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:939.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:940.110    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:940.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:940.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:941.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:941.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:941.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:942.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:942.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:943.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:943.504    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:943.893    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:944.251    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:944.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:944.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:945.386    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:945.778    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:946.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:946.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:946.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:947.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:947.647    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:948.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:948.379    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:948.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:949.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:949.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:949.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:950.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:950.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:950.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:951.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:951.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:952.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:952.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:952.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:953.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:953.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:953.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:954.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:954.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:955.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:955.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:955.920    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:956.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:956.749    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:957.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:957.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:957.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:958.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:958.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:958.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:959.379    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:959.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:960.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:960.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:960.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:961.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:961.643    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:961.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:962.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:962.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:963.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:963.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:963.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:964.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:964.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:964.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:965.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:965.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:966.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:966.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:966.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:967.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:967.638    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:967.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:968.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:968.754    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:969.128    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:969.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:969.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:970.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:970.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:970.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:971.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:971.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:972.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:972.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:972.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:973.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:973.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:973.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:974.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:974.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:975.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:975.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:975.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:976.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:976.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:976.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:977.380    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:977.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:978.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:978.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:978.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:979.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:979.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:980.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:980.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:980.886    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:981.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:981.645    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:981.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:982.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:982.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:983.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:983.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:983.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:984.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:984.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:985.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:985.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:985.892    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:986.268    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:986.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:987.160    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:987.530    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:987.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:988.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:988.656    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:989.013    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:989.382    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:989.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:990.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:990.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:990.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:991.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:991.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:991.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:992.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:992.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:993.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:993.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:993.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:994.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:994.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:995.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:995.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:995.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:996.116    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:996.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:996.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:997.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:997.638    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:997.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:998.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:998.791    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:999.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:999.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 001:999.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:000.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:000.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:001.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:001.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:001.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:002.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:002.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:002.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:003.383    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:003.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:004.112    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:004.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:004.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:005.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:005.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:005.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:006.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:006.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:007.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:007.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:007.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:008.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:008.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:008.997    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:009.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:009.761    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:010.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:010.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:010.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:011.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:011.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:012.014    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:012.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:012.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:013.137    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:013.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:013.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:014.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:014.644    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:015.018    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:015.384    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:015.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:016.115    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:016.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:016.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:017.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:017.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:018.019    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:018.375    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:018.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:019.133    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:019.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:019.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:020.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:020.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:020.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:021.389    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:021.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:022.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:022.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:022.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:023.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:023.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:024.135    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:024.485    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:024.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:025.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:025.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:026.131    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:026.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:026.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:027.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:027.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:028.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:028.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:028.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:029.136    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:029.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:029.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:030.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:030.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:031.025    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:031.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:031.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:032.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:032.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:032.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:033.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:033.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:033.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:034.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:034.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:035.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:035.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:035.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:036.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:036.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:037.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:037.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:037.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:038.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:038.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:038.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:039.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:039.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:039.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:040.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:040.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:041.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:041.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:041.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:042.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:042.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:043.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:043.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:043.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:044.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:044.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:044.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:045.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:045.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:045.998    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:046.384    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:046.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:047.116    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:047.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:047.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:048.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:048.640    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:048.980    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:049.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:049.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:050.152    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:050.502    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:050.886    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:051.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:051.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:052.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:052.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:052.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:053.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:053.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:053.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:054.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:054.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:055.000    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:055.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:055.764    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:056.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:056.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:056.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:057.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:057.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:057.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:058.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:058.835    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:059.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:059.657    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:060.136    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:060.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:060.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:061.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:061.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:061.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:062.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:062.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:063.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:063.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:063.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:064.265    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:064.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:064.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:065.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:065.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:066.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:066.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:066.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:067.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:067.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:068.015    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:068.382    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:068.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:069.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:069.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:069.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:070.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:070.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:070.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:071.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:071.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:072.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:072.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:072.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:073.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:073.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:073.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:074.379    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:074.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:075.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:075.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:075.876    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:076.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:076.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:076.999    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:077.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:077.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:078.129    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:078.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:078.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:079.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:079.643    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:079.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:080.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:080.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:081.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:081.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:081.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:082.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:082.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:082.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:083.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:083.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:084.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:084.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:084.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:085.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:085.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:086.129    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:086.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:086.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:087.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:087.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:088.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:088.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:088.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:089.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:089.638    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:089.979    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:090.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:090.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:091.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:091.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:091.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:092.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:092.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:092.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:093.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:093.842    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:094.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:094.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:094.985    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:095.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:095.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:096.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:096.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:096.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:097.253    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:097.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:098.138    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:098.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:098.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:099.274    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:099.774    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:100.270    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:100.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:101.000    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:101.375    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:101.776    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:102.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:102.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:102.891    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:103.266    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:103.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:103.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:104.376    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:104.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:105.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:105.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:105.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:106.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:106.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:107.127    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:107.518    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:107.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:108.262    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:108.656    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:109.020    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:109.394    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:109.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:110.112    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:110.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:110.890    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:111.272    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:111.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:112.134    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:112.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:112.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:113.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:113.646    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:113.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:114.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:114.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:115.135    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:115.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:115.886    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:116.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:116.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:116.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:117.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:117.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:118.115    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:118.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:118.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:119.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:119.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:119.977    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:120.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:120.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:121.114    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:121.483    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:121.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:122.230    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:122.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:122.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:123.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:123.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:124.115    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:124.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:124.855    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:125.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:125.644    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:125.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:126.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:126.760    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:127.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:127.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:127.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:128.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:128.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:128.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:129.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:129.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:130.122    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:130.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:130.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:131.252    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:131.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:132.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:132.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:132.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:133.116    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:133.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:133.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:134.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:134.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:134.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:135.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:135.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:136.117    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:136.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:136.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:137.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:137.644    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:137.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:138.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:138.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:139.120    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:139.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:139.871    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:140.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:140.658    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:141.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:141.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:141.928    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:142.387    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:142.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:143.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:143.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:143.870    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:144.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:144.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:144.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:145.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:145.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:146.115    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:146.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:146.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:147.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:147.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:148.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:148.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:148.746    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:149.137    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:149.504    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:149.889    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:150.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:150.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:150.984    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:151.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:151.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:152.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:152.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:152.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:153.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:153.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:153.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:154.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:154.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:155.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:155.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:155.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:156.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:156.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:156.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:157.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:157.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:158.118    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:158.499    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:158.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:159.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:159.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:159.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:160.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:160.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:161.139    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:161.500    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:161.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:162.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:162.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:162.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:163.377    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:163.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:164.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:164.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:164.886    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:165.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:165.655    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:166.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:166.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:166.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:167.121    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:167.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:167.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:168.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:168.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:168.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:169.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:169.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:170.119    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:170.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:170.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:171.267    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:171.653    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:172.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:172.416    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:172.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:173.296    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:173.766    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:174.123    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:174.496    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:174.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:175.255    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:175.652    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:175.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:176.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:176.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:177.125    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:177.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:177.874    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:178.266    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:178.649    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:178.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:179.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:188.653   Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.
+T4518 002:196.233   Reset: Using fallback: Reset pin.
+T4518 002:196.277   CPU is running
+T4518 002:196.298    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 002:196.790   CPU is running
+T4518 002:196.816    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 002:203.923   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 002:210.219   Reset: Reset device via reset pin
+T4518 002:339.638   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T4518 002:346.733   Reset: Reconnecting and manually halting CPU.
+T4518 002:355.333   Found SW-DP with ID 0x1BA01477
+T4518 002:365.413   AP map detection skipped. Manually configured AP map found.
+T4518 002:372.316   AP[0]: AHB-AP (IDR: Not set)
+T4518 002:384.871   AP[0]: Core found
+T4518 002:390.988   AP[0]: AHB-AP ROM base: 0xE00FF000
+T4518 002:400.548   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T4518 002:407.776   Found Cortex-M3 r1p1, Little endian.
+T4518 002:511.773    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 002:517.321    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:517.775    -- CPU_WriteMem(4 bytes @ 0xE0002000)
+T4518 002:518.276    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4518 002:518.652    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:519.127 - 1833.545ms
+T4518 002:519.152 JLINK_Halt()
+T4518 002:519.164 - 0.016ms returns 0x00
+T4518 002:519.180   JLINK_ReadMemU32(0xE000EDF0, 0x0001 Items, ...)
+T4518 002:519.204    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 002:519.652   Data:  03 00 03 00
+T4518 002:519.693    - DHCSR
+T4518 002:519.721 - 0.547ms returns 1
+T4518 002:519.745   JLINK_WriteU32(0xE000EDF0, 0xA05F0003)
+T4518 002:519.764    - DHCSR
+T4518 002:519.819    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 002:520.259 - 0.525ms returns 0
+T4518 002:520.282   JLINK_WriteU32(0xE000EDFC, 0x01000000)
+T4518 002:520.298    - DEMCR
+T4518 002:520.319    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 002:520.774 - 0.504ms returns 0
+T4518 002:551.227 JLINK_GetHWStatus(...)
+T4518 002:551.482 - 0.269ms returns 0x00
+T4518 002:569.991 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T4518 002:570.021 - 0.035ms returns 0x06
+T4518 002:570.033 JLINK_GetNumBPUnits(Type = 0xF0)
+T4518 002:570.042 - 0.012ms returns 0x2000
+T4518 002:570.051 JLINK_GetNumWPUnits()
+T4518 002:570.059 - 0.012ms returns 0x04
+T4518 002:589.055 JLINK_GetSpeed()
+T4518 002:589.089 - 0.038ms returns 0xFA0
+T4518 002:601.341   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T4518 002:601.387    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T4518 002:601.760   Data:  01 00 00 00
+T4518 002:601.785 - 0.450ms returns 1
+T4518 002:601.800   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T4518 002:601.820    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T4518 002:602.246   Data:  01 00 00 00
+T4518 002:602.265 - 0.469ms returns 1
+T4518 002:602.278 JLINK_WriteMemEx(0xE0001000, 0x001C Bytes, ..., Flags = 0x02000004)
+T4518 002:602.289   Data:  01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ...
+T4518 002:602.549    -- CPU_WriteMem(28 bytes @ 0xE0001000)
+T4518 002:603.130 - 0.860ms returns 0x1C
+T4518 002:603.151 JLINK_Halt()
+T4518 002:603.162 - 0.015ms returns 0x00
+T4518 002:603.175 JLINK_IsHalted()
+T4518 002:603.185 - 0.015ms returns TRUE
+T4518 002:606.244 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T4518 002:606.258   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T4518 002:606.445    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T4518 002:608.651 - 2.420ms returns 0x164
+T4518 002:608.721 JLINK_WriteReg(R0, 0x08000000)
+T4518 002:608.737 - 0.022ms returns 0x00
+T4518 002:608.749 JLINK_WriteReg(R1, 0x007A1200)
+T4518 002:608.759 - 0.015ms returns 0x00
+T4518 002:608.771 JLINK_WriteReg(R2, 0x00000001)
+T4518 002:608.783 - 0.018ms returns 0x00
+T4518 002:608.796 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:608.806 - 0.014ms returns 0x00
+T4518 002:608.818 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:608.828 - 0.014ms returns 0x00
+T4518 002:608.839 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:608.849 - 0.014ms returns 0x00
+T4518 002:608.860 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:608.870 - 0.014ms returns 0x00
+T4518 002:608.881 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:608.894 - 0.020ms returns 0x00
+T4518 002:608.908 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:608.918 - 0.015ms returns 0x00
+T4518 002:608.930 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:608.939 - 0.014ms returns 0x00
+T4518 002:608.951 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:608.961 - 0.014ms returns 0x00
+T4518 002:608.972 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:608.982 - 0.015ms returns 0x00
+T4518 002:608.994 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:609.004 - 0.014ms returns 0x00
+T4518 002:609.015 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:609.025 - 0.015ms returns 0x00
+T4518 002:609.036 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:609.047 - 0.014ms returns 0x00
+T4518 002:609.058 JLINK_WriteReg(R15 (PC), 0x20000038)
+T4518 002:609.068 - 0.015ms returns 0x00
+T4518 002:609.080 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:609.090 - 0.015ms returns 0x00
+T4518 002:609.102 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:609.112 - 0.014ms returns 0x00
+T4518 002:609.123 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:609.133 - 0.014ms returns 0x00
+T4518 002:609.144 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:609.154 - 0.014ms returns 0x00
+T4518 002:609.166   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:609.184    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:609.679 - 0.521ms returns 0x00000001
+T4518 002:609.694 JLINK_Go()
+T4518 002:609.705    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T4518 002:610.135    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:610.481    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T4518 002:610.496    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T4518 002:610.507    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T4518 002:610.519    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T4518 002:610.530    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T4518 002:610.542    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T4518 002:611.849    -- CPU_WriteMem(4 bytes @ 0xE0001004)
+T4518 002:614.856 - 5.176ms
+T4518 002:614.880 JLINK_IsHalted()
+T4518 002:617.539    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:617.863 - 2.990ms returns TRUE
+T4518 002:617.880 JLINK_ReadReg(R15 (PC))
+T4518 002:617.893 - 0.018ms returns 0x20000000
+T4518 002:617.905 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T4518 002:617.916 - 0.015ms returns 0x00
+T4518 002:617.928 JLINK_ReadReg(R0)
+T4518 002:617.938 - 0.014ms returns 0x00000000
+T4518 002:618.375 JLINK_WriteReg(R0, 0x08000000)
+T4518 002:618.394 - 0.023ms returns 0x00
+T4518 002:618.406 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:618.416 - 0.014ms returns 0x00
+T4518 002:618.427 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:618.437 - 0.014ms returns 0x00
+T4518 002:618.448 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:618.457 - 0.014ms returns 0x00
+T4518 002:618.469 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:618.479 - 0.015ms returns 0x00
+T4518 002:618.490 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:618.500 - 0.014ms returns 0x00
+T4518 002:618.512 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:618.521 - 0.014ms returns 0x00
+T4518 002:618.532 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:618.542 - 0.014ms returns 0x00
+T4518 002:618.553 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:618.563 - 0.015ms returns 0x00
+T4518 002:618.574 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:618.584 - 0.014ms returns 0x00
+T4518 002:618.595 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:618.605 - 0.014ms returns 0x00
+T4518 002:618.616 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:618.626 - 0.014ms returns 0x00
+T4518 002:618.641 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:618.650 - 0.014ms returns 0x00
+T4518 002:618.662 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:618.672 - 0.015ms returns 0x00
+T4518 002:618.683 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:618.693 - 0.014ms returns 0x00
+T4518 002:618.704 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:618.714 - 0.015ms returns 0x00
+T4518 002:618.725 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:618.735 - 0.014ms returns 0x00
+T4518 002:618.746 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:618.756 - 0.014ms returns 0x00
+T4518 002:618.767 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:618.777 - 0.018ms returns 0x00
+T4518 002:618.795 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:618.805 - 0.014ms returns 0x00
+T4518 002:618.817   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:618.832 - 0.020ms returns 0x00000002
+T4518 002:618.843 JLINK_Go()
+T4518 002:618.859    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:621.861 - 3.030ms
+T4518 002:621.883 JLINK_IsHalted()
+T4518 002:624.543    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:625.006 - 3.138ms returns TRUE
+T4518 002:625.041 JLINK_ReadReg(R15 (PC))
+T4518 002:625.060 - 0.028ms returns 0x20000000
+T4518 002:625.082 JLINK_ClrBPEx(BPHandle = 0x00000002)
+T4518 002:625.098 - 0.024ms returns 0x00
+T4518 002:625.119 JLINK_ReadReg(R0)
+T4518 002:625.135 - 0.024ms returns 0x00000001
+T4518 002:625.209 JLINK_WriteReg(R0, 0x08000000)
+T4518 002:625.229 - 0.027ms returns 0x00
+T4518 002:625.248 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:625.264 - 0.024ms returns 0x00
+T4518 002:625.282 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:625.298 - 0.023ms returns 0x00
+T4518 002:625.316 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:625.332 - 0.023ms returns 0x00
+T4518 002:625.350 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:625.366 - 0.023ms returns 0x00
+T4518 002:625.384 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:625.399 - 0.022ms returns 0x00
+T4518 002:625.413 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:625.423 - 0.014ms returns 0x00
+T4518 002:625.434 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:625.444 - 0.014ms returns 0x00
+T4518 002:625.455 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:625.465 - 0.014ms returns 0x00
+T4518 002:625.476 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:625.486 - 0.014ms returns 0x00
+T4518 002:625.497 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:625.507 - 0.014ms returns 0x00
+T4518 002:625.518 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:625.527 - 0.014ms returns 0x00
+T4518 002:625.539 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:625.548 - 0.014ms returns 0x00
+T4518 002:625.560 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:625.570 - 0.014ms returns 0x00
+T4518 002:625.582 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:625.592 - 0.014ms returns 0x00
+T4518 002:625.603 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:625.616 - 0.017ms returns 0x00
+T4518 002:625.627 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:625.637 - 0.014ms returns 0x00
+T4518 002:625.648 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:625.658 - 0.014ms returns 0x00
+T4518 002:625.670 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:625.679 - 0.014ms returns 0x00
+T4518 002:625.690 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:625.700 - 0.014ms returns 0x00
+T4518 002:625.712   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:625.727 - 0.020ms returns 0x00000003
+T4518 002:625.738 JLINK_Go()
+T4518 002:625.753    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:628.747 - 3.030ms
+T4518 002:628.785 JLINK_IsHalted()
+T4518 002:629.261 - 0.490ms returns FALSE
+T4518 002:656.784 JLINK_IsHalted()
+T4518 002:659.672    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:660.128 - 3.359ms returns TRUE
+T4518 002:660.157 JLINK_ReadReg(R15 (PC))
+T4518 002:660.175 - 0.025ms returns 0x20000000
+T4518 002:660.191 JLINK_ClrBPEx(BPHandle = 0x00000003)
+T4518 002:660.205 - 0.020ms returns 0x00
+T4518 002:660.222 JLINK_ReadReg(R0)
+T4518 002:660.236 - 0.021ms returns 0x00000000
+T4518 002:661.225 JLINK_WriteReg(R0, 0x08000400)
+T4518 002:661.253 - 0.035ms returns 0x00
+T4518 002:661.269 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:661.283 - 0.020ms returns 0x00
+T4518 002:661.298 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:661.312 - 0.020ms returns 0x00
+T4518 002:661.327 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:661.340 - 0.019ms returns 0x00
+T4518 002:661.355 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:661.368 - 0.020ms returns 0x00
+T4518 002:661.384 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:661.397 - 0.019ms returns 0x00
+T4518 002:661.412 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:661.425 - 0.019ms returns 0x00
+T4518 002:661.439 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:661.447 - 0.012ms returns 0x00
+T4518 002:661.460 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:661.471 - 0.014ms returns 0x00
+T4518 002:661.480 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:661.488 - 0.012ms returns 0x00
+T4518 002:661.497 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:661.505 - 0.012ms returns 0x00
+T4518 002:661.515 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:661.523 - 0.012ms returns 0x00
+T4518 002:661.533 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:661.541 - 0.012ms returns 0x00
+T4518 002:661.550 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:661.559 - 0.012ms returns 0x00
+T4518 002:661.568 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:661.576 - 0.012ms returns 0x00
+T4518 002:661.585 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:661.594 - 0.012ms returns 0x00
+T4518 002:661.603 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:661.611 - 0.013ms returns 0x00
+T4518 002:661.621 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:661.629 - 0.012ms returns 0x00
+T4518 002:661.638 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:661.646 - 0.012ms returns 0x00
+T4518 002:661.656 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:661.664 - 0.012ms returns 0x00
+T4518 002:661.674   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:661.686 - 0.017ms returns 0x00000004
+T4518 002:661.696 JLINK_Go()
+T4518 002:661.710    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:664.745 - 3.070ms
+T4518 002:664.783 JLINK_IsHalted()
+T4518 002:667.423    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:667.872 - 3.103ms returns TRUE
+T4518 002:667.903 JLINK_ReadReg(R15 (PC))
+T4518 002:667.925 - 0.030ms returns 0x20000000
+T4518 002:667.945 JLINK_ClrBPEx(BPHandle = 0x00000004)
+T4518 002:667.961 - 0.024ms returns 0x00
+T4518 002:667.980 JLINK_ReadReg(R0)
+T4518 002:667.996 - 0.024ms returns 0x00000001
+T4518 002:668.018 JLINK_WriteReg(R0, 0x08000400)
+T4518 002:668.035 - 0.024ms returns 0x00
+T4518 002:668.053 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:668.069 - 0.023ms returns 0x00
+T4518 002:668.087 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:668.103 - 0.023ms returns 0x00
+T4518 002:668.121 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:668.137 - 0.023ms returns 0x00
+T4518 002:668.155 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:668.171 - 0.023ms returns 0x00
+T4518 002:668.189 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:668.204 - 0.023ms returns 0x00
+T4518 002:668.222 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:668.238 - 0.023ms returns 0x00
+T4518 002:668.256 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:668.272 - 0.023ms returns 0x00
+T4518 002:668.290 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:668.306 - 0.023ms returns 0x00
+T4518 002:668.324 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:668.340 - 0.023ms returns 0x00
+T4518 002:668.358 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:668.374 - 0.023ms returns 0x00
+T4518 002:668.392 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:668.407 - 0.023ms returns 0x00
+T4518 002:668.425 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:668.441 - 0.023ms returns 0x00
+T4518 002:668.459 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:668.475 - 0.024ms returns 0x00
+T4518 002:668.493 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:668.512 - 0.023ms returns 0x00
+T4518 002:668.523 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:668.533 - 0.014ms returns 0x00
+T4518 002:668.544 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:668.554 - 0.014ms returns 0x00
+T4518 002:668.565 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:668.575 - 0.014ms returns 0x00
+T4518 002:668.586 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:668.596 - 0.014ms returns 0x00
+T4518 002:668.607 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:668.617 - 0.014ms returns 0x00
+T4518 002:668.628   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:668.643 - 0.020ms returns 0x00000005
+T4518 002:668.655 JLINK_Go()
+T4518 002:668.670    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:671.743 - 3.098ms
+T4518 002:671.761 JLINK_IsHalted()
+T4518 002:672.114 - 0.365ms returns FALSE
+T4518 002:700.696 JLINK_IsHalted()
+T4518 002:703.432    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:703.867 - 3.179ms returns TRUE
+T4518 002:703.891 JLINK_ReadReg(R15 (PC))
+T4518 002:703.907 - 0.021ms returns 0x20000000
+T4518 002:703.921 JLINK_ClrBPEx(BPHandle = 0x00000005)
+T4518 002:703.932 - 0.015ms returns 0x00
+T4518 002:703.945 JLINK_ReadReg(R0)
+T4518 002:703.955 - 0.015ms returns 0x00000000
+T4518 002:704.639 JLINK_WriteReg(R0, 0x08000800)
+T4518 002:704.656 - 0.022ms returns 0x00
+T4518 002:704.666 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:704.674 - 0.012ms returns 0x00
+T4518 002:704.684 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:704.692 - 0.012ms returns 0x00
+T4518 002:704.701 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:704.709 - 0.011ms returns 0x00
+T4518 002:704.719 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:704.727 - 0.012ms returns 0x00
+T4518 002:704.736 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:704.744 - 0.012ms returns 0x00
+T4518 002:704.753 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:704.761 - 0.011ms returns 0x00
+T4518 002:704.770 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:704.778 - 0.012ms returns 0x00
+T4518 002:704.787 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:704.795 - 0.012ms returns 0x00
+T4518 002:704.804 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:704.812 - 0.012ms returns 0x00
+T4518 002:704.822 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:704.830 - 0.012ms returns 0x00
+T4518 002:704.839 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:704.847 - 0.012ms returns 0x00
+T4518 002:704.856 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:704.864 - 0.012ms returns 0x00
+T4518 002:704.873 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:704.882 - 0.013ms returns 0x00
+T4518 002:704.892 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:704.900 - 0.012ms returns 0x00
+T4518 002:704.909 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:704.917 - 0.012ms returns 0x00
+T4518 002:704.926 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:704.934 - 0.011ms returns 0x00
+T4518 002:704.943 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:704.951 - 0.011ms returns 0x00
+T4518 002:704.960 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:704.968 - 0.011ms returns 0x00
+T4518 002:704.977 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:704.985 - 0.011ms returns 0x00
+T4518 002:704.995   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:705.009 - 0.018ms returns 0x00000006
+T4518 002:705.019 JLINK_Go()
+T4518 002:705.033    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:707.987 - 2.986ms
+T4518 002:708.020 JLINK_IsHalted()
+T4518 002:710.764    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:711.297 - 3.299ms returns TRUE
+T4518 002:711.337 JLINK_ReadReg(R15 (PC))
+T4518 002:711.359 - 0.030ms returns 0x20000000
+T4518 002:711.379 JLINK_ClrBPEx(BPHandle = 0x00000006)
+T4518 002:711.397 - 0.025ms returns 0x00
+T4518 002:711.416 JLINK_ReadReg(R0)
+T4518 002:711.432 - 0.025ms returns 0x00000001
+T4518 002:711.455 JLINK_WriteReg(R0, 0x08000800)
+T4518 002:711.474 - 0.027ms returns 0x00
+T4518 002:711.493 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:711.515 - 0.027ms returns 0x00
+T4518 002:711.528 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:711.537 - 0.012ms returns 0x00
+T4518 002:711.546 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:711.554 - 0.012ms returns 0x00
+T4518 002:711.564 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:711.572 - 0.012ms returns 0x00
+T4518 002:711.581 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:711.589 - 0.012ms returns 0x00
+T4518 002:711.598 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:711.606 - 0.012ms returns 0x00
+T4518 002:711.617 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:711.625 - 0.012ms returns 0x00
+T4518 002:711.634 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:711.642 - 0.012ms returns 0x00
+T4518 002:711.652 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:711.660 - 0.012ms returns 0x00
+T4518 002:711.669 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:711.678 - 0.012ms returns 0x00
+T4518 002:711.687 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:711.695 - 0.011ms returns 0x00
+T4518 002:711.704 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:711.712 - 0.011ms returns 0x00
+T4518 002:711.721 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:711.729 - 0.012ms returns 0x00
+T4518 002:711.739 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:711.751 - 0.016ms returns 0x00
+T4518 002:711.760 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:711.768 - 0.012ms returns 0x00
+T4518 002:711.778 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:711.786 - 0.012ms returns 0x00
+T4518 002:711.795 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:711.803 - 0.012ms returns 0x00
+T4518 002:711.812 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:711.820 - 0.011ms returns 0x00
+T4518 002:711.829 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:711.838 - 0.013ms returns 0x00
+T4518 002:711.848   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:711.860 - 0.016ms returns 0x00000007
+T4518 002:711.869 JLINK_Go()
+T4518 002:711.882    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:714.865 - 3.015ms
+T4518 002:714.900 JLINK_IsHalted()
+T4518 002:715.254 - 0.368ms returns FALSE
+T4518 002:724.538 JLINK_IsHalted()
+T4518 002:724.997 - 0.468ms returns FALSE
+T4518 002:726.568 JLINK_IsHalted()
+T4518 002:726.990 - 0.434ms returns FALSE
+T4518 002:728.570 JLINK_IsHalted()
+T4518 002:729.001 - 0.443ms returns FALSE
+T4518 002:730.631 JLINK_IsHalted()
+T4518 002:730.986 - 0.363ms returns FALSE
+T4518 002:732.637 JLINK_IsHalted()
+T4518 002:732.989 - 0.363ms returns FALSE
+T4518 002:734.147 JLINK_IsHalted()
+T4518 002:734.511 - 0.379ms returns FALSE
+T4518 002:736.220 JLINK_IsHalted()
+T4518 002:736.644 - 0.435ms returns FALSE
+T4518 002:738.382 JLINK_IsHalted()
+T4518 002:741.052    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:741.505 - 3.136ms returns TRUE
+T4518 002:741.532 JLINK_ReadReg(R15 (PC))
+T4518 002:741.552 - 0.028ms returns 0x20000000
+T4518 002:741.572 JLINK_ClrBPEx(BPHandle = 0x00000007)
+T4518 002:741.588 - 0.024ms returns 0x00
+T4518 002:741.607 JLINK_ReadReg(R0)
+T4518 002:741.623 - 0.023ms returns 0x00000000
+T4518 002:742.645 JLINK_WriteReg(R0, 0x08000C00)
+T4518 002:742.668 - 0.028ms returns 0x00
+T4518 002:742.681 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:742.692 - 0.016ms returns 0x00
+T4518 002:742.705 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:742.715 - 0.016ms returns 0x00
+T4518 002:742.728 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:742.739 - 0.016ms returns 0x00
+T4518 002:742.751 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:742.762 - 0.016ms returns 0x00
+T4518 002:742.774 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:742.785 - 0.016ms returns 0x00
+T4518 002:742.798 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:742.808 - 0.016ms returns 0x00
+T4518 002:742.821 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:742.832 - 0.016ms returns 0x00
+T4518 002:742.845 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:742.856 - 0.016ms returns 0x00
+T4518 002:742.868 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:742.879 - 0.016ms returns 0x00
+T4518 002:742.891 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:742.902 - 0.016ms returns 0x00
+T4518 002:742.914 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:742.925 - 0.016ms returns 0x00
+T4518 002:742.938 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:742.949 - 0.016ms returns 0x00
+T4518 002:742.961 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:742.973 - 0.017ms returns 0x00
+T4518 002:742.986 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:742.996 - 0.016ms returns 0x00
+T4518 002:743.009 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:743.020 - 0.016ms returns 0x00
+T4518 002:743.032 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:743.043 - 0.016ms returns 0x00
+T4518 002:743.055 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:743.066 - 0.016ms returns 0x00
+T4518 002:743.078 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:743.089 - 0.016ms returns 0x00
+T4518 002:743.103 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:743.119 - 0.024ms returns 0x00
+T4518 002:743.136   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:743.153 - 0.023ms returns 0x00000008
+T4518 002:743.165 JLINK_Go()
+T4518 002:743.183    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:746.252 - 3.101ms
+T4518 002:746.278 JLINK_IsHalted()
+T4518 002:748.957    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:749.367 - 3.101ms returns TRUE
+T4518 002:749.391 JLINK_ReadReg(R15 (PC))
+T4518 002:749.416 - 0.032ms returns 0x20000000
+T4518 002:749.433 JLINK_ClrBPEx(BPHandle = 0x00000008)
+T4518 002:749.485 - 0.060ms returns 0x00
+T4518 002:749.503 JLINK_ReadReg(R0)
+T4518 002:749.519 - 0.023ms returns 0x00000001
+T4518 002:749.538 JLINK_WriteReg(R0, 0x08000C00)
+T4518 002:749.552 - 0.020ms returns 0x00
+T4518 002:749.568 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:749.581 - 0.019ms returns 0x00
+T4518 002:749.596 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:749.609 - 0.019ms returns 0x00
+T4518 002:749.624 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:749.637 - 0.019ms returns 0x00
+T4518 002:749.652 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:749.665 - 0.019ms returns 0x00
+T4518 002:749.680 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:749.693 - 0.019ms returns 0x00
+T4518 002:749.708 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:749.721 - 0.019ms returns 0x00
+T4518 002:749.736 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:749.749 - 0.019ms returns 0x00
+T4518 002:749.764 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:749.777 - 0.019ms returns 0x00
+T4518 002:749.792 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:749.805 - 0.019ms returns 0x00
+T4518 002:749.820 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:749.833 - 0.019ms returns 0x00
+T4518 002:749.848 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:749.861 - 0.019ms returns 0x00
+T4518 002:749.876 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:749.889 - 0.019ms returns 0x00
+T4518 002:749.904 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:749.918 - 0.020ms returns 0x00
+T4518 002:749.933 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:749.946 - 0.019ms returns 0x00
+T4518 002:749.961 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:749.974 - 0.019ms returns 0x00
+T4518 002:749.989 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:750.002 - 0.019ms returns 0x00
+T4518 002:750.018 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:750.031 - 0.019ms returns 0x00
+T4518 002:750.046 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:750.059 - 0.019ms returns 0x00
+T4518 002:750.074 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:750.087 - 0.019ms returns 0x00
+T4518 002:750.103   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:750.125 - 0.028ms returns 0x00000009
+T4518 002:750.140 JLINK_Go()
+T4518 002:750.160    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:753.121 - 2.996ms
+T4518 002:753.149 JLINK_IsHalted()
+T4518 002:753.500 - 0.361ms returns FALSE
+T4518 002:754.626 JLINK_IsHalted()
+T4518 002:754.999 - 0.382ms returns FALSE
+T4518 002:756.643 JLINK_IsHalted()
+T4518 002:756.989 - 0.357ms returns FALSE
+T4518 002:758.681 JLINK_IsHalted()
+T4518 002:759.135 - 0.466ms returns FALSE
+T4518 002:760.680 JLINK_IsHalted()
+T4518 002:761.141 - 0.477ms returns FALSE
+T4518 002:763.747 JLINK_IsHalted()
+T4518 002:764.128 - 0.395ms returns FALSE
+T4518 002:766.353 JLINK_IsHalted()
+T4518 002:766.762 - 0.424ms returns FALSE
+T4518 002:768.412 JLINK_IsHalted()
+T4518 002:768.743 - 0.344ms returns FALSE
+T4518 002:770.415 JLINK_IsHalted()
+T4518 002:770.751 - 0.348ms returns FALSE
+T4518 002:772.415 JLINK_IsHalted()
+T4518 002:772.751 - 0.348ms returns FALSE
+T4518 002:774.415 JLINK_IsHalted()
+T4518 002:774.742 - 0.338ms returns FALSE
+T4518 002:777.006 JLINK_IsHalted()
+T4518 002:779.734    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:780.131 - 3.142ms returns TRUE
+T4518 002:780.165 JLINK_ReadReg(R15 (PC))
+T4518 002:780.200 - 0.042ms returns 0x20000000
+T4518 002:780.218 JLINK_ClrBPEx(BPHandle = 0x00000009)
+T4518 002:780.233 - 0.021ms returns 0x00
+T4518 002:780.251 JLINK_ReadReg(R0)
+T4518 002:780.265 - 0.020ms returns 0x00000000
+T4518 002:781.108 JLINK_WriteReg(R0, 0x08001000)
+T4518 002:781.131 - 0.029ms returns 0x00
+T4518 002:781.144 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:781.156 - 0.016ms returns 0x00
+T4518 002:781.168 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:781.179 - 0.016ms returns 0x00
+T4518 002:781.192 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:781.202 - 0.016ms returns 0x00
+T4518 002:781.215 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:781.226 - 0.016ms returns 0x00
+T4518 002:781.243 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:781.256 - 0.018ms returns 0x00
+T4518 002:781.268 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:781.279 - 0.016ms returns 0x00
+T4518 002:781.291 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:781.302 - 0.016ms returns 0x00
+T4518 002:781.314 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:781.326 - 0.017ms returns 0x00
+T4518 002:781.339 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:781.349 - 0.016ms returns 0x00
+T4518 002:781.362 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:781.373 - 0.016ms returns 0x00
+T4518 002:781.386 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:781.397 - 0.016ms returns 0x00
+T4518 002:781.409 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:781.420 - 0.016ms returns 0x00
+T4518 002:781.432 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:781.444 - 0.017ms returns 0x00
+T4518 002:781.457 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:781.468 - 0.016ms returns 0x00
+T4518 002:781.481 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:781.492 - 0.016ms returns 0x00
+T4518 002:781.504 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:781.515 - 0.016ms returns 0x00
+T4518 002:781.528 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:781.539 - 0.016ms returns 0x00
+T4518 002:781.551 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:781.562 - 0.016ms returns 0x00
+T4518 002:781.575 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:781.585 - 0.016ms returns 0x00
+T4518 002:781.599   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:781.616 - 0.023ms returns 0x0000000A
+T4518 002:781.629 JLINK_Go()
+T4518 002:781.647    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:784.646 - 3.032ms
+T4518 002:784.674 JLINK_IsHalted()
+T4518 002:787.293    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:787.763 - 3.104ms returns TRUE
+T4518 002:787.790 JLINK_ReadReg(R15 (PC))
+T4518 002:787.826 - 0.046ms returns 0x20000000
+T4518 002:787.849 JLINK_ClrBPEx(BPHandle = 0x0000000A)
+T4518 002:787.864 - 0.022ms returns 0x00
+T4518 002:787.881 JLINK_ReadReg(R0)
+T4518 002:787.895 - 0.020ms returns 0x00000001
+T4518 002:787.914 JLINK_WriteReg(R0, 0x08001000)
+T4518 002:787.929 - 0.021ms returns 0x00
+T4518 002:787.944 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:787.958 - 0.020ms returns 0x00
+T4518 002:787.973 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:787.987 - 0.020ms returns 0x00
+T4518 002:788.002 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:788.016 - 0.020ms returns 0x00
+T4518 002:788.031 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:788.045 - 0.020ms returns 0x00
+T4518 002:788.060 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:788.074 - 0.020ms returns 0x00
+T4518 002:788.090 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:788.103 - 0.020ms returns 0x00
+T4518 002:788.119 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:788.132 - 0.020ms returns 0x00
+T4518 002:788.148 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:788.161 - 0.020ms returns 0x00
+T4518 002:788.181 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:788.197 - 0.023ms returns 0x00
+T4518 002:788.213 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:788.248 - 0.044ms returns 0x00
+T4518 002:788.267 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:788.280 - 0.018ms returns 0x00
+T4518 002:788.296 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:788.308 - 0.018ms returns 0x00
+T4518 002:788.321 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:788.333 - 0.016ms returns 0x00
+T4518 002:788.346 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:788.357 - 0.016ms returns 0x00
+T4518 002:788.369 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:788.381 - 0.016ms returns 0x00
+T4518 002:788.393 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:788.404 - 0.016ms returns 0x00
+T4518 002:788.418 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:788.429 - 0.017ms returns 0x00
+T4518 002:788.442 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:788.454 - 0.016ms returns 0x00
+T4518 002:788.466 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:788.477 - 0.016ms returns 0x00
+T4518 002:788.491   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:788.508 - 0.048ms returns 0x0000000B
+T4518 002:788.555 JLINK_Go()
+T4518 002:788.589    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:791.748 - 3.210ms
+T4518 002:791.799 JLINK_IsHalted()
+T4518 002:792.253 - 0.466ms returns FALSE
+T4518 002:793.825 JLINK_IsHalted()
+T4518 002:794.260 - 0.450ms returns FALSE
+T4518 002:795.819 JLINK_IsHalted()
+T4518 002:796.263 - 0.456ms returns FALSE
+T4518 002:798.323 JLINK_IsHalted()
+T4518 002:798.751 - 0.457ms returns FALSE
+T4518 002:800.869 JLINK_IsHalted()
+T4518 002:801.258 - 0.400ms returns FALSE
+T4518 002:802.867 JLINK_IsHalted()
+T4518 002:803.257 - 0.401ms returns FALSE
+T4518 002:804.864 JLINK_IsHalted()
+T4518 002:805.245 - 0.389ms returns FALSE
+T4518 002:808.038 JLINK_IsHalted()
+T4518 002:808.569 - 0.544ms returns FALSE
+T4518 002:810.212 JLINK_IsHalted()
+T4518 002:810.642 - 0.438ms returns FALSE
+T4518 002:812.324 JLINK_IsHalted()
+T4518 002:812.838 - 0.526ms returns FALSE
+T4518 002:814.328 JLINK_IsHalted()
+T4518 002:817.045    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:817.506 - 3.194ms returns TRUE
+T4518 002:817.537 JLINK_ReadReg(R15 (PC))
+T4518 002:817.561 - 0.032ms returns 0x20000000
+T4518 002:817.580 JLINK_ClrBPEx(BPHandle = 0x0000000B)
+T4518 002:817.598 - 0.025ms returns 0x00
+T4518 002:817.617 JLINK_ReadReg(R0)
+T4518 002:817.634 - 0.024ms returns 0x00000000
+T4518 002:818.804 JLINK_WriteReg(R0, 0x08001400)
+T4518 002:818.822 - 0.022ms returns 0x00
+T4518 002:818.831 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:818.840 - 0.012ms returns 0x00
+T4518 002:818.849 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:818.857 - 0.012ms returns 0x00
+T4518 002:818.866 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:818.874 - 0.011ms returns 0x00
+T4518 002:818.883 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:818.891 - 0.011ms returns 0x00
+T4518 002:818.900 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:818.910 - 0.013ms returns 0x00
+T4518 002:818.919 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:818.927 - 0.012ms returns 0x00
+T4518 002:818.936 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:818.944 - 0.013ms returns 0x00
+T4518 002:818.954 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:818.962 - 0.012ms returns 0x00
+T4518 002:818.972 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:818.981 - 0.013ms returns 0x00
+T4518 002:818.990 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:818.998 - 0.011ms returns 0x00
+T4518 002:819.007 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:819.015 - 0.012ms returns 0x00
+T4518 002:819.025 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:819.033 - 0.012ms returns 0x00
+T4518 002:819.042 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:819.051 - 0.012ms returns 0x00
+T4518 002:819.060 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:819.068 - 0.011ms returns 0x00
+T4518 002:819.077 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:819.085 - 0.012ms returns 0x00
+T4518 002:819.094 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:819.103 - 0.012ms returns 0x00
+T4518 002:819.112 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:819.120 - 0.012ms returns 0x00
+T4518 002:819.129 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:819.137 - 0.011ms returns 0x00
+T4518 002:819.146 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:819.154 - 0.011ms returns 0x00
+T4518 002:819.164   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:819.177 - 0.017ms returns 0x0000000C
+T4518 002:819.187 JLINK_Go()
+T4518 002:819.202    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:822.243 - 3.071ms
+T4518 002:822.272 JLINK_IsHalted()
+T4518 002:824.920    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:825.381 - 3.120ms returns TRUE
+T4518 002:825.405 JLINK_ReadReg(R15 (PC))
+T4518 002:825.422 - 0.023ms returns 0x20000000
+T4518 002:825.437 JLINK_ClrBPEx(BPHandle = 0x0000000C)
+T4518 002:825.451 - 0.020ms returns 0x00
+T4518 002:825.467 JLINK_ReadReg(R0)
+T4518 002:825.480 - 0.020ms returns 0x00000001
+T4518 002:825.499 JLINK_WriteReg(R0, 0x08001400)
+T4518 002:825.513 - 0.020ms returns 0x00
+T4518 002:825.528 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:825.542 - 0.020ms returns 0x00
+T4518 002:825.557 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:825.575 - 0.024ms returns 0x00
+T4518 002:825.591 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:825.608 - 0.027ms returns 0x00
+T4518 002:825.626 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:825.639 - 0.019ms returns 0x00
+T4518 002:825.654 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:825.668 - 0.019ms returns 0x00
+T4518 002:825.683 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:825.696 - 0.019ms returns 0x00
+T4518 002:825.711 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:825.724 - 0.019ms returns 0x00
+T4518 002:825.740 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:825.753 - 0.019ms returns 0x00
+T4518 002:825.768 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:825.780 - 0.016ms returns 0x00
+T4518 002:825.790 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:825.798 - 0.012ms returns 0x00
+T4518 002:825.807 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:825.815 - 0.012ms returns 0x00
+T4518 002:825.824 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:825.833 - 0.012ms returns 0x00
+T4518 002:825.842 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:825.853 - 0.017ms returns 0x00
+T4518 002:825.866 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:825.877 - 0.017ms returns 0x00
+T4518 002:825.890 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:825.901 - 0.017ms returns 0x00
+T4518 002:825.914 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:825.928 - 0.017ms returns 0x00
+T4518 002:825.938 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:825.946 - 0.012ms returns 0x00
+T4518 002:825.956 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:825.964 - 0.012ms returns 0x00
+T4518 002:825.974 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:825.982 - 0.012ms returns 0x00
+T4518 002:825.992   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:826.006 - 0.018ms returns 0x0000000D
+T4518 002:826.032 JLINK_Go()
+T4518 002:826.059    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:829.105 - 3.082ms
+T4518 002:829.124 JLINK_IsHalted()
+T4518 002:829.500 - 0.385ms returns FALSE
+T4518 002:830.982 JLINK_IsHalted()
+T4518 002:831.363 - 0.394ms returns FALSE
+T4518 002:833.013 JLINK_IsHalted()
+T4518 002:833.380 - 0.375ms returns FALSE
+T4518 002:835.023 JLINK_IsHalted()
+T4518 002:835.366 - 0.350ms returns FALSE
+T4518 002:837.036 JLINK_IsHalted()
+T4518 002:837.370 - 0.341ms returns FALSE
+T4518 002:839.044 JLINK_IsHalted()
+T4518 002:839.366 - 0.331ms returns FALSE
+T4518 002:841.046 JLINK_IsHalted()
+T4518 002:841.374 - 0.338ms returns FALSE
+T4518 002:844.108 JLINK_IsHalted()
+T4518 002:844.496 - 0.399ms returns FALSE
+T4518 002:846.112 JLINK_IsHalted()
+T4518 002:846.491 - 0.390ms returns FALSE
+T4518 002:848.123 JLINK_IsHalted()
+T4518 002:848.498 - 0.385ms returns FALSE
+T4518 002:850.273 JLINK_IsHalted()
+T4518 002:850.639 - 0.374ms returns FALSE
+T4518 002:852.340 JLINK_IsHalted()
+T4518 002:855.044    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:855.371 - 3.039ms returns TRUE
+T4518 002:855.398 JLINK_ReadReg(R15 (PC))
+T4518 002:855.418 - 0.027ms returns 0x20000000
+T4518 002:855.431 JLINK_ClrBPEx(BPHandle = 0x0000000D)
+T4518 002:855.444 - 0.021ms returns 0x00
+T4518 002:855.464 JLINK_ReadReg(R0)
+T4518 002:855.494 - 0.042ms returns 0x00000000
+T4518 002:856.323 JLINK_WriteReg(R0, 0x08001800)
+T4518 002:856.346 - 0.027ms returns 0x00
+T4518 002:856.359 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:856.371 - 0.017ms returns 0x00
+T4518 002:856.382 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:856.419 - 0.042ms returns 0x00
+T4518 002:856.433 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:856.444 - 0.016ms returns 0x00
+T4518 002:856.456 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:856.472 - 0.022ms returns 0x00
+T4518 002:856.486 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:856.520 - 0.042ms returns 0x00
+T4518 002:856.543 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:856.557 - 0.022ms returns 0x00
+T4518 002:856.576 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:856.591 - 0.025ms returns 0x00
+T4518 002:856.611 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:856.626 - 0.023ms returns 0x00
+T4518 002:856.641 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:856.662 - 0.026ms returns 0x00
+T4518 002:856.675 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:856.685 - 0.015ms returns 0x00
+T4518 002:856.699 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:856.779 - 0.094ms returns 0x00
+T4518 002:856.805 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:856.817 - 0.019ms returns 0x00
+T4518 002:856.835 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:856.889 - 0.058ms returns 0x00
+T4518 002:856.905 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:856.916 - 0.015ms returns 0x00
+T4518 002:856.927 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:856.937 - 0.014ms returns 0x00
+T4518 002:856.947 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:856.955 - 0.013ms returns 0x00
+T4518 002:856.967 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:856.978 - 0.015ms returns 0x00
+T4518 002:856.991 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:857.003 - 0.018ms returns 0x00
+T4518 002:857.015 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:857.025 - 0.014ms returns 0x00
+T4518 002:857.040   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:857.056 - 0.027ms returns 0x0000000E
+T4518 002:857.077 JLINK_Go()
+T4518 002:857.096    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:860.112 - 3.044ms
+T4518 002:860.129 JLINK_IsHalted()
+T4518 002:862.817    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:863.246 - 3.124ms returns TRUE
+T4518 002:863.263 JLINK_ReadReg(R15 (PC))
+T4518 002:863.276 - 0.018ms returns 0x20000000
+T4518 002:863.288 JLINK_ClrBPEx(BPHandle = 0x0000000E)
+T4518 002:863.298 - 0.015ms returns 0x00
+T4518 002:863.310 JLINK_ReadReg(R0)
+T4518 002:863.323 - 0.017ms returns 0x00000001
+T4518 002:863.338 JLINK_WriteReg(R0, 0x08001800)
+T4518 002:863.348 - 0.015ms returns 0x00
+T4518 002:863.360 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:863.369 - 0.014ms returns 0x00
+T4518 002:863.381 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:863.391 - 0.014ms returns 0x00
+T4518 002:863.402 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:863.412 - 0.014ms returns 0x00
+T4518 002:863.423 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:863.434 - 0.015ms returns 0x00
+T4518 002:863.445 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:863.455 - 0.014ms returns 0x00
+T4518 002:863.471 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:863.483 - 0.016ms returns 0x00
+T4518 002:863.494 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:863.505 - 0.015ms returns 0x00
+T4518 002:863.516 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:863.526 - 0.014ms returns 0x00
+T4518 002:863.537 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:863.547 - 0.014ms returns 0x00
+T4518 002:863.558 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:863.568 - 0.014ms returns 0x00
+T4518 002:863.579 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:863.597 - 0.023ms returns 0x00
+T4518 002:863.610 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:863.620 - 0.015ms returns 0x00
+T4518 002:863.631 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:863.642 - 0.015ms returns 0x00
+T4518 002:863.653 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:863.663 - 0.014ms returns 0x00
+T4518 002:863.674 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:863.684 - 0.015ms returns 0x00
+T4518 002:863.696 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:863.705 - 0.013ms returns 0x00
+T4518 002:863.715 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:863.723 - 0.012ms returns 0x00
+T4518 002:863.732 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:863.741 - 0.018ms returns 0x00
+T4518 002:863.757 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:863.770 - 0.019ms returns 0x00
+T4518 002:863.783   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:863.795 - 0.017ms returns 0x0000000F
+T4518 002:863.805 JLINK_Go()
+T4518 002:863.818    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:866.854 - 3.062ms
+T4518 002:866.878 JLINK_IsHalted()
+T4518 002:867.238 - 0.373ms returns FALSE
+T4518 002:868.326 JLINK_IsHalted()
+T4518 002:868.745 - 0.427ms returns FALSE
+T4518 002:870.344 JLINK_IsHalted()
+T4518 002:870.746 - 0.411ms returns FALSE
+T4518 002:872.856 JLINK_IsHalted()
+T4518 002:873.295 - 0.470ms returns FALSE
+T4518 002:876.281 JLINK_IsHalted()
+T4518 002:876.761 - 0.492ms returns FALSE
+T4518 002:878.397 JLINK_IsHalted()
+T4518 002:878.746 - 0.361ms returns FALSE
+T4518 002:880.486 JLINK_IsHalted()
+T4518 002:880.883 - 0.414ms returns FALSE
+T4518 002:882.657 JLINK_IsHalted()
+T4518 002:882.987 - 0.341ms returns FALSE
+T4518 002:884.161 JLINK_IsHalted()
+T4518 002:884.835 - 0.683ms returns FALSE
+T4518 002:886.183 JLINK_IsHalted()
+T4518 002:886.640 - 0.469ms returns FALSE
+T4518 002:888.247 JLINK_IsHalted()
+T4518 002:888.649 - 0.413ms returns FALSE
+T4518 002:890.257 JLINK_IsHalted()
+T4518 002:892.927    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:893.382 - 3.142ms returns TRUE
+T4518 002:893.412 JLINK_ReadReg(R15 (PC))
+T4518 002:893.431 - 0.026ms returns 0x20000000
+T4518 002:893.447 JLINK_ClrBPEx(BPHandle = 0x0000000F)
+T4518 002:893.461 - 0.021ms returns 0x00
+T4518 002:893.477 JLINK_ReadReg(R0)
+T4518 002:893.491 - 0.020ms returns 0x00000000
+T4518 002:894.293 JLINK_WriteReg(R0, 0x08001C00)
+T4518 002:894.311 - 0.022ms returns 0x00
+T4518 002:894.321 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:894.329 - 0.012ms returns 0x00
+T4518 002:894.338 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:894.347 - 0.012ms returns 0x00
+T4518 002:894.356 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:894.364 - 0.012ms returns 0x00
+T4518 002:894.373 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:894.382 - 0.012ms returns 0x00
+T4518 002:894.391 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:894.399 - 0.011ms returns 0x00
+T4518 002:894.409 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:894.417 - 0.012ms returns 0x00
+T4518 002:894.426 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:894.435 - 0.012ms returns 0x00
+T4518 002:894.444 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:894.452 - 0.012ms returns 0x00
+T4518 002:894.461 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:894.469 - 0.011ms returns 0x00
+T4518 002:894.478 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:894.486 - 0.012ms returns 0x00
+T4518 002:894.495 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:894.503 - 0.012ms returns 0x00
+T4518 002:894.513 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:894.521 - 0.012ms returns 0x00
+T4518 002:894.530 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:894.539 - 0.012ms returns 0x00
+T4518 002:894.548 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:894.556 - 0.012ms returns 0x00
+T4518 002:894.565 JLINK_WriteReg(R15 (PC), 0x20000020)
+T4518 002:894.573 - 0.012ms returns 0x00
+T4518 002:894.583 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:894.591 - 0.012ms returns 0x00
+T4518 002:894.600 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:894.608 - 0.011ms returns 0x00
+T4518 002:894.617 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:894.625 - 0.012ms returns 0x00
+T4518 002:894.634 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:894.642 - 0.011ms returns 0x00
+T4518 002:894.652   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:894.664 - 0.017ms returns 0x00000010
+T4518 002:894.674 JLINK_Go()
+T4518 002:894.689    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:897.758 - 3.103ms
+T4518 002:897.792 JLINK_IsHalted()
+T4518 002:900.534    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:900.862 - 3.077ms returns TRUE
+T4518 002:900.879 JLINK_ReadReg(R15 (PC))
+T4518 002:900.893 - 0.020ms returns 0x20000000
+T4518 002:900.907 JLINK_ClrBPEx(BPHandle = 0x00000010)
+T4518 002:900.919 - 0.018ms returns 0x00
+T4518 002:900.932 JLINK_ReadReg(R0)
+T4518 002:900.944 - 0.018ms returns 0x00000001
+T4518 002:900.960 JLINK_WriteReg(R0, 0x08001C00)
+T4518 002:900.972 - 0.017ms returns 0x00
+T4518 002:900.985 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:900.997 - 0.018ms returns 0x00
+T4518 002:901.011 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:901.023 - 0.019ms returns 0x00
+T4518 002:901.039 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:901.050 - 0.014ms returns 0x00
+T4518 002:901.059 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:901.067 - 0.012ms returns 0x00
+T4518 002:901.077 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:901.085 - 0.012ms returns 0x00
+T4518 002:901.096 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:901.105 - 0.013ms returns 0x00
+T4518 002:901.114 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:901.125 - 0.015ms returns 0x00
+T4518 002:901.142 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:901.157 - 0.020ms returns 0x00
+T4518 002:901.174 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:901.184 - 0.014ms returns 0x00
+T4518 002:901.193 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:901.201 - 0.012ms returns 0x00
+T4518 002:901.211 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:901.220 - 0.013ms returns 0x00
+T4518 002:901.229 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:901.237 - 0.012ms returns 0x00
+T4518 002:901.246 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:901.255 - 0.012ms returns 0x00
+T4518 002:901.264 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:901.293 - 0.034ms returns 0x00
+T4518 002:901.307 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T4518 002:901.319 - 0.017ms returns 0x00
+T4518 002:901.332 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:901.342 - 0.015ms returns 0x00
+T4518 002:901.354 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:901.364 - 0.015ms returns 0x00
+T4518 002:901.376 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:901.386 - 0.015ms returns 0x00
+T4518 002:901.398 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:901.408 - 0.014ms returns 0x00
+T4518 002:901.419   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:901.435 - 0.020ms returns 0x00000011
+T4518 002:901.446 JLINK_Go()
+T4518 002:901.463    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:904.557 - 3.129ms
+T4518 002:904.587 JLINK_IsHalted()
+T4518 002:905.005 - 0.429ms returns FALSE
+T4518 002:906.727 JLINK_IsHalted()
+T4518 002:907.116 - 0.399ms returns FALSE
+T4518 002:908.733 JLINK_IsHalted()
+T4518 002:909.121 - 0.395ms returns FALSE
+T4518 002:910.741 JLINK_IsHalted()
+T4518 002:911.131 - 0.402ms returns FALSE
+T4518 002:912.751 JLINK_IsHalted()
+T4518 002:913.120 - 0.378ms returns FALSE
+T4518 002:915.487 JLINK_IsHalted()
+T4518 002:915.901 - 0.428ms returns FALSE
+T4518 002:917.543 JLINK_IsHalted()
+T4518 002:917.868 - 0.338ms returns FALSE
+T4518 002:919.634 JLINK_IsHalted()
+T4518 002:920.006 - 0.380ms returns FALSE
+T4518 002:921.632 JLINK_IsHalted()
+T4518 002:922.009 - 0.387ms returns FALSE
+T4518 002:923.639 JLINK_IsHalted()
+T4518 002:924.008 - 0.378ms returns FALSE
+T4518 002:926.260 JLINK_IsHalted()
+T4518 002:928.935    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:929.379 - 3.130ms returns TRUE
+T4518 002:929.403 JLINK_ReadReg(R15 (PC))
+T4518 002:929.421 - 0.024ms returns 0x20000000
+T4518 002:929.437 JLINK_ClrBPEx(BPHandle = 0x00000011)
+T4518 002:929.450 - 0.020ms returns 0x00
+T4518 002:929.466 JLINK_ReadReg(R0)
+T4518 002:929.480 - 0.020ms returns 0x00000000
+T4518 002:930.085 JLINK_WriteReg(R0, 0x00000001)
+T4518 002:930.107 - 0.028ms returns 0x00
+T4518 002:930.121 JLINK_WriteReg(R1, 0x00000400)
+T4518 002:930.132 - 0.016ms returns 0x00
+T4518 002:930.145 JLINK_WriteReg(R2, 0x000000FF)
+T4518 002:930.156 - 0.016ms returns 0x00
+T4518 002:930.169 JLINK_WriteReg(R3, 0x00000000)
+T4518 002:930.179 - 0.016ms returns 0x00
+T4518 002:930.192 JLINK_WriteReg(R4, 0x00000000)
+T4518 002:930.203 - 0.016ms returns 0x00
+T4518 002:930.215 JLINK_WriteReg(R5, 0x00000000)
+T4518 002:930.226 - 0.016ms returns 0x00
+T4518 002:930.238 JLINK_WriteReg(R6, 0x00000000)
+T4518 002:930.249 - 0.016ms returns 0x00
+T4518 002:930.262 JLINK_WriteReg(R7, 0x00000000)
+T4518 002:930.272 - 0.016ms returns 0x00
+T4518 002:930.285 JLINK_WriteReg(R8, 0x00000000)
+T4518 002:930.296 - 0.016ms returns 0x00
+T4518 002:930.308 JLINK_WriteReg(R9, 0x20000160)
+T4518 002:930.319 - 0.016ms returns 0x00
+T4518 002:930.332 JLINK_WriteReg(R10, 0x00000000)
+T4518 002:930.343 - 0.016ms returns 0x00
+T4518 002:930.355 JLINK_WriteReg(R11, 0x00000000)
+T4518 002:930.366 - 0.016ms returns 0x00
+T4518 002:930.378 JLINK_WriteReg(R12, 0x00000000)
+T4518 002:930.390 - 0.016ms returns 0x00
+T4518 002:930.402 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 002:930.413 - 0.016ms returns 0x00
+T4518 002:930.426 JLINK_WriteReg(R14, 0x20000001)
+T4518 002:930.437 - 0.016ms returns 0x00
+T4518 002:930.449 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T4518 002:930.460 - 0.017ms returns 0x00
+T4518 002:930.473 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 002:930.485 - 0.016ms returns 0x00
+T4518 002:930.497 JLINK_WriteReg(MSP, 0x20001000)
+T4518 002:930.513 - 0.023ms returns 0x00
+T4518 002:930.527 JLINK_WriteReg(PSP, 0x20001000)
+T4518 002:930.538 - 0.016ms returns 0x00
+T4518 002:930.551 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 002:930.562 - 0.016ms returns 0x00
+T4518 002:930.575   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 002:930.592 - 0.022ms returns 0x00000012
+T4518 002:930.605 JLINK_Go()
+T4518 002:930.623    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 002:933.645 - 3.053ms
+T4518 002:933.673 JLINK_IsHalted()
+T4518 002:936.429    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 002:936.873 - 3.211ms returns TRUE
+T4518 002:936.900 JLINK_ReadReg(R15 (PC))
+T4518 002:936.917 - 0.024ms returns 0x20000000
+T4518 002:936.935 JLINK_ClrBPEx(BPHandle = 0x00000012)
+T4518 002:936.949 - 0.019ms returns 0x00
+T4518 002:936.964 JLINK_ReadReg(R0)
+T4518 002:936.975 - 0.016ms returns 0x00000000
+T4518 003:001.342 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T4518 003:001.365   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T4518 003:001.399    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T4518 003:003.672 - 2.367ms returns 0x164
+T4518 003:003.809 JLINK_WriteReg(R0, 0x08000000)
+T4518 003:003.835 - 0.034ms returns 0x00
+T4518 003:003.850 JLINK_WriteReg(R1, 0x007A1200)
+T4518 003:003.862 - 0.017ms returns 0x00
+T4518 003:003.878 JLINK_WriteReg(R2, 0x00000002)
+T4518 003:003.890 - 0.018ms returns 0x00
+T4518 003:003.903 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:003.915 - 0.017ms returns 0x00
+T4518 003:003.928 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:003.939 - 0.016ms returns 0x00
+T4518 003:003.953 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:003.964 - 0.017ms returns 0x00
+T4518 003:003.982 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:003.994 - 0.017ms returns 0x00
+T4518 003:004.007 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:004.019 - 0.017ms returns 0x00
+T4518 003:004.032 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:004.043 - 0.016ms returns 0x00
+T4518 003:004.056 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:004.065 - 0.014ms returns 0x00
+T4518 003:004.075 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:004.084 - 0.012ms returns 0x00
+T4518 003:004.095 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:004.108 - 0.016ms returns 0x00
+T4518 003:004.118 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:004.131 - 0.017ms returns 0x00
+T4518 003:004.141 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:004.151 - 0.013ms returns 0x00
+T4518 003:004.160 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:004.169 - 0.013ms returns 0x00
+T4518 003:004.179 JLINK_WriteReg(R15 (PC), 0x20000038)
+T4518 003:004.188 - 0.012ms returns 0x00
+T4518 003:004.197 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:004.206 - 0.012ms returns 0x00
+T4518 003:004.234 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:004.252 - 0.023ms returns 0x00
+T4518 003:004.264 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:004.276 - 0.016ms returns 0x00
+T4518 003:004.288 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:004.299 - 0.017ms returns 0x00
+T4518 003:004.313   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:004.334    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:004.744 - 0.442ms returns 0x00000013
+T4518 003:004.763 JLINK_Go()
+T4518 003:004.775    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T4518 003:005.131    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:008.256 - 3.516ms
+T4518 003:008.295 JLINK_IsHalted()
+T4518 003:010.927    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:011.376 - 3.092ms returns TRUE
+T4518 003:011.400 JLINK_ReadReg(R15 (PC))
+T4518 003:011.418 - 0.025ms returns 0x20000000
+T4518 003:011.434 JLINK_ClrBPEx(BPHandle = 0x00000013)
+T4518 003:011.449 - 0.021ms returns 0x00
+T4518 003:011.466 JLINK_ReadReg(R0)
+T4518 003:011.479 - 0.020ms returns 0x00000000
+T4518 003:012.095 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:012.120   Data:  C8 06 00 20 89 01 00 08 AF 10 00 08 D1 0D 00 08 ...
+T4518 003:012.148    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:015.736 - 3.655ms returns 0x29C
+T4518 003:015.772 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:015.790   Data:  00 F0 FE F8 05 46 60 1C 02 D0 04 48 00 78 04 44 ...
+T4518 003:015.826    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:018.052 - 2.287ms returns 0x164
+T4518 003:018.106 JLINK_WriteReg(R0, 0x08000000)
+T4518 003:018.117 - 0.016ms returns 0x00
+T4518 003:018.127 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:018.136 - 0.013ms returns 0x00
+T4518 003:018.146 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:018.154 - 0.012ms returns 0x00
+T4518 003:018.164 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:018.192 - 0.033ms returns 0x00
+T4518 003:018.217 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:018.226 - 0.014ms returns 0x00
+T4518 003:018.236 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:018.247 - 0.015ms returns 0x00
+T4518 003:018.257 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:018.266 - 0.012ms returns 0x00
+T4518 003:018.276 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:018.289 - 0.019ms returns 0x00
+T4518 003:018.301 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:018.337 - 0.048ms returns 0x00
+T4518 003:018.361 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:018.374 - 0.019ms returns 0x00
+T4518 003:018.390 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:018.403 - 0.018ms returns 0x00
+T4518 003:018.415 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:018.427 - 0.028ms returns 0x00
+T4518 003:018.455 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:018.470 - 0.020ms returns 0x00
+T4518 003:018.482 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:018.494 - 0.016ms returns 0x00
+T4518 003:018.505 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:018.515 - 0.015ms returns 0x00
+T4518 003:018.527 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:018.537 - 0.015ms returns 0x00
+T4518 003:018.549 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:018.559 - 0.015ms returns 0x00
+T4518 003:018.570 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:018.581 - 0.015ms returns 0x00
+T4518 003:018.592 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:018.602 - 0.015ms returns 0x00
+T4518 003:018.614 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:018.624 - 0.014ms returns 0x00
+T4518 003:018.636   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:018.652 - 0.021ms returns 0x00000014
+T4518 003:018.664 JLINK_Go()
+T4518 003:018.681    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:021.851 - 3.198ms
+T4518 003:021.870 JLINK_IsHalted()
+T4518 003:022.235 - 0.371ms returns FALSE
+T4518 003:026.459 JLINK_IsHalted()
+T4518 003:026.860 - 0.408ms returns FALSE
+T4518 003:028.506 JLINK_IsHalted()
+T4518 003:028.998 - 0.511ms returns FALSE
+T4518 003:030.645 JLINK_IsHalted()
+T4518 003:030.988 - 0.351ms returns FALSE
+T4518 003:032.671 JLINK_IsHalted()
+T4518 003:033.125 - 0.465ms returns FALSE
+T4518 003:034.746 JLINK_IsHalted()
+T4518 003:035.116 - 0.380ms returns FALSE
+T4518 003:036.766 JLINK_IsHalted()
+T4518 003:037.127 - 0.372ms returns FALSE
+T4518 003:038.772 JLINK_IsHalted()
+T4518 003:039.124 - 0.365ms returns FALSE
+T4518 003:040.848 JLINK_IsHalted()
+T4518 003:041.249 - 0.411ms returns FALSE
+T4518 003:043.355 JLINK_IsHalted()
+T4518 003:043.810 - 0.470ms returns FALSE
+T4518 003:045.426 JLINK_IsHalted()
+T4518 003:045.871 - 0.455ms returns FALSE
+T4518 003:047.429 JLINK_IsHalted()
+T4518 003:047.884 - 0.467ms returns FALSE
+T4518 003:049.431 JLINK_IsHalted()
+T4518 003:049.876 - 0.456ms returns FALSE
+T4518 003:051.451 JLINK_IsHalted()
+T4518 003:051.885 - 0.447ms returns FALSE
+T4518 003:053.957 JLINK_IsHalted()
+T4518 003:056.736    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:057.130 - 3.188ms returns TRUE
+T4518 003:057.160 JLINK_ReadReg(R15 (PC))
+T4518 003:057.182 - 0.030ms returns 0x20000000
+T4518 003:057.202 JLINK_ClrBPEx(BPHandle = 0x00000014)
+T4518 003:057.218 - 0.022ms returns 0x00
+T4518 003:057.233 JLINK_ReadReg(R0)
+T4518 003:057.247 - 0.020ms returns 0x00000000
+T4518 003:058.255 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:058.275   Data:  40 45 02 D1 4F F0 03 08 01 E0 4F F0 04 08 08 FA ...
+T4518 003:058.300    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:062.100 - 3.902ms returns 0x29C
+T4518 003:062.180 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:062.210   Data:  C4 F8 24 80 A4 F8 2A 90 60 8D 20 85 2C 48 E0 62 ...
+T4518 003:062.263    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:064.387 - 2.222ms returns 0x164
+T4518 003:064.419 JLINK_WriteReg(R0, 0x08000400)
+T4518 003:064.435 - 0.023ms returns 0x00
+T4518 003:064.448 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:064.460 - 0.017ms returns 0x00
+T4518 003:064.473 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:064.484 - 0.016ms returns 0x00
+T4518 003:064.496 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:064.508 - 0.016ms returns 0x00
+T4518 003:064.520 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:064.532 - 0.017ms returns 0x00
+T4518 003:064.545 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:064.556 - 0.016ms returns 0x00
+T4518 003:064.568 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:064.579 - 0.016ms returns 0x00
+T4518 003:064.592 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:064.603 - 0.016ms returns 0x00
+T4518 003:064.616 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:064.627 - 0.016ms returns 0x00
+T4518 003:064.639 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:064.650 - 0.016ms returns 0x00
+T4518 003:064.662 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:064.673 - 0.016ms returns 0x00
+T4518 003:064.686 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:064.697 - 0.016ms returns 0x00
+T4518 003:064.709 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:064.720 - 0.016ms returns 0x00
+T4518 003:064.732 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:064.744 - 0.017ms returns 0x00
+T4518 003:064.757 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:064.768 - 0.016ms returns 0x00
+T4518 003:064.780 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:064.792 - 0.017ms returns 0x00
+T4518 003:064.804 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:064.815 - 0.016ms returns 0x00
+T4518 003:064.828 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:064.839 - 0.016ms returns 0x00
+T4518 003:064.851 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:064.862 - 0.016ms returns 0x00
+T4518 003:064.875 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:064.886 - 0.016ms returns 0x00
+T4518 003:064.900   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:064.943 - 0.049ms returns 0x00000015
+T4518 003:064.957 JLINK_Go()
+T4518 003:064.977    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:067.987 - 3.052ms
+T4518 003:068.025 JLINK_IsHalted()
+T4518 003:068.371 - 0.361ms returns FALSE
+T4518 003:070.126 JLINK_IsHalted()
+T4518 003:070.499 - 0.385ms returns FALSE
+T4518 003:072.152 JLINK_IsHalted()
+T4518 003:072.511 - 0.371ms returns FALSE
+T4518 003:074.192 JLINK_IsHalted()
+T4518 003:074.648 - 0.471ms returns FALSE
+T4518 003:076.704 JLINK_IsHalted()
+T4518 003:077.127 - 0.437ms returns FALSE
+T4518 003:078.726 JLINK_IsHalted()
+T4518 003:079.134 - 0.421ms returns FALSE
+T4518 003:080.759 JLINK_IsHalted()
+T4518 003:081.137 - 0.401ms returns FALSE
+T4518 003:082.789 JLINK_IsHalted()
+T4518 003:083.258 - 0.480ms returns FALSE
+T4518 003:084.810 JLINK_IsHalted()
+T4518 003:085.251 - 0.452ms returns FALSE
+T4518 003:087.325 JLINK_IsHalted()
+T4518 003:087.761 - 0.447ms returns FALSE
+T4518 003:089.353 JLINK_IsHalted()
+T4518 003:089.768 - 0.431ms returns FALSE
+T4518 003:092.405 JLINK_IsHalted()
+T4518 003:092.778 - 0.393ms returns FALSE
+T4518 003:094.608 JLINK_IsHalted()
+T4518 003:095.010 - 0.413ms returns FALSE
+T4518 003:096.677 JLINK_IsHalted()
+T4518 003:097.126 - 0.464ms returns FALSE
+T4518 003:098.707 JLINK_IsHalted()
+T4518 003:101.422    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:101.881 - 3.196ms returns TRUE
+T4518 003:101.921 JLINK_ReadReg(R15 (PC))
+T4518 003:101.943 - 0.031ms returns 0x20000000
+T4518 003:101.963 JLINK_ClrBPEx(BPHandle = 0x00000015)
+T4518 003:101.981 - 0.026ms returns 0x00
+T4518 003:102.001 JLINK_ReadReg(R0)
+T4518 003:102.017 - 0.024ms returns 0x00000000
+T4518 003:103.039 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:103.064   Data:  0A 49 09 68 B1 FB F0 F0 00 F0 CE FA 48 B9 10 2C ...
+T4518 003:103.093    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:106.809 - 3.794ms returns 0x29C
+T4518 003:106.849 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:106.873   Data:  81 00 01 28 07 D0 68 68 C0 F3 81 00 02 28 09 D1 ...
+T4518 003:106.910    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:109.203 - 2.372ms returns 0x164
+T4518 003:109.241 JLINK_WriteReg(R0, 0x08000800)
+T4518 003:109.262 - 0.027ms returns 0x00
+T4518 003:109.277 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:109.291 - 0.020ms returns 0x00
+T4518 003:109.307 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:109.321 - 0.020ms returns 0x00
+T4518 003:109.336 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:109.349 - 0.020ms returns 0x00
+T4518 003:109.365 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:109.378 - 0.020ms returns 0x00
+T4518 003:109.393 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:109.408 - 0.021ms returns 0x00
+T4518 003:109.423 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:109.436 - 0.020ms returns 0x00
+T4518 003:109.453 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:109.466 - 0.021ms returns 0x00
+T4518 003:109.482 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:109.496 - 0.020ms returns 0x00
+T4518 003:109.511 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:109.524 - 0.019ms returns 0x00
+T4518 003:109.539 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:109.552 - 0.019ms returns 0x00
+T4518 003:109.568 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:109.581 - 0.019ms returns 0x00
+T4518 003:109.597 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:109.610 - 0.019ms returns 0x00
+T4518 003:109.626 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:109.640 - 0.020ms returns 0x00
+T4518 003:109.656 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:109.669 - 0.019ms returns 0x00
+T4518 003:109.684 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:109.698 - 0.020ms returns 0x00
+T4518 003:109.713 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:109.727 - 0.020ms returns 0x00
+T4518 003:109.742 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:109.755 - 0.019ms returns 0x00
+T4518 003:109.771 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:109.784 - 0.019ms returns 0x00
+T4518 003:109.799 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:109.812 - 0.019ms returns 0x00
+T4518 003:109.829   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:109.850 - 0.028ms returns 0x00000016
+T4518 003:109.866 JLINK_Go()
+T4518 003:109.889    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:112.980 - 3.129ms
+T4518 003:113.006 JLINK_IsHalted()
+T4518 003:113.375 - 0.379ms returns FALSE
+T4518 003:114.526 JLINK_IsHalted()
+T4518 003:114.868 - 0.355ms returns FALSE
+T4518 003:116.541 JLINK_IsHalted()
+T4518 003:117.003 - 0.474ms returns FALSE
+T4518 003:119.315 JLINK_IsHalted()
+T4518 003:119.749 - 0.447ms returns FALSE
+T4518 003:121.373 JLINK_IsHalted()
+T4518 003:121.750 - 0.386ms returns FALSE
+T4518 003:123.576 JLINK_IsHalted()
+T4518 003:124.009 - 0.446ms returns FALSE
+T4518 003:125.578 JLINK_IsHalted()
+T4518 003:126.001 - 0.435ms returns FALSE
+T4518 003:127.599 JLINK_IsHalted()
+T4518 003:128.002 - 0.418ms returns FALSE
+T4518 003:130.117 JLINK_IsHalted()
+T4518 003:130.498 - 0.391ms returns FALSE
+T4518 003:132.113 JLINK_IsHalted()
+T4518 003:132.500 - 0.399ms returns FALSE
+T4518 003:134.113 JLINK_IsHalted()
+T4518 003:134.492 - 0.390ms returns FALSE
+T4518 003:136.113 JLINK_IsHalted()
+T4518 003:136.528 - 0.431ms returns FALSE
+T4518 003:138.313 JLINK_IsHalted()
+T4518 003:138.764 - 0.464ms returns FALSE
+T4518 003:140.506 JLINK_IsHalted()
+T4518 003:140.927 - 0.437ms returns FALSE
+T4518 003:142.981 JLINK_IsHalted()
+T4518 003:143.386 - 0.416ms returns FALSE
+T4518 003:144.977 JLINK_IsHalted()
+T4518 003:147.731    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:148.126 - 3.171ms returns TRUE
+T4518 003:148.171 JLINK_ReadReg(R15 (PC))
+T4518 003:148.194 - 0.031ms returns 0x20000000
+T4518 003:148.216 JLINK_ClrBPEx(BPHandle = 0x00000016)
+T4518 003:148.233 - 0.025ms returns 0x00
+T4518 003:148.256 JLINK_ReadReg(R0)
+T4518 003:148.273 - 0.025ms returns 0x00000000
+T4518 003:149.301 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:149.325   Data:  FF F7 4C FC C0 1B 02 28 75 D8 68 6A 80 07 F7 D4 ...
+T4518 003:149.356    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:153.015 - 3.729ms returns 0x29C
+T4518 003:153.043 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:153.057   Data:  05 61 00 20 CC E7 00 00 02 00 01 00 70 B5 16 46 ...
+T4518 003:153.083    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:155.308 - 2.283ms returns 0x164
+T4518 003:155.345 JLINK_WriteReg(R0, 0x08000C00)
+T4518 003:155.363 - 0.026ms returns 0x00
+T4518 003:155.379 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:155.394 - 0.021ms returns 0x00
+T4518 003:155.409 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:155.423 - 0.020ms returns 0x00
+T4518 003:155.438 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:155.451 - 0.020ms returns 0x00
+T4518 003:155.466 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:155.480 - 0.020ms returns 0x00
+T4518 003:155.495 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:155.509 - 0.019ms returns 0x00
+T4518 003:155.524 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:155.537 - 0.019ms returns 0x00
+T4518 003:155.552 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:155.566 - 0.020ms returns 0x00
+T4518 003:155.581 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:155.594 - 0.019ms returns 0x00
+T4518 003:155.609 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:155.622 - 0.019ms returns 0x00
+T4518 003:155.638 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:155.651 - 0.019ms returns 0x00
+T4518 003:155.666 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:155.679 - 0.020ms returns 0x00
+T4518 003:155.695 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:155.708 - 0.019ms returns 0x00
+T4518 003:155.723 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:155.738 - 0.021ms returns 0x00
+T4518 003:155.753 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:155.766 - 0.019ms returns 0x00
+T4518 003:155.781 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:155.795 - 0.020ms returns 0x00
+T4518 003:155.810 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:155.824 - 0.020ms returns 0x00
+T4518 003:155.839 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:155.852 - 0.019ms returns 0x00
+T4518 003:155.868 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:155.882 - 0.020ms returns 0x00
+T4518 003:155.897 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:155.910 - 0.020ms returns 0x00
+T4518 003:155.926   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:155.947 - 0.028ms returns 0x00000017
+T4518 003:155.962 JLINK_Go()
+T4518 003:155.985    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:158.986 - 3.044ms
+T4518 003:159.023 JLINK_IsHalted()
+T4518 003:159.376 - 0.366ms returns FALSE
+T4518 003:160.758 JLINK_IsHalted()
+T4518 003:161.124 - 0.376ms returns FALSE
+T4518 003:162.775 JLINK_IsHalted()
+T4518 003:163.123 - 0.358ms returns FALSE
+T4518 003:164.777 JLINK_IsHalted()
+T4518 003:165.148 - 0.383ms returns FALSE
+T4518 003:166.776 JLINK_IsHalted()
+T4518 003:167.125 - 0.361ms returns FALSE
+T4518 003:169.015 JLINK_IsHalted()
+T4518 003:169.490 - 0.485ms returns FALSE
+T4518 003:171.544 JLINK_IsHalted()
+T4518 003:172.009 - 0.477ms returns FALSE
+T4518 003:173.568 JLINK_IsHalted()
+T4518 003:173.997 - 0.440ms returns FALSE
+T4518 003:175.572 JLINK_IsHalted()
+T4518 003:176.001 - 0.441ms returns FALSE
+T4518 003:177.569 JLINK_IsHalted()
+T4518 003:178.002 - 0.445ms returns FALSE
+T4518 003:179.583 JLINK_IsHalted()
+T4518 003:180.010 - 0.439ms returns FALSE
+T4518 003:182.094 JLINK_IsHalted()
+T4518 003:182.511 - 0.426ms returns FALSE
+T4518 003:184.175 JLINK_IsHalted()
+T4518 003:184.645 - 0.487ms returns FALSE
+T4518 003:186.602 JLINK_IsHalted()
+T4518 003:187.002 - 0.414ms returns FALSE
+T4518 003:188.771 JLINK_IsHalted()
+T4518 003:189.138 - 0.380ms returns FALSE
+T4518 003:190.297 JLINK_IsHalted()
+T4518 003:193.051    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:193.512 - 3.237ms returns TRUE
+T4518 003:193.552 JLINK_ReadReg(R15 (PC))
+T4518 003:193.581 - 0.046ms returns 0x20000000
+T4518 003:193.611 JLINK_ClrBPEx(BPHandle = 0x00000017)
+T4518 003:193.630 - 0.028ms returns 0x00
+T4518 003:193.651 JLINK_ReadReg(R0)
+T4518 003:193.670 - 0.027ms returns 0x00000000
+T4518 003:194.844 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:194.864   Data:  E8 FE 08 B1 01 20 70 BD 68 1C 05 D0 FF F7 46 FA ...
+T4518 003:194.896    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:198.486 - 3.657ms returns 0x29C
+T4518 003:198.515 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:198.574   Data:  FF F7 18 FB 00 28 01 D0 72 B6 FE E7 10 B0 10 BD ...
+T4518 003:198.605    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:200.840 - 2.370ms returns 0x164
+T4518 003:200.976 JLINK_WriteReg(R0, 0x08001000)
+T4518 003:201.003 - 0.035ms returns 0x00
+T4518 003:201.042 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:201.074 - 0.044ms returns 0x00
+T4518 003:201.095 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:201.121 - 0.037ms returns 0x00
+T4518 003:201.141 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:201.156 - 0.021ms returns 0x00
+T4518 003:201.188 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:201.217 - 0.040ms returns 0x00
+T4518 003:201.238 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:201.259 - 0.032ms returns 0x00
+T4518 003:201.291 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:201.311 - 0.029ms returns 0x00
+T4518 003:201.337 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:201.352 - 0.027ms returns 0x00
+T4518 003:201.374 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:201.395 - 0.029ms returns 0x00
+T4518 003:201.413 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:201.438 - 0.035ms returns 0x00
+T4518 003:201.467 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:201.479 - 0.025ms returns 0x00
+T4518 003:201.503 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:201.530 - 0.034ms returns 0x00
+T4518 003:201.547 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:201.568 - 0.030ms returns 0x00
+T4518 003:201.585 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:201.640 - 0.067ms returns 0x00
+T4518 003:201.666 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:201.685 - 0.028ms returns 0x00
+T4518 003:201.707 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:201.727 - 0.027ms returns 0x00
+T4518 003:201.747 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:201.783 - 0.045ms returns 0x00
+T4518 003:201.802 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:201.840 - 0.045ms returns 0x00
+T4518 003:201.856 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:201.879 - 0.029ms returns 0x00
+T4518 003:201.893 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:201.906 - 0.017ms returns 0x00
+T4518 003:201.919   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:201.938 - 0.027ms returns 0x00000018
+T4518 003:201.954 JLINK_Go()
+T4518 003:201.986    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:205.116 - 3.176ms
+T4518 003:205.144 JLINK_IsHalted()
+T4518 003:205.497 - 0.371ms returns FALSE
+T4518 003:208.366 JLINK_IsHalted()
+T4518 003:208.774 - 0.428ms returns FALSE
+T4518 003:210.392 JLINK_IsHalted()
+T4518 003:210.896 - 0.514ms returns FALSE
+T4518 003:212.431 JLINK_IsHalted()
+T4518 003:212.874 - 0.452ms returns FALSE
+T4518 003:214.954 JLINK_IsHalted()
+T4518 003:215.388 - 0.453ms returns FALSE
+T4518 003:217.018 JLINK_IsHalted()
+T4518 003:217.370 - 0.361ms returns FALSE
+T4518 003:219.025 JLINK_IsHalted()
+T4518 003:219.360 - 0.344ms returns FALSE
+T4518 003:221.033 JLINK_IsHalted()
+T4518 003:221.362 - 0.338ms returns FALSE
+T4518 003:225.071 JLINK_IsHalted()
+T4518 003:225.496 - 0.439ms returns FALSE
+T4518 003:227.159 JLINK_IsHalted()
+T4518 003:227.501 - 0.349ms returns FALSE
+T4518 003:229.174 JLINK_IsHalted()
+T4518 003:229.486 - 0.320ms returns FALSE
+T4518 003:231.243 JLINK_IsHalted()
+T4518 003:231.664 - 0.437ms returns FALSE
+T4518 003:233.614 JLINK_IsHalted()
+T4518 003:233.993 - 0.385ms returns FALSE
+T4518 003:235.618 JLINK_IsHalted()
+T4518 003:238.300    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:238.754 - 3.149ms returns TRUE
+T4518 003:238.778 JLINK_ReadReg(R15 (PC))
+T4518 003:238.792 - 0.019ms returns 0x20000000
+T4518 003:238.804 JLINK_ClrBPEx(BPHandle = 0x00000018)
+T4518 003:238.815 - 0.015ms returns 0x00
+T4518 003:238.827 JLINK_ReadReg(R0)
+T4518 003:238.837 - 0.015ms returns 0x00000000
+T4518 003:239.592 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:239.607   Data:  2A 12 00 62 64 08 13 23 00 36 49 55 22 50 00 00 ...
+T4518 003:239.632    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:243.240 - 3.668ms returns 0x29C
+T4518 003:243.278 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:243.295   Data:  00 02 04 18 E0 00 00 00 00 40 20 18 07 00 00 00 ...
+T4518 003:243.328    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:245.544 - 2.280ms returns 0x164
+T4518 003:245.578 JLINK_WriteReg(R0, 0x08001400)
+T4518 003:245.598 - 0.028ms returns 0x00
+T4518 003:245.616 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:245.633 - 0.024ms returns 0x00
+T4518 003:245.651 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:245.667 - 0.023ms returns 0x00
+T4518 003:245.685 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:245.700 - 0.023ms returns 0x00
+T4518 003:245.718 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:245.734 - 0.023ms returns 0x00
+T4518 003:245.752 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:245.768 - 0.024ms returns 0x00
+T4518 003:245.787 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:245.803 - 0.023ms returns 0x00
+T4518 003:245.821 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:245.836 - 0.023ms returns 0x00
+T4518 003:245.854 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:245.870 - 0.023ms returns 0x00
+T4518 003:245.888 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:245.904 - 0.023ms returns 0x00
+T4518 003:245.922 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:245.938 - 0.023ms returns 0x00
+T4518 003:245.956 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:245.972 - 0.023ms returns 0x00
+T4518 003:245.990 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:246.006 - 0.023ms returns 0x00
+T4518 003:246.024 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:246.041 - 0.025ms returns 0x00
+T4518 003:246.059 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:246.075 - 0.023ms returns 0x00
+T4518 003:246.093 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:246.110 - 0.024ms returns 0x00
+T4518 003:246.128 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:246.144 - 0.023ms returns 0x00
+T4518 003:246.161 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:246.177 - 0.023ms returns 0x00
+T4518 003:246.195 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:246.211 - 0.023ms returns 0x00
+T4518 003:246.229 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:246.244 - 0.023ms returns 0x00
+T4518 003:246.264   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:246.288 - 0.033ms returns 0x00000019
+T4518 003:246.307 JLINK_Go()
+T4518 003:246.332    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:249.354 - 3.059ms
+T4518 003:249.375 JLINK_IsHalted()
+T4518 003:249.734 - 0.365ms returns FALSE
+T4518 003:251.745 JLINK_IsHalted()
+T4518 003:252.106 - 0.367ms returns FALSE
+T4518 003:253.771 JLINK_IsHalted()
+T4518 003:254.135 - 0.376ms returns FALSE
+T4518 003:255.799 JLINK_IsHalted()
+T4518 003:256.251 - 0.464ms returns FALSE
+T4518 003:257.815 JLINK_IsHalted()
+T4518 003:258.259 - 0.456ms returns FALSE
+T4518 003:259.817 JLINK_IsHalted()
+T4518 003:260.248 - 0.443ms returns FALSE
+T4518 003:261.840 JLINK_IsHalted()
+T4518 003:262.276 - 0.451ms returns FALSE
+T4518 003:263.946 JLINK_IsHalted()
+T4518 003:264.376 - 0.442ms returns FALSE
+T4518 003:265.966 JLINK_IsHalted()
+T4518 003:266.373 - 0.418ms returns FALSE
+T4518 003:268.493 JLINK_IsHalted()
+T4518 003:268.879 - 0.403ms returns FALSE
+T4518 003:270.578 JLINK_IsHalted()
+T4518 003:271.001 - 0.436ms returns FALSE
+T4518 003:272.576 JLINK_IsHalted()
+T4518 003:272.998 - 0.434ms returns FALSE
+T4518 003:275.099 JLINK_IsHalted()
+T4518 003:275.501 - 0.415ms returns FALSE
+T4518 003:277.110 JLINK_IsHalted()
+T4518 003:277.528 - 0.432ms returns FALSE
+T4518 003:279.670 JLINK_IsHalted()
+T4518 003:282.446    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:282.885 - 3.237ms returns TRUE
+T4518 003:282.923 JLINK_ReadReg(R15 (PC))
+T4518 003:282.942 - 0.026ms returns 0x20000000
+T4518 003:282.960 JLINK_ClrBPEx(BPHandle = 0x00000019)
+T4518 003:282.975 - 0.021ms returns 0x00
+T4518 003:282.991 JLINK_ReadReg(R0)
+T4518 003:283.005 - 0.020ms returns 0x00000000
+T4518 003:283.974 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:283.996   Data:  08 08 F0 00 00 00 00 30 36 01 00 00 C0 30 C8 28 ...
+T4518 003:284.027    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:287.655 - 3.702ms returns 0x29C
+T4518 003:287.692 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:287.709   Data:  00 80 98 98 00 00 00 00 00 20 20 3F 20 20 00 00 ...
+T4518 003:287.741    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:289.902 - 2.230ms returns 0x164
+T4518 003:289.943 JLINK_WriteReg(R0, 0x08001800)
+T4518 003:289.964 - 0.030ms returns 0x00
+T4518 003:289.983 JLINK_WriteReg(R1, 0x00000400)
+T4518 003:290.000 - 0.025ms returns 0x00
+T4518 003:290.019 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:290.035 - 0.024ms returns 0x00
+T4518 003:290.053 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:290.070 - 0.024ms returns 0x00
+T4518 003:290.088 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:290.104 - 0.024ms returns 0x00
+T4518 003:290.123 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:290.138 - 0.024ms returns 0x00
+T4518 003:290.157 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:290.173 - 0.023ms returns 0x00
+T4518 003:290.191 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:290.206 - 0.025ms returns 0x00
+T4518 003:290.226 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:290.242 - 0.024ms returns 0x00
+T4518 003:290.261 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:290.277 - 0.023ms returns 0x00
+T4518 003:290.295 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:290.311 - 0.024ms returns 0x00
+T4518 003:290.329 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:290.345 - 0.023ms returns 0x00
+T4518 003:290.363 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:290.379 - 0.024ms returns 0x00
+T4518 003:290.398 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:290.415 - 0.024ms returns 0x00
+T4518 003:290.433 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:290.449 - 0.023ms returns 0x00
+T4518 003:290.468 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:290.484 - 0.023ms returns 0x00
+T4518 003:290.502 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:290.518 - 0.023ms returns 0x00
+T4518 003:290.536 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:290.552 - 0.023ms returns 0x00
+T4518 003:290.570 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:290.586 - 0.023ms returns 0x00
+T4518 003:290.604 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:290.625 - 0.028ms returns 0x00
+T4518 003:290.645   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:290.666 - 0.028ms returns 0x0000001A
+T4518 003:290.679 JLINK_Go()
+T4518 003:290.697    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:293.865 - 3.198ms
+T4518 003:293.887 JLINK_IsHalted()
+T4518 003:294.254 - 0.379ms returns FALSE
+T4518 003:295.827 JLINK_IsHalted()
+T4518 003:296.261 - 0.447ms returns FALSE
+T4518 003:297.837 JLINK_IsHalted()
+T4518 003:298.268 - 0.443ms returns FALSE
+T4518 003:299.856 JLINK_IsHalted()
+T4518 003:300.248 - 0.402ms returns FALSE
+T4518 003:301.875 JLINK_IsHalted()
+T4518 003:302.251 - 0.388ms returns FALSE
+T4518 003:303.875 JLINK_IsHalted()
+T4518 003:304.251 - 0.389ms returns FALSE
+T4518 003:305.903 JLINK_IsHalted()
+T4518 003:306.298 - 0.407ms returns FALSE
+T4518 003:307.922 JLINK_IsHalted()
+T4518 003:308.388 - 0.481ms returns FALSE
+T4518 003:310.569 JLINK_IsHalted()
+T4518 003:311.024 - 0.474ms returns FALSE
+T4518 003:312.676 JLINK_IsHalted()
+T4518 003:313.127 - 0.463ms returns FALSE
+T4518 003:314.678 JLINK_IsHalted()
+T4518 003:315.124 - 0.457ms returns FALSE
+T4518 003:316.695 JLINK_IsHalted()
+T4518 003:317.126 - 0.444ms returns FALSE
+T4518 003:318.719 JLINK_IsHalted()
+T4518 003:319.123 - 0.417ms returns FALSE
+T4518 003:320.718 JLINK_IsHalted()
+T4518 003:321.123 - 0.414ms returns FALSE
+T4518 003:322.808 JLINK_IsHalted()
+T4518 003:323.251 - 0.456ms returns FALSE
+T4518 003:324.915 JLINK_IsHalted()
+T4518 003:327.734    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:328.127 - 3.223ms returns TRUE
+T4518 003:328.154 JLINK_ReadReg(R15 (PC))
+T4518 003:328.172 - 0.024ms returns 0x20000000
+T4518 003:328.189 JLINK_ClrBPEx(BPHandle = 0x0000001A)
+T4518 003:328.203 - 0.020ms returns 0x00
+T4518 003:328.221 JLINK_ReadReg(R0)
+T4518 003:328.234 - 0.020ms returns 0x00000000
+T4518 003:329.515 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T4518 003:329.542   Data:  00 00 00 00 01 02 03 04 06 07 08 09 00 00 00 00 ...
+T4518 003:329.567    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T4518 003:333.236 - 3.733ms returns 0x29C
+T4518 003:333.260 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T4518 003:333.274   Data:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF ...
+T4518 003:333.299    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T4518 003:335.537 - 2.288ms returns 0x164
+T4518 003:335.561 JLINK_WriteReg(R0, 0x08001C00)
+T4518 003:335.574 - 0.019ms returns 0x00
+T4518 003:335.587 JLINK_WriteReg(R1, 0x00000044)
+T4518 003:335.599 - 0.016ms returns 0x00
+T4518 003:335.611 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:335.622 - 0.016ms returns 0x00
+T4518 003:335.634 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:335.645 - 0.016ms returns 0x00
+T4518 003:335.660 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:335.675 - 0.022ms returns 0x00
+T4518 003:335.693 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:335.709 - 0.023ms returns 0x00
+T4518 003:335.726 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:335.742 - 0.023ms returns 0x00
+T4518 003:335.760 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:335.776 - 0.023ms returns 0x00
+T4518 003:335.794 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:335.810 - 0.023ms returns 0x00
+T4518 003:335.828 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:335.843 - 0.023ms returns 0x00
+T4518 003:335.861 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:335.877 - 0.023ms returns 0x00
+T4518 003:335.895 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:335.911 - 0.023ms returns 0x00
+T4518 003:335.929 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:335.945 - 0.023ms returns 0x00
+T4518 003:335.963 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:335.980 - 0.024ms returns 0x00
+T4518 003:335.998 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:336.013 - 0.023ms returns 0x00
+T4518 003:336.032 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T4518 003:336.048 - 0.023ms returns 0x00
+T4518 003:336.066 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:336.084 - 0.026ms returns 0x00
+T4518 003:336.103 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:336.118 - 0.023ms returns 0x00
+T4518 003:336.136 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:336.152 - 0.023ms returns 0x00
+T4518 003:336.171 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:336.186 - 0.023ms returns 0x00
+T4518 003:336.207   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:336.231 - 0.033ms returns 0x0000001B
+T4518 003:336.249 JLINK_Go()
+T4518 003:336.275    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:339.264 - 3.030ms
+T4518 003:339.293 JLINK_IsHalted()
+T4518 003:339.646 - 0.365ms returns FALSE
+T4518 003:340.904 JLINK_IsHalted()
+T4518 003:343.730    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:344.127 - 3.239ms returns TRUE
+T4518 003:344.157 JLINK_ReadReg(R15 (PC))
+T4518 003:344.175 - 0.024ms returns 0x20000000
+T4518 003:344.190 JLINK_ClrBPEx(BPHandle = 0x0000001B)
+T4518 003:344.206 - 0.021ms returns 0x00
+T4518 003:344.221 JLINK_ReadReg(R0)
+T4518 003:344.235 - 0.020ms returns 0x00000000
+T4518 003:344.255 JLINK_WriteReg(R0, 0x00000002)
+T4518 003:344.270 - 0.021ms returns 0x00
+T4518 003:344.285 JLINK_WriteReg(R1, 0x00000044)
+T4518 003:344.299 - 0.020ms returns 0x00
+T4518 003:344.314 JLINK_WriteReg(R2, 0x20000164)
+T4518 003:344.327 - 0.019ms returns 0x00
+T4518 003:344.343 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:344.356 - 0.019ms returns 0x00
+T4518 003:344.371 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:344.385 - 0.019ms returns 0x00
+T4518 003:344.400 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:344.414 - 0.020ms returns 0x00
+T4518 003:344.429 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:344.442 - 0.019ms returns 0x00
+T4518 003:344.458 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:344.471 - 0.019ms returns 0x00
+T4518 003:344.486 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:344.499 - 0.019ms returns 0x00
+T4518 003:344.515 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:344.528 - 0.019ms returns 0x00
+T4518 003:344.543 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:344.556 - 0.021ms returns 0x00
+T4518 003:344.577 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:344.594 - 0.023ms returns 0x00
+T4518 003:344.609 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:344.623 - 0.020ms returns 0x00
+T4518 003:344.639 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:344.652 - 0.020ms returns 0x00
+T4518 003:344.668 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:344.681 - 0.018ms returns 0x00
+T4518 003:344.693 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T4518 003:344.704 - 0.016ms returns 0x00
+T4518 003:344.717 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:344.728 - 0.016ms returns 0x00
+T4518 003:344.741 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:344.752 - 0.016ms returns 0x00
+T4518 003:344.764 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:344.775 - 0.016ms returns 0x00
+T4518 003:344.787 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:344.798 - 0.016ms returns 0x00
+T4518 003:344.812   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:344.829 - 0.022ms returns 0x0000001C
+T4518 003:344.841 JLINK_Go()
+T4518 003:344.859    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:347.967 - 3.144ms
+T4518 003:348.001 JLINK_IsHalted()
+T4518 003:350.735    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:351.130 - 3.143ms returns TRUE
+T4518 003:351.158 JLINK_ReadReg(R15 (PC))
+T4518 003:351.178 - 0.028ms returns 0x20000000
+T4518 003:351.198 JLINK_ClrBPEx(BPHandle = 0x0000001C)
+T4518 003:351.215 - 0.024ms returns 0x00
+T4518 003:351.234 JLINK_ReadReg(R0)
+T4518 003:351.250 - 0.024ms returns 0x00000000
+T4518 003:417.048 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T4518 003:417.072   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T4518 003:417.105    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T4518 003:419.276 - 2.254ms returns 0x164
+T4518 003:419.366 JLINK_WriteReg(R0, 0x08000000)
+T4518 003:419.389 - 0.029ms returns 0x00
+T4518 003:419.404 JLINK_WriteReg(R1, 0x007A1200)
+T4518 003:419.418 - 0.020ms returns 0x00
+T4518 003:419.433 JLINK_WriteReg(R2, 0x00000003)
+T4518 003:419.446 - 0.018ms returns 0x00
+T4518 003:419.460 JLINK_WriteReg(R3, 0x00000000)
+T4518 003:419.473 - 0.019ms returns 0x00
+T4518 003:419.487 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:419.499 - 0.018ms returns 0x00
+T4518 003:419.514 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:419.526 - 0.018ms returns 0x00
+T4518 003:419.540 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:419.553 - 0.018ms returns 0x00
+T4518 003:419.567 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:419.580 - 0.019ms returns 0x00
+T4518 003:419.594 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:419.607 - 0.019ms returns 0x00
+T4518 003:419.621 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:419.634 - 0.018ms returns 0x00
+T4518 003:419.650 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:419.664 - 0.021ms returns 0x00
+T4518 003:419.679 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:419.692 - 0.018ms returns 0x00
+T4518 003:419.706 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:419.718 - 0.018ms returns 0x00
+T4518 003:419.732 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:419.748 - 0.022ms returns 0x00
+T4518 003:419.762 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:419.775 - 0.018ms returns 0x00
+T4518 003:419.789 JLINK_WriteReg(R15 (PC), 0x20000038)
+T4518 003:419.801 - 0.018ms returns 0x00
+T4518 003:419.815 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:419.828 - 0.018ms returns 0x00
+T4518 003:419.842 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:419.852 - 0.015ms returns 0x00
+T4518 003:419.863 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:419.874 - 0.015ms returns 0x00
+T4518 003:419.885 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:419.894 - 0.013ms returns 0x00
+T4518 003:419.906   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:419.929    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:420.366 - 0.471ms returns 0x0000001D
+T4518 003:420.385 JLINK_Go()
+T4518 003:420.398    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T4518 003:420.763    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:423.741 - 3.370ms
+T4518 003:423.770 JLINK_IsHalted()
+T4518 003:426.410    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:426.739 - 2.983ms returns TRUE
+T4518 003:426.770 JLINK_ReadReg(R15 (PC))
+T4518 003:426.786 - 0.021ms returns 0x20000000
+T4518 003:426.799 JLINK_ClrBPEx(BPHandle = 0x0000001D)
+T4518 003:426.810 - 0.015ms returns 0x00
+T4518 003:426.821 JLINK_ReadReg(R0)
+T4518 003:426.830 - 0.013ms returns 0x00000000
+T4518 003:426.842 JLINK_WriteReg(R0, 0xFFFFFFFF)
+T4518 003:426.850 - 0.012ms returns 0x00
+T4518 003:426.860 JLINK_WriteReg(R1, 0x08000000)
+T4518 003:426.868 - 0.012ms returns 0x00
+T4518 003:426.877 JLINK_WriteReg(R2, 0x00001C44)
+T4518 003:426.885 - 0.012ms returns 0x00
+T4518 003:426.894 JLINK_WriteReg(R3, 0x04C11DB7)
+T4518 003:426.903 - 0.012ms returns 0x00
+T4518 003:426.912 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:426.920 - 0.011ms returns 0x00
+T4518 003:426.929 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:426.937 - 0.012ms returns 0x00
+T4518 003:426.947 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:426.955 - 0.011ms returns 0x00
+T4518 003:426.964 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:426.972 - 0.012ms returns 0x00
+T4518 003:426.981 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:426.990 - 0.012ms returns 0x00
+T4518 003:426.999 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:427.007 - 0.012ms returns 0x00
+T4518 003:427.016 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:427.024 - 0.183ms returns 0x00
+T4518 003:427.209 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:427.218 - 0.013ms returns 0x00
+T4518 003:427.228 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:427.236 - 0.012ms returns 0x00
+T4518 003:427.245 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:427.255 - 0.013ms returns 0x00
+T4518 003:427.264 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:427.272 - 0.012ms returns 0x00
+T4518 003:427.281 JLINK_WriteReg(R15 (PC), 0x20000002)
+T4518 003:427.289 - 0.012ms returns 0x00
+T4518 003:427.299 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:427.307 - 0.012ms returns 0x00
+T4518 003:427.316 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:427.325 - 0.012ms returns 0x00
+T4518 003:427.334 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:427.342 - 0.012ms returns 0x00
+T4518 003:427.352 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:427.360 - 0.012ms returns 0x00
+T4518 003:427.370   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:427.383 - 0.017ms returns 0x0000001E
+T4518 003:427.393 JLINK_Go()
+T4518 003:427.407    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:430.367 - 2.992ms
+T4518 003:430.404 JLINK_IsHalted()
+T4518 003:430.761 - 0.368ms returns FALSE
+T4518 003:435.177 JLINK_IsHalted()
+T4518 003:435.651 - 0.495ms returns FALSE
+T4518 003:437.277 JLINK_IsHalted()
+T4518 003:437.633 - 0.364ms returns FALSE
+T4518 003:439.301 JLINK_IsHalted()
+T4518 003:439.760 - 0.471ms returns FALSE
+T4518 003:441.321 JLINK_IsHalted()
+T4518 003:441.750 - 0.441ms returns FALSE
+T4518 003:443.342 JLINK_IsHalted()
+T4518 003:443.760 - 0.430ms returns FALSE
+T4518 003:445.342 JLINK_IsHalted()
+T4518 003:445.759 - 0.429ms returns FALSE
+T4518 003:447.343 JLINK_IsHalted()
+T4518 003:447.760 - 0.428ms returns FALSE
+T4518 003:449.907 JLINK_IsHalted()
+T4518 003:450.373 - 0.475ms returns FALSE
+T4518 003:452.172 JLINK_IsHalted()
+T4518 003:452.646 - 0.487ms returns FALSE
+T4518 003:454.178 JLINK_IsHalted()
+T4518 003:454.645 - 0.480ms returns FALSE
+T4518 003:456.196 JLINK_IsHalted()
+T4518 003:456.646 - 0.472ms returns FALSE
+T4518 003:458.285 JLINK_IsHalted()
+T4518 003:458.760 - 0.488ms returns FALSE
+T4518 003:460.307 JLINK_IsHalted()
+T4518 003:460.750 - 0.455ms returns FALSE
+T4518 003:462.446 JLINK_IsHalted()
+T4518 003:462.876 - 0.442ms returns FALSE
+T4518 003:464.476 JLINK_IsHalted()
+T4518 003:464.876 - 0.412ms returns FALSE
+T4518 003:466.595 JLINK_IsHalted()
+T4518 003:467.036 - 0.452ms returns FALSE
+T4518 003:468.997 JLINK_IsHalted()
+T4518 003:469.375 - 0.390ms returns FALSE
+T4518 003:471.038 JLINK_IsHalted()
+T4518 003:471.377 - 0.351ms returns FALSE
+T4518 003:473.059 JLINK_IsHalted()
+T4518 003:473.509 - 0.462ms returns FALSE
+T4518 003:475.065 JLINK_IsHalted()
+T4518 003:475.500 - 0.446ms returns FALSE
+T4518 003:477.066 JLINK_IsHalted()
+T4518 003:477.509 - 0.459ms returns FALSE
+T4518 003:479.522 JLINK_IsHalted()
+T4518 003:479.884 - 0.373ms returns FALSE
+T4518 003:481.026 JLINK_IsHalted()
+T4518 003:481.513 - 0.513ms returns FALSE
+T4518 003:483.116 JLINK_IsHalted()
+T4518 003:483.522 - 0.419ms returns FALSE
+T4518 003:485.155 JLINK_IsHalted()
+T4518 003:485.639 - 0.497ms returns FALSE
+T4518 003:487.180 JLINK_IsHalted()
+T4518 003:487.649 - 0.486ms returns FALSE
+T4518 003:489.264 JLINK_IsHalted()
+T4518 003:489.644 - 0.392ms returns FALSE
+T4518 003:491.350 JLINK_IsHalted()
+T4518 003:491.817 - 0.487ms returns FALSE
+T4518 003:493.810 JLINK_IsHalted()
+T4518 003:494.248 - 0.452ms returns FALSE
+T4518 003:495.839 JLINK_IsHalted()
+T4518 003:496.248 - 0.421ms returns FALSE
+T4518 003:497.923 JLINK_IsHalted()
+T4518 003:498.379 - 0.466ms returns FALSE
+T4518 003:499.929 JLINK_IsHalted()
+T4518 003:500.385 - 0.473ms returns FALSE
+T4518 003:501.997 JLINK_IsHalted()
+T4518 003:502.382 - 0.405ms returns FALSE
+T4518 003:504.024 JLINK_IsHalted()
+T4518 003:504.384 - 0.375ms returns FALSE
+T4518 003:506.066 JLINK_IsHalted()
+T4518 003:506.501 - 0.451ms returns FALSE
+T4518 003:508.072 JLINK_IsHalted()
+T4518 003:508.501 - 0.441ms returns FALSE
+T4518 003:510.257 JLINK_IsHalted()
+T4518 003:512.925    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:513.365 - 3.119ms returns TRUE
+T4518 003:513.388 JLINK_ReadReg(R15 (PC))
+T4518 003:513.414 - 0.033ms returns 0x20000000
+T4518 003:513.432 JLINK_ClrBPEx(BPHandle = 0x0000001E)
+T4518 003:513.446 - 0.021ms returns 0x00
+T4518 003:513.463 JLINK_ReadReg(R0)
+T4518 003:513.478 - 0.021ms returns 0xA1278EAD
+T4518 003:514.713 JLINK_WriteReg(R0, 0x00000003)
+T4518 003:514.737 - 0.029ms returns 0x00
+T4518 003:514.750 JLINK_WriteReg(R1, 0x08000000)
+T4518 003:514.761 - 0.017ms returns 0x00
+T4518 003:514.774 JLINK_WriteReg(R2, 0x00001C44)
+T4518 003:514.786 - 0.017ms returns 0x00
+T4518 003:514.799 JLINK_WriteReg(R3, 0x04C11DB7)
+T4518 003:514.810 - 0.016ms returns 0x00
+T4518 003:514.822 JLINK_WriteReg(R4, 0x00000000)
+T4518 003:514.837 - 0.020ms returns 0x00
+T4518 003:514.850 JLINK_WriteReg(R5, 0x00000000)
+T4518 003:514.862 - 0.018ms returns 0x00
+T4518 003:514.880 JLINK_WriteReg(R6, 0x00000000)
+T4518 003:514.894 - 0.019ms returns 0x00
+T4518 003:514.907 JLINK_WriteReg(R7, 0x00000000)
+T4518 003:514.918 - 0.016ms returns 0x00
+T4518 003:514.930 JLINK_WriteReg(R8, 0x00000000)
+T4518 003:514.942 - 0.016ms returns 0x00
+T4518 003:514.954 JLINK_WriteReg(R9, 0x20000160)
+T4518 003:514.965 - 0.016ms returns 0x00
+T4518 003:514.977 JLINK_WriteReg(R10, 0x00000000)
+T4518 003:514.988 - 0.016ms returns 0x00
+T4518 003:515.001 JLINK_WriteReg(R11, 0x00000000)
+T4518 003:515.012 - 0.016ms returns 0x00
+T4518 003:515.024 JLINK_WriteReg(R12, 0x00000000)
+T4518 003:515.035 - 0.016ms returns 0x00
+T4518 003:515.047 JLINK_WriteReg(R13 (SP), 0x20001000)
+T4518 003:515.059 - 0.016ms returns 0x00
+T4518 003:515.071 JLINK_WriteReg(R14, 0x20000001)
+T4518 003:515.082 - 0.016ms returns 0x00
+T4518 003:515.095 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T4518 003:515.106 - 0.016ms returns 0x00
+T4518 003:515.119 JLINK_WriteReg(XPSR, 0x01000000)
+T4518 003:515.130 - 0.016ms returns 0x00
+T4518 003:515.142 JLINK_WriteReg(MSP, 0x20001000)
+T4518 003:515.153 - 0.016ms returns 0x00
+T4518 003:515.166 JLINK_WriteReg(PSP, 0x20001000)
+T4518 003:515.177 - 0.016ms returns 0x00
+T4518 003:515.189 JLINK_WriteReg(CFBP, 0x00000000)
+T4518 003:515.200 - 0.016ms returns 0x00
+T4518 003:515.214   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T4518 003:515.230 - 0.022ms returns 0x0000001F
+T4518 003:515.243 JLINK_Go()
+T4518 003:515.261    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:518.253 - 3.032ms
+T4518 003:518.294 JLINK_IsHalted()
+T4518 003:521.071    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T4518 003:521.514 - 3.243ms returns TRUE
+T4518 003:521.555 JLINK_ReadReg(R15 (PC))
+T4518 003:521.576 - 0.030ms returns 0x20000000
+T4518 003:521.596 JLINK_ClrBPEx(BPHandle = 0x0000001F)
+T4518 003:521.613 - 0.025ms returns 0x00
+T4518 003:521.632 JLINK_ReadReg(R0)
+T4518 003:521.649 - 0.030ms returns 0x00000000
+T4518 003:582.631 JLINK_WriteMemEx(0x20000000, 0x0002 Bytes, ..., Flags = 0x02000000)
+T4518 003:582.668   Data:  FE E7
+T4518 003:582.703    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T4518 003:583.147 - 0.532ms returns 0x02
+T4518 003:583.181 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T4518 003:583.192 - 0.017ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T4518 003:583.206 JLINK_Reset()
+T4518 003:583.226    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 003:583.653    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 003:591.623   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T4518 003:598.838   Reset: Reset device via AIRCR.SYSRESETREQ.
+T4518 003:598.898    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4518 003:652.038    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 003:652.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 003:652.872    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4518 003:653.278    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4518 003:658.962    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4518 003:662.045    -- CPU_WriteMem(4 bytes @ 0xE0002000)
+T4518 003:662.521    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4518 003:662.872    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:663.263 - 80.075ms
+T4518 003:663.302 JLINK_Go()
+T4518 003:663.330    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T4518 003:663.757    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T4518 003:663.793    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T4518 003:663.817    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T4518 003:663.840    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T4518 003:663.863    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T4518 003:663.886    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T4518 003:665.248    -- CPU_WriteMem(4 bytes @ 0xE0001004)
+T4518 003:666.110 - 2.822ms
+T4518 003:687.671 JLINK_Close()
+T4518 003:688.247   CPU is running
+T4518 003:688.281    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T4518 003:689.119   CPU is running
+T4518 003:689.139    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T4518 003:689.996   CPU is running
+T4518 003:690.017    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T4518 003:690.879   CPU is running
+T4518 003:690.896    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T4518 003:691.763   CPU is running
+T4518 003:691.805    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T4518 003:692.755   CPU is running
+T4518 003:692.779    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T4518 003:707.379 - 19.729ms
+T4518 003:707.408   
+T4518 003:707.422   Closed

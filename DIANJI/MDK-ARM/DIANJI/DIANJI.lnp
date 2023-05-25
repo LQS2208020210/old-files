@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dianji\startup_stm32f103xb.o"
+"dianji\main.o"
+"dianji\gpio.o"
+"dianji\tim.o"
+"dianji\stm32f1xx_it.o"
+"dianji\stm32f1xx_hal_msp.o"
+"dianji\stm32f1xx_hal_gpio_ex.o"
+"dianji\stm32f1xx_hal_tim.o"
+"dianji\stm32f1xx_hal_tim_ex.o"
+"dianji\stm32f1xx_hal.o"
+"dianji\stm32f1xx_hal_rcc.o"
+"dianji\stm32f1xx_hal_rcc_ex.o"
+"dianji\stm32f1xx_hal_gpio.o"
+"dianji\stm32f1xx_hal_dma.o"
+"dianji\stm32f1xx_hal_cortex.o"
+"dianji\stm32f1xx_hal_pwr.o"
+"dianji\stm32f1xx_hal_flash.o"
+"dianji\stm32f1xx_hal_flash_ex.o"
+"dianji\stm32f1xx_hal_exti.o"
+"dianji\system_stm32f1xx.o"
+--strict --scatter "DIANJI\DIANJI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DIANJI.map" -o DIANJI\DIANJI.axf

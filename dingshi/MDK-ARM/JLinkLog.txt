@@ -1,0 +1,3128 @@
+T567C 000:009.392   SEGGER J-Link V6.60c Log File
+T567C 000:009.527   DLL Compiled: Dec 23 2019 16:14:31
+T567C 000:009.536   Logging started @ 2023-04-07 12:05
+T567C 000:009.547 JLINK_SetWarnOutHandler(...)
+T567C 000:009.557 - 0.014ms
+T567C 000:009.570 JLINK_OpenEx(...)
+T567C 000:027.607   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T567C 000:039.202   Hardware: V9.40
+T567C 000:039.242   S/N: 69405494
+T567C 000:039.265   OEM: SEGGER
+T567C 000:039.288   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T567C 000:040.871   TELNET listener socket opened on port 19021
+T567C 000:040.966   WEBSRV Starting webserver
+T567C 000:041.076   WEBSRV Webserver running on local port 19080
+T567C 000:041.091 - 31.524ms returns "O.K."
+T567C 000:041.116 JLINK_GetEmuCaps()
+T567C 000:041.124 - 0.012ms returns 0xB9FF7BBF
+T567C 000:041.139 JLINK_TIF_GetAvailable(...)
+T567C 000:041.345 - 0.212ms
+T567C 000:041.360 JLINK_SetErrorOutHandler(...)
+T567C 000:041.368 - 0.012ms
+T567C 000:041.395 JLINK_ExecCommand("ProjectFile = "D:\stm32\dingshi\MDK-ARM\JLinkSettings.ini"", ...). 
+T567C 000:044.951   Ref file found at: D:\keil\ARM\Segger\JLinkDevices.ref
+T567C 000:045.252   XML referenced by ref file: C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml
+T567C 000:046.555   C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml evaluated successfully.
+T567C 000:224.258 - 182.886ms returns 0x00
+T567C 000:227.103 JLINK_ExecCommand("Device = STM32F103C8", ...). 
+T567C 000:229.820   Device "STM32F103C8" selected.
+T567C 000:230.158 - 3.043ms returns 0x00
+T567C 000:230.175 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T567C 000:230.187 - 0.007ms returns 0x01
+T567C 000:230.198 JLINK_GetHardwareVersion()
+T567C 000:230.206 - 0.011ms returns 0x16F30
+T567C 000:230.215 JLINK_GetDLLVersion()  returns 66003
+T567C 000:230.229 JLINK_GetFirmwareString(...)
+T567C 000:230.237 - 0.011ms
+T567C 000:236.398 JLINK_GetDLLVersion()  returns 66003
+T567C 000:236.420 JLINK_GetCompileDateTime()
+T567C 000:236.429 - 0.012ms
+T567C 000:238.447 JLINK_GetFirmwareString(...)
+T567C 000:238.462 - 0.019ms
+T567C 000:240.479 JLINK_GetHardwareVersion()
+T567C 000:240.494 - 0.019ms returns 0x16F30
+T567C 000:248.903 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T567C 000:250.042 - 1.152ms returns 0x00
+T567C 000:250.123 JLINK_SetSpeed(5000)
+T567C 000:250.424 - 0.309ms
+T567C 000:250.442 JLINK_GetId()
+T567C 000:254.102   Found SW-DP with ID 0x1BA01477
+T567C 000:276.231   Active write protected STM32 device detected.
+This could cause problems during flash download.
+Note: Unsecuring will trigger a mass erase of the internal flash.
+T567C 000:279.402   Executing default behavior previously saved in the registry.
+T567C 000:283.279   Device will be unsecured now.
+T567C 000:355.976   Found SW-DP with ID 0x1BA01477
+T567C 000:362.147   Scanning AP map to find all available APs
+T567C 000:368.127   AP[1]: Stopped AP scan as end of AP map has been reached
+T567C 000:371.074   AP[0]: AHB-AP (IDR: 0x14770011)
+T567C 000:374.032   Iterating through AP map to find AHB-AP to use
+T567C 000:381.930   AP[0]: Core found
+T567C 000:384.026   AP[0]: AHB-AP ROM base: 0xE00FF000
+T567C 000:389.141   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T567C 000:391.729   Found Cortex-M3 r1p1, Little endian.
+T567C 000:493.227    -- Max. mem block: 0x00011028
+T567C 000:493.281    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:493.989    -- CPU_ReadMem(4 bytes @ 0xE0002000)
+T567C 000:497.423   FPUnit: 6 code (BP) slots and 2 literal slots
+T567C 000:497.449    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T567C 000:497.881    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 000:498.240    -- CPU_WriteMem(4 bytes @ 0xE0001000)
+T567C 000:498.629    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T567C 000:498.997    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T567C 000:499.379    -- CPU_ReadMem(4 bytes @ 0xE000ED88)
+T567C 000:499.736    -- CPU_WriteMem(4 bytes @ 0xE000ED88)
+T567C 000:502.292   CoreSight components:
+T567C 000:504.483   ROMTbl[0] @ E00FF000
+T567C 000:504.504    -- CPU_ReadMem(16 bytes @ 0xE00FF000)
+T567C 000:505.064    -- CPU_ReadMem(16 bytes @ 0xE000EFF0)
+T567C 000:505.571    -- CPU_ReadMem(16 bytes @ 0xE000EFE0)
+T567C 000:508.343   ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 001BB000 SCS
+T567C 000:508.364    -- CPU_ReadMem(16 bytes @ 0xE0001FF0)
+T567C 000:508.832    -- CPU_ReadMem(16 bytes @ 0xE0001FE0)
+T567C 000:511.435   ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 001BB002 DWT
+T567C 000:511.455    -- CPU_ReadMem(16 bytes @ 0xE0002FF0)
+T567C 000:511.918    -- CPU_ReadMem(16 bytes @ 0xE0002FE0)
+T567C 000:514.593   ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB003 FPB
+T567C 000:514.629    -- CPU_ReadMem(16 bytes @ 0xE0000FF0)
+T567C 000:515.065    -- CPU_ReadMem(16 bytes @ 0xE0000FE0)
+T567C 000:518.169   ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 001BB001 ITM
+T567C 000:518.191    -- CPU_ReadMem(16 bytes @ 0xE00FF010)
+T567C 000:518.681    -- CPU_ReadMem(16 bytes @ 0xE0040FF0)
+T567C 000:519.177    -- CPU_ReadMem(16 bytes @ 0xE0040FE0)
+T567C 000:522.189   ROMTbl[0][4]: E0040000, CID: B105900D, PID: 001BB923 TPIU-Lite
+T567C 000:522.760 - 272.326ms   returns 0x1BA01477
+T567C 000:522.784 JLINK_GetDLLVersion()  returns 66003
+T567C 000:522.797 JLINK_CORE_GetFound()
+T567C 000:522.807 - 0.014ms returns 0x30000FF
+T567C 000:522.820 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T567C 000:522.831   Value=0xE00FF000
+T567C 000:522.845 - 0.029ms returns 0x00
+T567C 000:525.464 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T567C 000:525.479   Value=0xE00FF000
+T567C 000:525.491 - 0.031ms returns 0x00
+T567C 000:525.501 JLINK_GetDebugInfo(0x101 = JLINKARM_DEBUG_INFO_ETM_ADDR_INDEX)
+T567C 000:525.509   Value=0x00000000
+T567C 000:525.520 - 0.022ms returns 0x00
+T567C 000:525.542   JLINK_ReadMemEx(0xE0041FF0, 0x0010 Bytes, ..., Flags = 0x02000004)
+T567C 000:525.579    -- CPU_ReadMem(16 bytes @ 0xE0041FF0)
+T567C 000:526.078   Data:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T567C 000:526.099 - 0.563ms returns 0x10
+T567C 000:526.112 JLINK_GetDebugInfo(0x102 = JLINKARM_DEBUG_INFO_MTB_ADDR_INDEX)
+T567C 000:526.122   Value=0x00000000
+T567C 000:526.136 - 0.028ms returns 0x00
+T567C 000:526.147 JLINK_GetDebugInfo(0x103 = JLINKARM_DEBUG_INFO_TPIU_ADDR_INDEX)
+T567C 000:526.157   Value=0xE0040000
+T567C 000:526.170 - 0.028ms returns 0x00
+T567C 000:526.181 JLINK_GetDebugInfo(0x104 = JLINKARM_DEBUG_INFO_ITM_ADDR_INDEX)
+T567C 000:526.191   Value=0xE0000000
+T567C 000:526.205 - 0.028ms returns 0x00
+T567C 000:526.216 JLINK_GetDebugInfo(0x105 = JLINKARM_DEBUG_INFO_DWT_ADDR_INDEX)
+T567C 000:526.225   Value=0xE0001000
+T567C 000:526.239 - 0.027ms returns 0x00
+T567C 000:526.249 JLINK_GetDebugInfo(0x106 = JLINKARM_DEBUG_INFO_FPB_ADDR_INDEX)
+T567C 000:526.259   Value=0xE0002000
+T567C 000:526.272 - 0.027ms returns 0x00
+T567C 000:526.283 JLINK_GetDebugInfo(0x107 = JLINKARM_DEBUG_INFO_NVIC_ADDR_INDEX)
+T567C 000:526.293   Value=0xE000E000
+T567C 000:526.306 - 0.027ms returns 0x00
+T567C 000:526.317 JLINK_GetDebugInfo(0x10C = JLINKARM_DEBUG_INFO_DBG_ADDR_INDEX)
+T567C 000:526.326   Value=0xE000EDF0
+T567C 000:526.340 - 0.027ms returns 0x00
+T567C 000:526.351 JLINK_GetDebugInfo(0x01 = Unknown)
+T567C 000:526.365   Value=0x00000000
+T567C 000:526.379 - 0.033ms returns 0x00
+T567C 000:526.395   JLINK_ReadMemU32(0xE000ED00, 0x0001 Items, ...)
+T567C 000:526.414    -- CPU_ReadMem(4 bytes @ 0xE000ED00)
+T567C 000:526.754   Data:  31 C2 1F 41
+T567C 000:526.779    - CPUID
+T567C 000:526.793 - 0.403ms returns 1
+T567C 000:526.806 JLINK_GetDebugInfo(0x10F = JLINKARM_DEBUG_INFO_HAS_CORTEX_M_SECURITY_EXT_INDEX)
+T567C 000:526.821   Value=0x00000000
+T567C 000:526.835 - 0.033ms returns 0x00
+T567C 000:526.850 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T567C 000:526.859 - 0.014ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T567C 000:526.871 JLINK_Reset()
+T567C 000:526.902   CPU is running
+T567C 000:526.918    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 000:527.255   CPU is running
+T567C 000:527.280    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 000:531.189   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 000:534.347   Reset: Reset device via AIRCR.SYSRESETREQ.
+T567C 000:534.368   CPU is running
+T567C 000:534.381    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T567C 000:587.195    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:587.635    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:588.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:588.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:588.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:589.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:589.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:589.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:590.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:590.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:591.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:591.497    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:591.889    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:592.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:592.657    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:592.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:593.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:593.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:594.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:594.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:594.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:595.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:595.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:595.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:596.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:596.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:597.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:597.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:597.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:598.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:598.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:598.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:599.389    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:599.744    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:600.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:600.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:600.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:601.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:601.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:601.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:602.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:602.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:603.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:603.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:603.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:604.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:604.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:605.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:605.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:605.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:606.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:606.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:606.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:607.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:607.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:608.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:608.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:608.787    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:609.262    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:609.635    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:610.001    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:610.380    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:610.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:611.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:611.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:611.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:612.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:612.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:612.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:613.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:613.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:614.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:614.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:614.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:615.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:615.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:615.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:616.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:616.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:617.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:617.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:617.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:618.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:618.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:619.016    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:619.381    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:619.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:620.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:620.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:620.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:621.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:621.633    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:621.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:622.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:622.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:623.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:623.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:623.872    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:624.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:624.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:625.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:625.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:625.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:626.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:626.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:626.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:627.247    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:627.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:628.016    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:628.384    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:628.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:629.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:629.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:629.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:630.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:630.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:630.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:631.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:631.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:632.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:632.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:632.869    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:633.263    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:633.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:634.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:634.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:634.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:635.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:635.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:635.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:636.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:636.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:636.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:637.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:637.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:638.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:638.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:638.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:639.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:639.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:640.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:640.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:640.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:641.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:641.624    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:641.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:642.387    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:642.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:643.154    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:643.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:643.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:644.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:644.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:645.008    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:645.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:645.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:646.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:646.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:646.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:647.262    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:647.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:648.016    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:648.382    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:648.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:649.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:649.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:649.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:650.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:650.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:650.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:651.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:651.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:652.174    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:652.676    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:653.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:653.510    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:653.876    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:654.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:654.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:655.050    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:655.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:655.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:656.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:656.628    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:657.017    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:657.373    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:657.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:658.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:658.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:658.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:659.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:659.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:659.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:660.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:660.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:661.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:661.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:661.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:662.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:662.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:662.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:663.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:663.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:664.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:664.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:664.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:665.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:665.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:665.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:666.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:666.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:667.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:667.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:667.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:668.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:668.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:668.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:669.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:669.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:670.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:670.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:670.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:671.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:671.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:672.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:672.400    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:672.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:673.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:673.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:673.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:674.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:674.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:675.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:675.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:675.881    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:676.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:676.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:676.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:677.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:677.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:678.152    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:678.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:678.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:679.264    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:679.620    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:680.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:680.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:680.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:681.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:681.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:681.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:682.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:682.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:682.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:683.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:683.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:684.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:684.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:684.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:685.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:685.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:685.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:686.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:686.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:687.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:687.549    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:687.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:688.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:688.772    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:689.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:689.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:689.909    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:690.261    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:690.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:690.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:691.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:691.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:692.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:692.505    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:692.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:693.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:693.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:693.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:694.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:694.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:695.153    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:695.624    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:695.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:696.372    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:696.761    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:697.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:697.510    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:697.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:698.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:698.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:698.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:699.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:699.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:700.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:700.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:700.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:701.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:701.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:701.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:702.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:702.751    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:703.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:703.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:703.909    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:704.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:704.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:705.061    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:705.543    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:706.028    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:706.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:706.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:707.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:707.637    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:708.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:708.383    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:708.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:709.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:709.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:709.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:710.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:710.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:710.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:711.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:711.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:712.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:712.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:712.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:713.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:713.630    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:713.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:714.376    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:714.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:715.155    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:715.634    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:715.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:716.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:716.784    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:717.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:717.511    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:717.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:718.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:718.641    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:719.151    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:719.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:719.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:720.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:720.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:720.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:721.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:721.762    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:722.153    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:722.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:722.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:723.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:723.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:723.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:724.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:724.745    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:725.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:725.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:725.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:726.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:726.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:726.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:727.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:727.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:728.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:728.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:728.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:729.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:729.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:729.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:730.384    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:730.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:731.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:731.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:731.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:732.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:732.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:732.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:733.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:733.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:734.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:734.495    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:734.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:735.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:735.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:735.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:736.371    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:736.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:737.152    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:737.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:737.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:738.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:738.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:738.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:739.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:739.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:740.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:740.513    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:740.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:741.266    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:741.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:741.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:742.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:742.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:743.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:743.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:743.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:744.249    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:744.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:745.007    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:745.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:745.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:746.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:746.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:746.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:747.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:747.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:747.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:748.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:748.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:749.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:749.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:749.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:750.244    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:750.667    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:751.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:751.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:751.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:752.337    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:752.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:753.165    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:753.664    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:754.157    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:754.636    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:755.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:755.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:755.775    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:756.150    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:756.510    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:756.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:757.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:757.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:757.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:758.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:758.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:759.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:759.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:759.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:760.248    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:760.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:760.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:761.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:761.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:762.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:762.512    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:762.885    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:763.259    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:763.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:763.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:764.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:764.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:765.153    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:765.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:765.993    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:766.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:766.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:767.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:767.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:767.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:768.272    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:768.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:769.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:769.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:769.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:770.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:770.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:770.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:771.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:771.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:771.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:772.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:772.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:773.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:773.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:773.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:774.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:774.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:774.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:775.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:775.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:776.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:776.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:776.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:777.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:777.622    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:778.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:778.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:778.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:779.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:779.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:779.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:780.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:780.630    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:781.013    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:781.374    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:781.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:782.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:782.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:782.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:783.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:783.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:784.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:784.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:784.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:785.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:785.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:785.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:786.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:786.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:786.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:787.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:787.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:788.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:788.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:788.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:789.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:789.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:789.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:790.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:790.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:791.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:791.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:791.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:792.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:792.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:793.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:793.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:793.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:794.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:794.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:794.868    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:795.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:795.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:796.012    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:796.370    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:796.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:797.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:797.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:797.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:798.243    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:798.622    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:799.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:799.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:799.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:800.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:800.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:800.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:801.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:801.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:801.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:802.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:802.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:803.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:803.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:803.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:804.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:804.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:804.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:805.382    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:805.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:806.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:806.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:806.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:807.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:807.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:808.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:808.390    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:808.747    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:809.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:809.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:809.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:810.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:810.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:810.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:811.405    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:813.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:813.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:813.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:814.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:814.617    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:814.996    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:815.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:815.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:816.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:816.492    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:816.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:817.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:817.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:818.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:818.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:818.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:819.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:819.498    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:819.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:820.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:820.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:820.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:821.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:821.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:822.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:822.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:822.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:823.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:823.615    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:823.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:824.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:824.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:825.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:825.490    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:825.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:826.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:826.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:827.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:827.639    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:827.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:828.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:828.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:829.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:829.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:829.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:830.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:830.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:830.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:831.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:831.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:832.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:832.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:832.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:833.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:833.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:833.994    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:834.384    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:834.755    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:835.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:835.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:835.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:836.242    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:836.623    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:837.010    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:837.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:837.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 000:841.717   Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.
+T567C 000:845.408   Reset: Using fallback: Reset pin.
+T567C 000:845.437   CPU is running
+T567C 000:845.456    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 000:845.893   CPU is running
+T567C 000:845.914    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 000:849.188   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 000:852.012   Reset: Reset device via reset pin
+T567C 000:978.786   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T567C 000:981.798   Reset: Reconnecting and manually halting CPU.
+T567C 000:987.030   Found SW-DP with ID 0x1BA01477
+T567C 000:993.356   AP map detection skipped. Manually configured AP map found.
+T567C 000:995.989   AP[0]: AHB-AP (IDR: Not set)
+T567C 001:004.897   AP[0]: Core found
+T567C 001:007.076   AP[0]: AHB-AP ROM base: 0xE00FF000
+T567C 001:012.306   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T567C 001:014.403   Found Cortex-M3 r1p1, Little endian.
+T567C 001:121.953   CPU could not be halted
+T567C 001:122.002   CPU is running
+T567C 001:122.023    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 001:128.028    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:132.951   Reset: Core did not halt after reset, trying to disable WDT.
+T567C 001:132.981   CPU is running
+T567C 001:133.005    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 001:133.506   CPU is running
+T567C 001:133.539    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 001:136.850   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 001:140.093   Reset: Reset device via reset pin
+T567C 001:267.370   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T567C 001:270.347   Reset: Reconnecting and manually halting CPU.
+T567C 001:274.022   Found SW-DP with ID 0x1BA01477
+T567C 001:279.758   AP map detection skipped. Manually configured AP map found.
+T567C 001:282.645   AP[0]: AHB-AP (IDR: Not set)
+T567C 001:290.722   AP[0]: Core found
+T567C 001:292.886   AP[0]: AHB-AP ROM base: 0xE00FF000
+T567C 001:298.242   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T567C 001:300.333   Found Cortex-M3 r1p1, Little endian.
+T567C 001:409.292   CPU could not be halted
+T567C 001:409.352    -- CPU_ReadMem(4 bytes @ 0x400F2000)
+T567C 001:409.900    -- CPU_ReadMem(4 bytes @ 0x40040000)
+T567C 001:410.573   CPU is running
+T567C 001:410.626    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 001:414.441   Reset: Failed. Toggling reset pin and trying reset strategy again.
+T567C 001:418.976   Found SW-DP with ID 0x1BA01477
+T567C 001:425.332   AP map detection skipped. Manually configured AP map found.
+T567C 001:428.044   AP[0]: AHB-AP (IDR: Not set)
+T567C 001:436.328   AP[0]: Core found
+T567C 001:438.838   AP[0]: AHB-AP ROM base: 0xE00FF000
+T567C 001:443.534   CPUID register: 0x411FC231. Implementer code: 0x41 (ARM)
+T567C 001:445.612   Found Cortex-M3 r1p1, Little endian.
+T567C 001:547.338   CPU is running
+T567C 001:547.451    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 001:548.015   CPU is running
+T567C 001:548.061    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 001:552.423   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 001:556.564   Reset: Reset device via AIRCR.SYSRESETREQ.
+T567C 001:556.593   CPU is running
+T567C 001:556.611    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T567C 001:609.763    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:610.259    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:610.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:611.181    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:611.667    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:612.217    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:612.680    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:613.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:613.502    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:613.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:614.252    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:614.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:614.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:615.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:615.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:616.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:616.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:616.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:617.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:617.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:617.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:618.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:618.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:619.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:619.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:619.887    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:620.254    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:620.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:620.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:621.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:621.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:622.152    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:622.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:622.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:623.255    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:623.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:624.038    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:624.523    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:625.021    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:625.396    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:625.754    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:626.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:626.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:626.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:627.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:627.618    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:627.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:628.388    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:628.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:629.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:629.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:629.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:630.235    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:630.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:630.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:631.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:631.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:632.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:632.509    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:632.888    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:633.253    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:633.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:633.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:634.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:634.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:635.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:635.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:635.859    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:636.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:636.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:636.984    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:637.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:637.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:638.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:638.484    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:638.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:639.254    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:639.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:639.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:640.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:640.754    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:641.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:641.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:641.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:642.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:642.645    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:642.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:643.385    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:643.750    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:644.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:644.505    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:644.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:645.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:645.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:645.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:646.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:646.752    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:647.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:647.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:647.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:648.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:648.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:648.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:649.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:649.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:650.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:650.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:650.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:651.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:651.630    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:651.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:652.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:652.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:653.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:653.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:653.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:654.254    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:654.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:654.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:655.360    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:655.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:656.178    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:656.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:656.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:657.392    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:657.734    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:658.167    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:658.641    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:659.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:659.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:659.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:660.336    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:660.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:661.177    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:661.629    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:661.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:662.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:662.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:663.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:663.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:663.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:664.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:664.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:665.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:665.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:665.756    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:666.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:666.485    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:666.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:667.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:667.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:667.991    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:668.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:668.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:669.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:669.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:669.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:670.234    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:670.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:670.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:671.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:671.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:672.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:672.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:672.881    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:673.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:673.625    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:674.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:674.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:674.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:675.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:675.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:675.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:676.235    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:676.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:676.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:677.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:677.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:678.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:678.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:678.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:679.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:679.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:680.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:680.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:680.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:681.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:681.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:681.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:682.250    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:682.633    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:683.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:683.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:683.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:684.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:684.504    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:684.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:685.255    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:685.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:685.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:686.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:686.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:687.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:687.505    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:687.912    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:688.398    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:688.898    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:689.397    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:689.740    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:690.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:690.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:690.883    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:691.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:691.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:691.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:692.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:692.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:693.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:693.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:693.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:694.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:694.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:694.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:695.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:695.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:696.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:696.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:696.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:697.235    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:697.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:698.002    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:698.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:698.734    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:699.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:699.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:699.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:700.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:700.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:700.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:701.359    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:701.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:702.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:702.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:702.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:703.259    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:703.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:704.041    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:704.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:704.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:705.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:705.616    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:705.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:706.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:706.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:707.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:707.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:707.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:708.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:708.741    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:709.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:709.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:709.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:710.241    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:710.629    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:710.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:711.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:711.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:712.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:712.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:712.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:713.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:713.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:713.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:714.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:714.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:715.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:715.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:715.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:716.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:716.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:716.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:717.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:717.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:718.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:718.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:718.984    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:719.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:719.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:720.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:720.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:720.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:721.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:721.666    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:722.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:722.507    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:722.866    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:723.338    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:723.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:724.149    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:724.634    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:725.009    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:725.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:725.754    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:726.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:726.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:726.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:727.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:727.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:727.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:728.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:728.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:729.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:729.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:729.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:730.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:730.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:730.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:731.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:731.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:732.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:732.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:732.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:733.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:733.683    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:734.179    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:734.651    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:735.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:735.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:735.867    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:736.255    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:736.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:736.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:737.368    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:737.758    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:738.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:738.502    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:738.859    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:739.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:739.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:739.984    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:740.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:740.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:741.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:741.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:741.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:742.239    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:742.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:742.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:743.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:743.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:744.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:744.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:744.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:745.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:745.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:745.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:746.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:746.757    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:747.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:747.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:747.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:748.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:748.654    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:748.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:749.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:749.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:750.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:750.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:750.881    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:751.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:751.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:751.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:752.369    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:752.759    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:753.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:753.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:753.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:754.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:754.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:755.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:755.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:755.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:756.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:756.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:756.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:757.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:757.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:757.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:758.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:758.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:759.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:759.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:759.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:760.234    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:760.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:761.002    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:761.366    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:761.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:762.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:762.494    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:762.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:763.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:763.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:763.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:764.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:764.742    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:765.145    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:765.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:765.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:766.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:766.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:766.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:767.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:767.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:768.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:768.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:768.861    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:769.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:769.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:769.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:770.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:770.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:771.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:771.489    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:771.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:772.257    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:772.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:772.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:773.380    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:773.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:774.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:774.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:774.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:775.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:775.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:775.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:776.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:776.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:777.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:777.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:777.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:778.253    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:778.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:778.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:779.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:779.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:780.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:780.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:780.920    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:781.410    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:781.875    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:782.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:782.628    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:782.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:783.378    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:783.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:784.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:784.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:784.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:785.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:785.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:786.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:786.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:786.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:787.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:787.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:787.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:788.254    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:788.612    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:788.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:789.359    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:789.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:790.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:790.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:790.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:791.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:791.609    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:791.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:792.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:792.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:793.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:793.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:793.859    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:794.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:794.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:794.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:795.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:795.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:796.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:796.515    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:796.882    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:797.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:797.650    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:798.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:798.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:798.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:799.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:799.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:799.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:800.379    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:800.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:801.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:801.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:802.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:802.387    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:802.748    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:803.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:803.506    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:803.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:804.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:804.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:805.004    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:805.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:805.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:806.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:806.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:806.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:807.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:807.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:807.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:808.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:808.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:809.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:809.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:809.884    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:810.260    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:810.628    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:811.001    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:811.361    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:811.765    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:812.160    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:812.648    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:813.148    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:813.493    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:813.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:814.258    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:814.628    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:814.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:815.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:815.753    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:816.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:816.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:816.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:817.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:817.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:817.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:818.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:818.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:819.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:819.486    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:819.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:820.254    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:820.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:820.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:821.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:821.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:822.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:822.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:822.864    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:823.256    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:823.630    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:823.992    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:824.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:824.739    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:825.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:825.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:825.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:826.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:826.609    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:827.003    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:827.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:827.906    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:828.391    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:828.880    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:829.245    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:829.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:829.995    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:830.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:830.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:831.147    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:831.629    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:831.990    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:832.365    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:832.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:833.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:833.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:833.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:834.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:834.613    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:835.006    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:835.367    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:835.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:836.141    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:836.504    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:836.865    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:837.238    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:837.621    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:837.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:838.362    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:838.743    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:839.144    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:839.491    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:839.879    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:840.246    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:840.610    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:840.984    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:841.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:841.737    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:842.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:842.508    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:842.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:843.240    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:843.629    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:843.988    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:844.364    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:844.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:845.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:845.488    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:845.878    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:846.253    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:846.614    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:846.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:847.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:847.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:848.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:848.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:848.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:849.237    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:849.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:849.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:850.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:850.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:851.146    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:851.503    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:851.863    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:852.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:852.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:852.986    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:853.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:853.738    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:854.143    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:854.487    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:854.862    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:855.236    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:855.611    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:855.989    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:856.363    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:856.736    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:857.142    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:857.501    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:857.860    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:858.251    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:858.632    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:858.987    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:859.389    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:859.785    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:860.324    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:860.805    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 001:864.751   Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.
+T567C 001:867.694   Reset: Using fallback: Reset pin.
+T567C 001:867.721   CPU is running
+T567C 001:867.740    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 001:868.160   CPU is running
+T567C 001:868.189    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 001:871.555   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 001:874.415   Reset: Reset device via reset pin
+T567C 001:999.427    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 002:005.339    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 002:005.761    -- CPU_WriteMem(4 bytes @ 0xE0002000)
+T567C 002:006.142    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T567C 002:006.491    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:006.883 - 1480.031ms
+T567C 002:006.926 JLINK_Halt()
+T567C 002:006.943 - 0.024ms returns 0x00
+T567C 002:006.973   JLINK_ReadMemU32(0xE000EDF0, 0x0001 Items, ...)
+T567C 002:007.011    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 002:007.512   Data:  03 00 03 00
+T567C 002:007.544    - DHCSR
+T567C 002:007.567 - 0.602ms returns 1
+T567C 002:007.594   JLINK_WriteU32(0xE000EDF0, 0xA05F0003)
+T567C 002:007.635    - DHCSR
+T567C 002:007.705    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 002:008.159 - 0.600ms returns 0
+T567C 002:008.215   JLINK_WriteU32(0xE000EDFC, 0x01000000)
+T567C 002:008.235    - DEMCR
+T567C 002:008.264    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 002:008.627 - 0.424ms returns 0
+T567C 002:019.461 JLINK_GetHWStatus(...)
+T567C 002:019.718 - 0.274ms returns 0x00
+T567C 002:026.474 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T567C 002:026.495 - 0.025ms returns 0x06
+T567C 002:026.506 JLINK_GetNumBPUnits(Type = 0xF0)
+T567C 002:026.515 - 0.012ms returns 0x2000
+T567C 002:026.525 JLINK_GetNumWPUnits()
+T567C 002:026.532 - 0.012ms returns 0x04
+T567C 002:033.572 JLINK_GetSpeed()
+T567C 002:033.597 - 0.031ms returns 0xFA0
+T567C 002:037.677   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T567C 002:037.710    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T567C 002:038.150   Data:  01 00 00 00
+T567C 002:038.166 - 0.494ms returns 1
+T567C 002:038.178   JLINK_ReadMemU32(0xE000E004, 0x0001 Items, ...)
+T567C 002:038.192    -- CPU_ReadMem(4 bytes @ 0xE000E004)
+T567C 002:038.611   Data:  01 00 00 00
+T567C 002:038.625 - 0.452ms returns 1
+T567C 002:038.636 JLINK_WriteMemEx(0xE0001000, 0x001C Bytes, ..., Flags = 0x02000004)
+T567C 002:038.645   Data:  01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ...
+T567C 002:038.845    -- CPU_WriteMem(28 bytes @ 0xE0001000)
+T567C 002:039.373 - 0.744ms returns 0x1C
+T567C 002:039.391 JLINK_Halt()
+T567C 002:039.400 - 0.012ms returns 0x00
+T567C 002:039.409 JLINK_IsHalted()
+T567C 002:039.418 - 0.012ms returns TRUE
+T567C 002:042.663 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T567C 002:042.676   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T567C 002:042.878    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T567C 002:045.035 - 2.387ms returns 0x164
+T567C 002:045.110 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:045.132 - 0.031ms returns 0x00
+T567C 002:045.151 JLINK_WriteReg(R1, 0x007A1200)
+T567C 002:045.167 - 0.023ms returns 0x00
+T567C 002:045.185 JLINK_WriteReg(R2, 0x00000001)
+T567C 002:045.201 - 0.023ms returns 0x00
+T567C 002:045.219 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:045.235 - 0.023ms returns 0x00
+T567C 002:045.253 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:045.268 - 0.023ms returns 0x00
+T567C 002:045.286 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:045.302 - 0.023ms returns 0x00
+T567C 002:045.320 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:045.335 - 0.023ms returns 0x00
+T567C 002:045.353 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:045.369 - 0.023ms returns 0x00
+T567C 002:045.386 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:045.402 - 0.023ms returns 0x00
+T567C 002:045.420 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:045.436 - 0.023ms returns 0x00
+T567C 002:045.454 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:045.469 - 0.023ms returns 0x00
+T567C 002:045.487 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:045.503 - 0.023ms returns 0x00
+T567C 002:045.521 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:045.536 - 0.023ms returns 0x00
+T567C 002:045.554 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:045.572 - 0.025ms returns 0x00
+T567C 002:045.590 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:045.605 - 0.023ms returns 0x00
+T567C 002:045.623 JLINK_WriteReg(R15 (PC), 0x20000038)
+T567C 002:045.639 - 0.023ms returns 0x00
+T567C 002:045.657 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:045.673 - 0.023ms returns 0x00
+T567C 002:045.691 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:045.706 - 0.023ms returns 0x00
+T567C 002:045.724 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:045.740 - 0.028ms returns 0x00
+T567C 002:045.766 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:045.782 - 0.023ms returns 0x00
+T567C 002:045.801   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:045.829    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:046.242 - 0.456ms returns 0x00000001
+T567C 002:046.269 JLINK_Go()
+T567C 002:046.285    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T567C 002:046.652    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:046.978    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T567C 002:046.997    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T567C 002:047.016    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T567C 002:047.031    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T567C 002:047.045    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T567C 002:047.060    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T567C 002:048.550    -- CPU_WriteMem(4 bytes @ 0xE0001004)
+T567C 002:051.598 - 5.338ms
+T567C 002:051.616 JLINK_IsHalted()
+T567C 002:054.298    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:054.757 - 3.154ms returns TRUE
+T567C 002:054.784 JLINK_ReadReg(R15 (PC))
+T567C 002:054.804 - 0.028ms returns 0x20000000
+T567C 002:054.823 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T567C 002:054.839 - 0.024ms returns 0x00
+T567C 002:054.857 JLINK_ReadReg(R0)
+T567C 002:054.874 - 0.024ms returns 0x00000000
+T567C 002:055.814 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:055.841 - 0.035ms returns 0x00
+T567C 002:055.857 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:055.871 - 0.020ms returns 0x00
+T567C 002:055.886 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:055.899 - 0.020ms returns 0x00
+T567C 002:055.914 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:055.927 - 0.019ms returns 0x00
+T567C 002:055.942 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:055.955 - 0.019ms returns 0x00
+T567C 002:055.970 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:055.979 - 0.012ms returns 0x00
+T567C 002:055.988 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:055.996 - 0.011ms returns 0x00
+T567C 002:056.005 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:056.013 - 0.012ms returns 0x00
+T567C 002:056.022 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:056.030 - 0.011ms returns 0x00
+T567C 002:056.039 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:056.047 - 0.012ms returns 0x00
+T567C 002:056.056 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:056.064 - 0.012ms returns 0x00
+T567C 002:056.073 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:056.081 - 0.012ms returns 0x00
+T567C 002:056.090 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:056.098 - 0.012ms returns 0x00
+T567C 002:056.107 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:056.116 - 0.012ms returns 0x00
+T567C 002:056.125 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:056.133 - 0.012ms returns 0x00
+T567C 002:056.142 JLINK_WriteReg(R15 (PC), 0x20000020)
+T567C 002:056.150 - 0.011ms returns 0x00
+T567C 002:056.159 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:056.167 - 0.012ms returns 0x00
+T567C 002:056.176 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:056.184 - 0.011ms returns 0x00
+T567C 002:056.193 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:056.201 - 0.011ms returns 0x00
+T567C 002:056.210 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:056.218 - 0.012ms returns 0x00
+T567C 002:056.228   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:056.240 - 0.017ms returns 0x00000002
+T567C 002:056.250 JLINK_Go()
+T567C 002:056.263    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:059.446 - 3.213ms
+T567C 002:059.483 JLINK_IsHalted()
+T567C 002:062.227    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:062.726 - 3.264ms returns TRUE
+T567C 002:062.768 JLINK_ReadReg(R15 (PC))
+T567C 002:062.798 - 0.041ms returns 0x20000000
+T567C 002:062.827 JLINK_ClrBPEx(BPHandle = 0x00000002)
+T567C 002:062.845 - 0.026ms returns 0x00
+T567C 002:062.864 JLINK_ReadReg(R0)
+T567C 002:062.877 - 0.020ms returns 0x00000001
+T567C 002:062.943 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:062.961 - 0.023ms returns 0x00
+T567C 002:062.972 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:062.980 - 0.012ms returns 0x00
+T567C 002:062.989 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:062.997 - 0.011ms returns 0x00
+T567C 002:063.010 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:063.020 - 0.013ms returns 0x00
+T567C 002:063.029 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:063.037 - 0.012ms returns 0x00
+T567C 002:063.046 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:063.054 - 0.011ms returns 0x00
+T567C 002:063.063 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:063.071 - 0.012ms returns 0x00
+T567C 002:063.080 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:063.088 - 0.012ms returns 0x00
+T567C 002:063.097 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:063.105 - 0.012ms returns 0x00
+T567C 002:063.114 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:063.122 - 0.011ms returns 0x00
+T567C 002:063.131 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:063.139 - 0.012ms returns 0x00
+T567C 002:063.149 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:063.157 - 0.012ms returns 0x00
+T567C 002:063.166 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:063.174 - 0.012ms returns 0x00
+T567C 002:063.183 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:063.191 - 0.012ms returns 0x00
+T567C 002:063.200 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:063.208 - 0.012ms returns 0x00
+T567C 002:063.218 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T567C 002:063.226 - 0.012ms returns 0x00
+T567C 002:063.235 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:063.243 - 0.012ms returns 0x00
+T567C 002:063.252 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:063.260 - 0.011ms returns 0x00
+T567C 002:063.269 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:063.277 - 0.011ms returns 0x00
+T567C 002:063.286 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:063.294 - 0.012ms returns 0x00
+T567C 002:063.304   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:063.317 - 0.017ms returns 0x00000003
+T567C 002:063.326 JLINK_Go()
+T567C 002:063.339    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:066.365 - 3.057ms
+T567C 002:066.397 JLINK_IsHalted()
+T567C 002:066.749 - 0.364ms returns FALSE
+T567C 002:080.925 JLINK_IsHalted()
+T567C 002:081.383 - 0.473ms returns FALSE
+T567C 002:082.917 JLINK_IsHalted()
+T567C 002:083.370 - 0.466ms returns FALSE
+T567C 002:084.917 JLINK_IsHalted()
+T567C 002:085.379 - 0.476ms returns FALSE
+T567C 002:086.914 JLINK_IsHalted()
+T567C 002:087.345 - 0.437ms returns FALSE
+T567C 002:088.919 JLINK_IsHalted()
+T567C 002:091.681    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:092.143 - 3.235ms returns TRUE
+T567C 002:092.166 JLINK_ReadReg(R15 (PC))
+T567C 002:092.183 - 0.023ms returns 0x20000000
+T567C 002:092.199 JLINK_ClrBPEx(BPHandle = 0x00000003)
+T567C 002:092.213 - 0.020ms returns 0x00
+T567C 002:092.228 JLINK_ReadReg(R0)
+T567C 002:092.242 - 0.019ms returns 0x00000000
+T567C 002:093.835 JLINK_WriteReg(R0, 0x08000400)
+T567C 002:093.863 - 0.034ms returns 0x00
+T567C 002:093.877 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:093.890 - 0.018ms returns 0x00
+T567C 002:093.904 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:093.915 - 0.017ms returns 0x00
+T567C 002:093.932 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:093.950 - 0.023ms returns 0x00
+T567C 002:093.963 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:093.975 - 0.017ms returns 0x00
+T567C 002:093.988 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:093.999 - 0.017ms returns 0x00
+T567C 002:094.016 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:094.034 - 0.027ms returns 0x00
+T567C 002:094.051 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:094.062 - 0.017ms returns 0x00
+T567C 002:094.075 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:094.087 - 0.017ms returns 0x00
+T567C 002:094.100 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:094.112 - 0.017ms returns 0x00
+T567C 002:094.125 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:094.136 - 0.017ms returns 0x00
+T567C 002:094.149 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:094.161 - 0.017ms returns 0x00
+T567C 002:094.174 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:094.190 - 0.025ms returns 0x00
+T567C 002:094.208 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:094.220 - 0.017ms returns 0x00
+T567C 002:094.233 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:094.244 - 0.017ms returns 0x00
+T567C 002:094.257 JLINK_WriteReg(R15 (PC), 0x20000020)
+T567C 002:094.269 - 0.021ms returns 0x00
+T567C 002:094.289 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:094.301 - 0.017ms returns 0x00
+T567C 002:094.314 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:094.325 - 0.017ms returns 0x00
+T567C 002:094.339 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:094.350 - 0.017ms returns 0x00
+T567C 002:094.363 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:094.374 - 0.017ms returns 0x00
+T567C 002:094.388   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:094.406 - 0.024ms returns 0x00000004
+T567C 002:094.420 JLINK_Go()
+T567C 002:094.441    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:097.624 - 3.228ms
+T567C 002:097.666 JLINK_IsHalted()
+T567C 002:100.416    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:100.875 - 3.222ms returns TRUE
+T567C 002:100.903 JLINK_ReadReg(R15 (PC))
+T567C 002:100.922 - 0.027ms returns 0x20000000
+T567C 002:100.941 JLINK_ClrBPEx(BPHandle = 0x00000004)
+T567C 002:100.957 - 0.024ms returns 0x00
+T567C 002:100.975 JLINK_ReadReg(R0)
+T567C 002:100.991 - 0.023ms returns 0x00000001
+T567C 002:101.014 JLINK_WriteReg(R0, 0x08000400)
+T567C 002:101.031 - 0.025ms returns 0x00
+T567C 002:101.048 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:101.061 - 0.019ms returns 0x00
+T567C 002:101.076 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:101.089 - 0.019ms returns 0x00
+T567C 002:101.104 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:101.117 - 0.019ms returns 0x00
+T567C 002:101.132 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:101.145 - 0.019ms returns 0x00
+T567C 002:101.160 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:101.173 - 0.019ms returns 0x00
+T567C 002:101.187 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:101.200 - 0.019ms returns 0x00
+T567C 002:101.215 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:101.228 - 0.019ms returns 0x00
+T567C 002:101.243 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:101.256 - 0.019ms returns 0x00
+T567C 002:101.270 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:101.283 - 0.019ms returns 0x00
+T567C 002:101.298 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:101.311 - 0.019ms returns 0x00
+T567C 002:101.326 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:101.339 - 0.019ms returns 0x00
+T567C 002:101.354 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:101.367 - 0.019ms returns 0x00
+T567C 002:101.381 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:101.395 - 0.020ms returns 0x00
+T567C 002:101.410 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:101.423 - 0.019ms returns 0x00
+T567C 002:101.438 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T567C 002:101.451 - 0.019ms returns 0x00
+T567C 002:101.465 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:101.479 - 0.019ms returns 0x00
+T567C 002:101.493 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:101.506 - 0.019ms returns 0x00
+T567C 002:101.521 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:101.534 - 0.019ms returns 0x00
+T567C 002:101.549 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:101.562 - 0.019ms returns 0x00
+T567C 002:101.578   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:101.597 - 0.027ms returns 0x00000005
+T567C 002:101.612 JLINK_Go()
+T567C 002:101.632    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:104.603 - 3.005ms
+T567C 002:104.632 JLINK_IsHalted()
+T567C 002:105.005 - 0.386ms returns FALSE
+T567C 002:107.001 JLINK_IsHalted()
+T567C 002:107.370 - 0.380ms returns FALSE
+T567C 002:109.003 JLINK_IsHalted()
+T567C 002:109.412 - 0.427ms returns FALSE
+T567C 002:111.093 JLINK_IsHalted()
+T567C 002:111.515 - 0.436ms returns FALSE
+T567C 002:113.471 JLINK_IsHalted()
+T567C 002:113.879 - 0.422ms returns FALSE
+T567C 002:115.620 JLINK_IsHalted()
+T567C 002:115.996 - 0.386ms returns FALSE
+T567C 002:117.992 JLINK_IsHalted()
+T567C 002:118.369 - 0.389ms returns FALSE
+T567C 002:120.072 JLINK_IsHalted()
+T567C 002:120.487 - 0.427ms returns FALSE
+T567C 002:122.482 JLINK_IsHalted()
+T567C 002:122.870 - 0.400ms returns FALSE
+T567C 002:124.493 JLINK_IsHalted()
+T567C 002:124.924 - 0.458ms returns FALSE
+T567C 002:127.927 JLINK_IsHalted()
+T567C 002:130.680    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:131.148 - 3.236ms returns TRUE
+T567C 002:131.180 JLINK_ReadReg(R15 (PC))
+T567C 002:131.213 - 0.043ms returns 0x20000000
+T567C 002:131.236 JLINK_ClrBPEx(BPHandle = 0x00000005)
+T567C 002:131.255 - 0.027ms returns 0x00
+T567C 002:131.277 JLINK_ReadReg(R0)
+T567C 002:131.296 - 0.027ms returns 0x00000000
+T567C 002:132.508 JLINK_WriteReg(R0, 0x08000800)
+T567C 002:132.539 - 0.039ms returns 0x00
+T567C 002:132.556 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:132.571 - 0.021ms returns 0x00
+T567C 002:132.589 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:132.603 - 0.020ms returns 0x00
+T567C 002:132.618 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:132.638 - 0.029ms returns 0x00
+T567C 002:132.656 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:132.669 - 0.019ms returns 0x00
+T567C 002:132.684 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:132.697 - 0.019ms returns 0x00
+T567C 002:132.712 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:132.726 - 0.020ms returns 0x00
+T567C 002:132.741 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:132.754 - 0.019ms returns 0x00
+T567C 002:132.769 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:132.782 - 0.019ms returns 0x00
+T567C 002:132.797 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:132.811 - 0.019ms returns 0x00
+T567C 002:132.826 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:132.839 - 0.019ms returns 0x00
+T567C 002:132.854 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:132.867 - 0.020ms returns 0x00
+T567C 002:132.882 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:132.895 - 0.019ms returns 0x00
+T567C 002:132.911 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:132.925 - 0.020ms returns 0x00
+T567C 002:132.940 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:132.953 - 0.020ms returns 0x00
+T567C 002:132.968 JLINK_WriteReg(R15 (PC), 0x20000020)
+T567C 002:132.982 - 0.019ms returns 0x00
+T567C 002:132.997 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:133.008 - 0.016ms returns 0x00
+T567C 002:133.020 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:133.031 - 0.016ms returns 0x00
+T567C 002:133.043 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:133.054 - 0.016ms returns 0x00
+T567C 002:133.067 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:133.079 - 0.017ms returns 0x00
+T567C 002:133.093   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:133.109 - 0.022ms returns 0x00000006
+T567C 002:133.122 JLINK_Go()
+T567C 002:133.140    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:136.140 - 3.034ms
+T567C 002:136.169 JLINK_IsHalted()
+T567C 002:138.786    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:139.246 - 3.087ms returns TRUE
+T567C 002:139.272 JLINK_ReadReg(R15 (PC))
+T567C 002:139.288 - 0.023ms returns 0x20000000
+T567C 002:139.306 JLINK_ClrBPEx(BPHandle = 0x00000006)
+T567C 002:139.320 - 0.020ms returns 0x00
+T567C 002:139.337 JLINK_ReadReg(R0)
+T567C 002:139.350 - 0.019ms returns 0x00000001
+T567C 002:139.370 JLINK_WriteReg(R0, 0x08000800)
+T567C 002:139.384 - 0.020ms returns 0x00
+T567C 002:139.401 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:139.414 - 0.019ms returns 0x00
+T567C 002:139.431 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:139.444 - 0.019ms returns 0x00
+T567C 002:139.460 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:139.473 - 0.019ms returns 0x00
+T567C 002:139.490 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:139.503 - 0.019ms returns 0x00
+T567C 002:139.520 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:139.533 - 0.019ms returns 0x00
+T567C 002:139.548 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:139.561 - 0.019ms returns 0x00
+T567C 002:139.587 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:139.600 - 0.019ms returns 0x00
+T567C 002:139.617 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:139.630 - 0.019ms returns 0x00
+T567C 002:139.647 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:139.660 - 0.019ms returns 0x00
+T567C 002:139.676 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:139.689 - 0.019ms returns 0x00
+T567C 002:139.706 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:139.719 - 0.019ms returns 0x00
+T567C 002:139.736 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:139.749 - 0.019ms returns 0x00
+T567C 002:139.766 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:139.779 - 0.019ms returns 0x00
+T567C 002:139.795 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:139.812 - 0.025ms returns 0x00
+T567C 002:139.831 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T567C 002:139.844 - 0.019ms returns 0x00
+T567C 002:139.861 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:139.874 - 0.019ms returns 0x00
+T567C 002:139.891 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:139.904 - 0.019ms returns 0x00
+T567C 002:139.921 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:139.934 - 0.019ms returns 0x00
+T567C 002:139.950 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:139.963 - 0.019ms returns 0x00
+T567C 002:139.981   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:140.000 - 0.026ms returns 0x00000007
+T567C 002:140.021 JLINK_Go()
+T567C 002:140.052    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:143.239 - 3.234ms
+T567C 002:143.272 JLINK_IsHalted()
+T567C 002:143.619 - 0.359ms returns FALSE
+T567C 002:147.160 JLINK_IsHalted()
+T567C 002:147.631 - 0.485ms returns FALSE
+T567C 002:149.626 JLINK_IsHalted()
+T567C 002:150.027 - 0.414ms returns FALSE
+T567C 002:152.023 JLINK_IsHalted()
+T567C 002:152.383 - 0.373ms returns FALSE
+T567C 002:154.380 JLINK_IsHalted()
+T567C 002:154.744 - 0.376ms returns FALSE
+T567C 002:156.375 JLINK_IsHalted()
+T567C 002:156.743 - 0.384ms returns FALSE
+T567C 002:158.379 JLINK_IsHalted()
+T567C 002:158.745 - 0.376ms returns FALSE
+T567C 002:160.664 JLINK_IsHalted()
+T567C 002:161.141 - 0.487ms returns FALSE
+T567C 002:163.138 JLINK_IsHalted()
+T567C 002:163.496 - 0.370ms returns FALSE
+T567C 002:165.384 JLINK_IsHalted()
+T567C 002:168.037    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:168.508 - 3.136ms returns TRUE
+T567C 002:168.538 JLINK_ReadReg(R15 (PC))
+T567C 002:168.558 - 0.028ms returns 0x20000000
+T567C 002:168.580 JLINK_ClrBPEx(BPHandle = 0x00000007)
+T567C 002:168.596 - 0.024ms returns 0x00
+T567C 002:168.617 JLINK_ReadReg(R0)
+T567C 002:168.633 - 0.023ms returns 0x00000000
+T567C 002:169.725 JLINK_WriteReg(R0, 0x08000C00)
+T567C 002:169.748 - 0.030ms returns 0x00
+T567C 002:169.763 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:169.776 - 0.019ms returns 0x00
+T567C 002:169.791 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:169.804 - 0.019ms returns 0x00
+T567C 002:169.818 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:169.831 - 0.018ms returns 0x00
+T567C 002:169.845 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:169.858 - 0.019ms returns 0x00
+T567C 002:169.872 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:169.884 - 0.018ms returns 0x00
+T567C 002:169.899 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:169.911 - 0.018ms returns 0x00
+T567C 002:169.925 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:169.938 - 0.020ms returns 0x00
+T567C 002:169.954 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:169.967 - 0.019ms returns 0x00
+T567C 002:169.981 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:169.993 - 0.018ms returns 0x00
+T567C 002:170.007 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:170.020 - 0.018ms returns 0x00
+T567C 002:170.034 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:170.047 - 0.018ms returns 0x00
+T567C 002:170.061 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:170.076 - 0.020ms returns 0x00
+T567C 002:170.090 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:170.103 - 0.019ms returns 0x00
+T567C 002:170.118 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:170.130 - 0.019ms returns 0x00
+T567C 002:170.145 JLINK_WriteReg(R15 (PC), 0x20000020)
+T567C 002:170.157 - 0.018ms returns 0x00
+T567C 002:170.172 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:170.184 - 0.016ms returns 0x00
+T567C 002:170.196 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:170.206 - 0.016ms returns 0x00
+T567C 002:170.219 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:170.230 - 0.017ms returns 0x00
+T567C 002:170.243 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:170.253 - 0.015ms returns 0x00
+T567C 002:170.267   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:170.283 - 0.021ms returns 0x00000008
+T567C 002:170.295 JLINK_Go()
+T567C 002:170.313    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:173.358 - 3.077ms
+T567C 002:173.383 JLINK_IsHalted()
+T567C 002:176.050    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:176.499 - 3.132ms returns TRUE
+T567C 002:176.530 JLINK_ReadReg(R15 (PC))
+T567C 002:176.549 - 0.029ms returns 0x20000000
+T567C 002:176.570 JLINK_ClrBPEx(BPHandle = 0x00000008)
+T567C 002:176.586 - 0.023ms returns 0x00
+T567C 002:176.604 JLINK_ReadReg(R0)
+T567C 002:176.620 - 0.023ms returns 0x00000001
+T567C 002:176.642 JLINK_WriteReg(R0, 0x08000C00)
+T567C 002:176.658 - 0.024ms returns 0x00
+T567C 002:176.676 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:176.692 - 0.023ms returns 0x00
+T567C 002:176.710 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:176.725 - 0.023ms returns 0x00
+T567C 002:176.743 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:176.758 - 0.023ms returns 0x00
+T567C 002:176.776 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:176.791 - 0.023ms returns 0x00
+T567C 002:176.809 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:176.825 - 0.023ms returns 0x00
+T567C 002:176.843 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:176.858 - 0.023ms returns 0x00
+T567C 002:176.876 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:176.892 - 0.023ms returns 0x00
+T567C 002:176.909 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:176.925 - 0.023ms returns 0x00
+T567C 002:176.942 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:176.958 - 0.023ms returns 0x00
+T567C 002:176.976 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:176.991 - 0.023ms returns 0x00
+T567C 002:177.009 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:177.025 - 0.023ms returns 0x00
+T567C 002:177.042 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:177.058 - 0.023ms returns 0x00
+T567C 002:177.076 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:177.092 - 0.024ms returns 0x00
+T567C 002:177.110 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:177.126 - 0.023ms returns 0x00
+T567C 002:177.143 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T567C 002:177.159 - 0.025ms returns 0x00
+T567C 002:177.179 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:177.191 - 0.017ms returns 0x00
+T567C 002:177.204 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:177.214 - 0.016ms returns 0x00
+T567C 002:177.227 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:177.238 - 0.016ms returns 0x00
+T567C 002:177.251 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:177.261 - 0.018ms returns 0x00
+T567C 002:177.277   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:177.293 - 0.022ms returns 0x00000009
+T567C 002:177.306 JLINK_Go()
+T567C 002:177.322    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:180.352 - 3.059ms
+T567C 002:180.376 JLINK_IsHalted()
+T567C 002:180.744 - 0.378ms returns FALSE
+T567C 002:181.885 JLINK_IsHalted()
+T567C 002:182.242 - 0.364ms returns FALSE
+T567C 002:184.241 JLINK_IsHalted()
+T567C 002:184.619 - 0.390ms returns FALSE
+T567C 002:186.248 JLINK_IsHalted()
+T567C 002:186.652 - 0.420ms returns FALSE
+T567C 002:188.821 JLINK_IsHalted()
+T567C 002:189.256 - 0.447ms returns FALSE
+T567C 002:191.253 JLINK_IsHalted()
+T567C 002:191.621 - 0.380ms returns FALSE
+T567C 002:193.662 JLINK_IsHalted()
+T567C 002:194.139 - 0.491ms returns FALSE
+T567C 002:195.636 JLINK_IsHalted()
+T567C 002:195.997 - 0.373ms returns FALSE
+T567C 002:197.992 JLINK_IsHalted()
+T567C 002:198.371 - 0.391ms returns FALSE
+T567C 002:200.367 JLINK_IsHalted()
+T567C 002:200.742 - 0.387ms returns FALSE
+T567C 002:202.832 JLINK_IsHalted()
+T567C 002:205.539    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:206.024 - 3.207ms returns TRUE
+T567C 002:206.053 JLINK_ReadReg(R15 (PC))
+T567C 002:206.072 - 0.027ms returns 0x20000000
+T567C 002:206.092 JLINK_ClrBPEx(BPHandle = 0x00000009)
+T567C 002:206.108 - 0.023ms returns 0x00
+T567C 002:206.126 JLINK_ReadReg(R0)
+T567C 002:206.142 - 0.023ms returns 0x00000000
+T567C 002:207.005 JLINK_WriteReg(R0, 0x08001000)
+T567C 002:207.027 - 0.028ms returns 0x00
+T567C 002:207.040 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:207.051 - 0.016ms returns 0x00
+T567C 002:207.063 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:207.074 - 0.016ms returns 0x00
+T567C 002:207.087 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:207.098 - 0.015ms returns 0x00
+T567C 002:207.110 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:207.120 - 0.016ms returns 0x00
+T567C 002:207.133 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:207.148 - 0.021ms returns 0x00
+T567C 002:207.161 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:207.171 - 0.016ms returns 0x00
+T567C 002:207.184 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:207.194 - 0.016ms returns 0x00
+T567C 002:207.207 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:207.218 - 0.016ms returns 0x00
+T567C 002:207.230 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:207.241 - 0.016ms returns 0x00
+T567C 002:207.253 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:207.263 - 0.016ms returns 0x00
+T567C 002:207.276 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:207.287 - 0.016ms returns 0x00
+T567C 002:207.299 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:207.310 - 0.015ms returns 0x00
+T567C 002:207.322 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:207.334 - 0.017ms returns 0x00
+T567C 002:207.346 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:207.357 - 0.016ms returns 0x00
+T567C 002:207.369 JLINK_WriteReg(R15 (PC), 0x20000020)
+T567C 002:207.380 - 0.016ms returns 0x00
+T567C 002:207.392 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:207.403 - 0.016ms returns 0x00
+T567C 002:207.415 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:207.426 - 0.016ms returns 0x00
+T567C 002:207.438 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:207.449 - 0.016ms returns 0x00
+T567C 002:207.462 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:207.473 - 0.016ms returns 0x00
+T567C 002:207.485   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:207.501 - 0.021ms returns 0x0000000A
+T567C 002:207.514 JLINK_Go()
+T567C 002:207.531    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:210.612 - 3.113ms
+T567C 002:210.641 JLINK_IsHalted()
+T567C 002:213.288    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:213.749 - 3.120ms returns TRUE
+T567C 002:213.775 JLINK_ReadReg(R15 (PC))
+T567C 002:213.794 - 0.026ms returns 0x20000000
+T567C 002:213.812 JLINK_ClrBPEx(BPHandle = 0x0000000A)
+T567C 002:213.829 - 0.024ms returns 0x00
+T567C 002:213.848 JLINK_ReadReg(R0)
+T567C 002:213.863 - 0.023ms returns 0x00000001
+T567C 002:213.885 JLINK_WriteReg(R0, 0x08001000)
+T567C 002:213.901 - 0.024ms returns 0x00
+T567C 002:213.919 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:213.935 - 0.023ms returns 0x00
+T567C 002:213.953 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:213.969 - 0.023ms returns 0x00
+T567C 002:213.986 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:214.002 - 0.023ms returns 0x00
+T567C 002:214.020 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:214.035 - 0.023ms returns 0x00
+T567C 002:214.053 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:214.069 - 0.023ms returns 0x00
+T567C 002:214.087 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:214.102 - 0.023ms returns 0x00
+T567C 002:214.120 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:214.135 - 0.023ms returns 0x00
+T567C 002:214.153 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:214.169 - 0.023ms returns 0x00
+T567C 002:214.187 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:214.203 - 0.023ms returns 0x00
+T567C 002:214.221 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:214.234 - 0.019ms returns 0x00
+T567C 002:214.249 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:214.262 - 0.019ms returns 0x00
+T567C 002:214.276 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:214.290 - 0.019ms returns 0x00
+T567C 002:214.304 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:214.318 - 0.019ms returns 0x00
+T567C 002:214.333 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:214.346 - 0.019ms returns 0x00
+T567C 002:214.361 JLINK_WriteReg(R15 (PC), 0x200000B6)
+T567C 002:214.374 - 0.019ms returns 0x00
+T567C 002:214.389 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:214.402 - 0.019ms returns 0x00
+T567C 002:214.416 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:214.429 - 0.019ms returns 0x00
+T567C 002:214.444 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:214.457 - 0.019ms returns 0x00
+T567C 002:214.472 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:214.485 - 0.019ms returns 0x00
+T567C 002:214.501   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:214.524 - 0.030ms returns 0x0000000B
+T567C 002:214.539 JLINK_Go()
+T567C 002:214.557    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:217.737 - 3.216ms
+T567C 002:217.770 JLINK_IsHalted()
+T567C 002:218.136 - 0.378ms returns FALSE
+T567C 002:220.165 JLINK_IsHalted()
+T567C 002:220.629 - 0.475ms returns FALSE
+T567C 002:222.626 JLINK_IsHalted()
+T567C 002:222.996 - 0.382ms returns FALSE
+T567C 002:224.992 JLINK_IsHalted()
+T567C 002:225.370 - 0.388ms returns FALSE
+T567C 002:227.127 JLINK_IsHalted()
+T567C 002:227.505 - 0.389ms returns FALSE
+T567C 002:229.497 JLINK_IsHalted()
+T567C 002:229.880 - 0.396ms returns FALSE
+T567C 002:231.875 JLINK_IsHalted()
+T567C 002:232.242 - 0.379ms returns FALSE
+T567C 002:234.099 JLINK_IsHalted()
+T567C 002:234.503 - 0.415ms returns FALSE
+T567C 002:236.503 JLINK_IsHalted()
+T567C 002:236.880 - 0.390ms returns FALSE
+T567C 002:238.876 JLINK_IsHalted()
+T567C 002:239.268 - 0.405ms returns FALSE
+T567C 002:241.263 JLINK_IsHalted()
+T567C 002:243.912    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:244.364 - 3.112ms returns TRUE
+T567C 002:244.391 JLINK_ReadReg(R15 (PC))
+T567C 002:244.406 - 0.022ms returns 0x20000000
+T567C 002:244.424 JLINK_ClrBPEx(BPHandle = 0x0000000B)
+T567C 002:244.438 - 0.020ms returns 0x00
+T567C 002:244.455 JLINK_ReadReg(R0)
+T567C 002:244.468 - 0.020ms returns 0x00000000
+T567C 002:245.013 JLINK_WriteReg(R0, 0x00000001)
+T567C 002:245.038 - 0.032ms returns 0x00
+T567C 002:245.054 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:245.067 - 0.019ms returns 0x00
+T567C 002:245.082 JLINK_WriteReg(R2, 0x000000FF)
+T567C 002:245.095 - 0.019ms returns 0x00
+T567C 002:245.110 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:245.123 - 0.019ms returns 0x00
+T567C 002:245.137 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:245.151 - 0.020ms returns 0x00
+T567C 002:245.166 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:245.179 - 0.019ms returns 0x00
+T567C 002:245.194 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:245.207 - 0.019ms returns 0x00
+T567C 002:245.221 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:245.234 - 0.019ms returns 0x00
+T567C 002:245.249 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:245.262 - 0.019ms returns 0x00
+T567C 002:245.276 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:245.289 - 0.018ms returns 0x00
+T567C 002:245.301 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:245.312 - 0.015ms returns 0x00
+T567C 002:245.324 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:245.335 - 0.015ms returns 0x00
+T567C 002:245.347 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:245.358 - 0.016ms returns 0x00
+T567C 002:245.370 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:245.381 - 0.016ms returns 0x00
+T567C 002:245.394 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:245.404 - 0.016ms returns 0x00
+T567C 002:245.416 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T567C 002:245.427 - 0.016ms returns 0x00
+T567C 002:245.439 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:245.450 - 0.015ms returns 0x00
+T567C 002:245.462 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:245.473 - 0.015ms returns 0x00
+T567C 002:245.485 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:245.495 - 0.015ms returns 0x00
+T567C 002:245.508 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:245.518 - 0.015ms returns 0x00
+T567C 002:245.531   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:245.547 - 0.021ms returns 0x0000000C
+T567C 002:245.560 JLINK_Go()
+T567C 002:245.576    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:248.621 - 3.080ms
+T567C 002:248.661 JLINK_IsHalted()
+T567C 002:251.434    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:251.876 - 3.228ms returns TRUE
+T567C 002:251.904 JLINK_ReadReg(R15 (PC))
+T567C 002:251.923 - 0.028ms returns 0x20000000
+T567C 002:251.942 JLINK_ClrBPEx(BPHandle = 0x0000000C)
+T567C 002:251.959 - 0.024ms returns 0x00
+T567C 002:251.977 JLINK_ReadReg(R0)
+T567C 002:251.993 - 0.023ms returns 0x00000000
+T567C 002:313.488 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T567C 002:313.512   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T567C 002:313.546    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T567C 002:315.835 - 2.370ms returns 0x164
+T567C 002:315.929 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:315.954 - 0.034ms returns 0x00
+T567C 002:315.973 JLINK_WriteReg(R1, 0x007A1200)
+T567C 002:315.997 - 0.032ms returns 0x00
+T567C 002:316.016 JLINK_WriteReg(R2, 0x00000002)
+T567C 002:316.032 - 0.023ms returns 0x00
+T567C 002:316.050 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:316.066 - 0.023ms returns 0x00
+T567C 002:316.083 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:316.098 - 0.023ms returns 0x00
+T567C 002:316.116 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:316.132 - 0.023ms returns 0x00
+T567C 002:316.149 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:316.165 - 0.023ms returns 0x00
+T567C 002:316.182 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:316.198 - 0.023ms returns 0x00
+T567C 002:316.215 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:316.231 - 0.023ms returns 0x00
+T567C 002:316.249 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:316.264 - 0.023ms returns 0x00
+T567C 002:316.282 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:316.297 - 0.023ms returns 0x00
+T567C 002:316.315 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:316.330 - 0.023ms returns 0x00
+T567C 002:316.348 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:316.363 - 0.023ms returns 0x00
+T567C 002:316.381 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:316.399 - 0.025ms returns 0x00
+T567C 002:316.416 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:316.432 - 0.023ms returns 0x00
+T567C 002:316.449 JLINK_WriteReg(R15 (PC), 0x20000038)
+T567C 002:316.465 - 0.022ms returns 0x00
+T567C 002:316.480 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:316.491 - 0.016ms returns 0x00
+T567C 002:316.503 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:316.521 - 0.023ms returns 0x00
+T567C 002:316.533 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:316.544 - 0.015ms returns 0x00
+T567C 002:316.556 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:316.567 - 0.015ms returns 0x00
+T567C 002:316.581   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:316.601    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:317.030 - 0.462ms returns 0x0000000D
+T567C 002:317.055 JLINK_Go()
+T567C 002:317.074    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T567C 002:317.530    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:320.488 - 3.446ms
+T567C 002:320.517 JLINK_IsHalted()
+T567C 002:323.225    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:323.624 - 3.119ms returns TRUE
+T567C 002:323.655 JLINK_ReadReg(R15 (PC))
+T567C 002:323.674 - 0.028ms returns 0x20000000
+T567C 002:323.696 JLINK_ClrBPEx(BPHandle = 0x0000000D)
+T567C 002:323.712 - 0.024ms returns 0x00
+T567C 002:323.733 JLINK_ReadReg(R0)
+T567C 002:323.761 - 0.035ms returns 0x00000000
+T567C 002:324.385 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T567C 002:324.420   Data:  B8 06 00 20 89 01 00 08 7B 0F 00 08 95 0E 00 08 ...
+T567C 002:324.454    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T567C 002:328.154 - 3.791ms returns 0x29C
+T567C 002:328.191 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T567C 002:328.206   Data:  DF F8 B8 91 00 24 09 F1 04 0A 0A F1 04 0B 23 46 ...
+T567C 002:328.242    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T567C 002:330.422 - 2.253ms returns 0x164
+T567C 002:330.471 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:330.487 - 0.024ms returns 0x00
+T567C 002:330.504 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:330.516 - 0.017ms returns 0x00
+T567C 002:330.528 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:330.539 - 0.016ms returns 0x00
+T567C 002:330.552 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:330.562 - 0.016ms returns 0x00
+T567C 002:330.575 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:330.585 - 0.015ms returns 0x00
+T567C 002:330.597 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:330.608 - 0.015ms returns 0x00
+T567C 002:330.620 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:330.631 - 0.016ms returns 0x00
+T567C 002:330.643 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:330.654 - 0.016ms returns 0x00
+T567C 002:330.666 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:330.677 - 0.016ms returns 0x00
+T567C 002:330.690 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:330.700 - 0.016ms returns 0x00
+T567C 002:330.713 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:330.724 - 0.016ms returns 0x00
+T567C 002:330.736 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:330.802 - 0.075ms returns 0x00
+T567C 002:330.819 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:330.830 - 0.016ms returns 0x00
+T567C 002:330.843 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:330.887 - 0.050ms returns 0x00
+T567C 002:330.900 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:330.911 - 0.016ms returns 0x00
+T567C 002:330.924 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T567C 002:330.934 - 0.016ms returns 0x00
+T567C 002:330.947 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:330.958 - 0.016ms returns 0x00
+T567C 002:330.970 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:330.981 - 0.016ms returns 0x00
+T567C 002:330.993 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:331.004 - 0.016ms returns 0x00
+T567C 002:331.016 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:331.027 - 0.016ms returns 0x00
+T567C 002:331.040   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:331.056 - 0.022ms returns 0x0000000E
+T567C 002:331.069 JLINK_Go()
+T567C 002:331.086    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:334.139 - 3.089ms
+T567C 002:334.174 JLINK_IsHalted()
+T567C 002:334.616 - 0.452ms returns FALSE
+T567C 002:338.247 JLINK_IsHalted()
+T567C 002:338.632 - 0.398ms returns FALSE
+T567C 002:340.627 JLINK_IsHalted()
+T567C 002:341.139 - 0.525ms returns FALSE
+T567C 002:342.790 JLINK_IsHalted()
+T567C 002:343.250 - 0.474ms returns FALSE
+T567C 002:345.805 JLINK_IsHalted()
+T567C 002:346.246 - 0.454ms returns FALSE
+T567C 002:348.243 JLINK_IsHalted()
+T567C 002:348.618 - 0.387ms returns FALSE
+T567C 002:350.426 JLINK_IsHalted()
+T567C 002:350.878 - 0.464ms returns FALSE
+T567C 002:352.514 JLINK_IsHalted()
+T567C 002:352.871 - 0.370ms returns FALSE
+T567C 002:354.866 JLINK_IsHalted()
+T567C 002:355.246 - 0.392ms returns FALSE
+T567C 002:357.243 JLINK_IsHalted()
+T567C 002:357.665 - 0.435ms returns FALSE
+T567C 002:361.244 JLINK_IsHalted()
+T567C 002:361.626 - 0.393ms returns FALSE
+T567C 002:363.240 JLINK_IsHalted()
+T567C 002:363.612 - 0.382ms returns FALSE
+T567C 002:365.608 JLINK_IsHalted()
+T567C 002:368.290    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:368.747 - 3.150ms returns TRUE
+T567C 002:368.770 JLINK_ReadReg(R15 (PC))
+T567C 002:368.786 - 0.023ms returns 0x20000000
+T567C 002:368.802 JLINK_ClrBPEx(BPHandle = 0x0000000E)
+T567C 002:368.816 - 0.020ms returns 0x00
+T567C 002:368.832 JLINK_ReadReg(R0)
+T567C 002:368.845 - 0.019ms returns 0x00000000
+T567C 002:369.790 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T567C 002:369.810   Data:  01 D5 16 43 00 E0 96 43 2E 60 4D 68 DA F8 00 60 ...
+T567C 002:369.834    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T567C 002:373.509 - 3.735ms returns 0x29C
+T567C 002:373.540 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T567C 002:373.557   Data:  20 F4 E0 60 08 43 60 60 28 78 00 07 06 D5 60 68 ...
+T567C 002:373.587    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T567C 002:375.792 - 2.264ms returns 0x164
+T567C 002:375.820 JLINK_WriteReg(R0, 0x08000400)
+T567C 002:375.834 - 0.020ms returns 0x00
+T567C 002:375.849 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:375.860 - 0.016ms returns 0x00
+T567C 002:375.874 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:375.885 - 0.016ms returns 0x00
+T567C 002:375.899 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:375.910 - 0.016ms returns 0x00
+T567C 002:375.923 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:375.934 - 0.016ms returns 0x00
+T567C 002:375.948 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:375.961 - 0.019ms returns 0x00
+T567C 002:375.980 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:375.996 - 0.023ms returns 0x00
+T567C 002:376.016 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:376.032 - 0.024ms returns 0x00
+T567C 002:376.052 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:376.068 - 0.023ms returns 0x00
+T567C 002:376.088 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:376.104 - 0.023ms returns 0x00
+T567C 002:376.124 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:376.140 - 0.023ms returns 0x00
+T567C 002:376.160 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:376.176 - 0.023ms returns 0x00
+T567C 002:376.196 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:376.212 - 0.023ms returns 0x00
+T567C 002:376.237 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:376.258 - 0.028ms returns 0x00
+T567C 002:376.280 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:376.296 - 0.024ms returns 0x00
+T567C 002:376.316 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T567C 002:376.332 - 0.023ms returns 0x00
+T567C 002:376.352 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:376.368 - 0.024ms returns 0x00
+T567C 002:376.388 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:376.404 - 0.023ms returns 0x00
+T567C 002:376.424 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:376.440 - 0.023ms returns 0x00
+T567C 002:376.461 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:376.476 - 0.023ms returns 0x00
+T567C 002:376.497   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:376.521 - 0.032ms returns 0x0000000F
+T567C 002:376.542 JLINK_Go()
+T567C 002:376.568    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:379.610 - 3.080ms
+T567C 002:379.637 JLINK_IsHalted()
+T567C 002:380.003 - 0.376ms returns FALSE
+T567C 002:382.001 JLINK_IsHalted()
+T567C 002:382.378 - 0.389ms returns FALSE
+T567C 002:384.090 JLINK_IsHalted()
+T567C 002:384.500 - 0.421ms returns FALSE
+T567C 002:386.492 JLINK_IsHalted()
+T567C 002:386.871 - 0.390ms returns FALSE
+T567C 002:388.866 JLINK_IsHalted()
+T567C 002:389.338 - 0.489ms returns FALSE
+T567C 002:391.332 JLINK_IsHalted()
+T567C 002:391.776 - 0.457ms returns FALSE
+T567C 002:393.772 JLINK_IsHalted()
+T567C 002:394.140 - 0.380ms returns FALSE
+T567C 002:395.790 JLINK_IsHalted()
+T567C 002:396.255 - 0.477ms returns FALSE
+T567C 002:398.251 JLINK_IsHalted()
+T567C 002:398.617 - 0.376ms returns FALSE
+T567C 002:400.275 JLINK_IsHalted()
+T567C 002:400.766 - 0.503ms returns FALSE
+T567C 002:402.763 JLINK_IsHalted()
+T567C 002:403.139 - 0.388ms returns FALSE
+T567C 002:404.853 JLINK_IsHalted()
+T567C 002:405.336 - 0.498ms returns FALSE
+T567C 002:406.949 JLINK_IsHalted()
+T567C 002:407.380 - 0.443ms returns FALSE
+T567C 002:409.375 JLINK_IsHalted()
+T567C 002:409.745 - 0.382ms returns FALSE
+T567C 002:411.741 JLINK_IsHalted()
+T567C 002:414.423    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:414.871 - 3.142ms returns TRUE
+T567C 002:414.898 JLINK_ReadReg(R15 (PC))
+T567C 002:414.917 - 0.027ms returns 0x20000000
+T567C 002:414.935 JLINK_ClrBPEx(BPHandle = 0x0000000F)
+T567C 002:414.952 - 0.024ms returns 0x00
+T567C 002:414.971 JLINK_ReadReg(R0)
+T567C 002:414.987 - 0.023ms returns 0x00000000
+T567C 002:416.027 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T567C 002:416.046   Data:  80 07 4F F0 01 09 4F F0 00 08 39 D5 68 68 10 F0 ...
+T567C 002:416.069    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T567C 002:419.729 - 3.717ms returns 0x29C
+T567C 002:419.758 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T567C 002:419.775   Data:  00 20 10 BD 70 47 70 47 70 B5 90 F8 3C 20 01 2A ...
+T567C 002:419.805    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T567C 002:422.036 - 2.292ms returns 0x164
+T567C 002:422.065 JLINK_WriteReg(R0, 0x08000800)
+T567C 002:422.082 - 0.023ms returns 0x00
+T567C 002:422.096 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:422.110 - 0.019ms returns 0x00
+T567C 002:422.124 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:422.137 - 0.019ms returns 0x00
+T567C 002:422.151 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:422.164 - 0.019ms returns 0x00
+T567C 002:422.178 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:422.191 - 0.019ms returns 0x00
+T567C 002:422.205 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:422.218 - 0.019ms returns 0x00
+T567C 002:422.232 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:422.245 - 0.018ms returns 0x00
+T567C 002:422.259 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:422.272 - 0.019ms returns 0x00
+T567C 002:422.286 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:422.299 - 0.019ms returns 0x00
+T567C 002:422.313 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:422.326 - 0.019ms returns 0x00
+T567C 002:422.340 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:422.354 - 0.019ms returns 0x00
+T567C 002:422.368 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:422.381 - 0.018ms returns 0x00
+T567C 002:422.395 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:422.408 - 0.023ms returns 0x00
+T567C 002:422.429 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:422.442 - 0.020ms returns 0x00
+T567C 002:422.457 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:422.470 - 0.019ms returns 0x00
+T567C 002:422.484 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T567C 002:422.497 - 0.019ms returns 0x00
+T567C 002:422.512 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:422.525 - 0.019ms returns 0x00
+T567C 002:422.539 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:422.552 - 0.019ms returns 0x00
+T567C 002:422.565 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:422.576 - 0.016ms returns 0x00
+T567C 002:422.589 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:422.599 - 0.017ms returns 0x00
+T567C 002:422.613   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:422.630 - 0.022ms returns 0x00000010
+T567C 002:422.643 JLINK_Go()
+T567C 002:422.659    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:425.612 - 2.986ms
+T567C 002:425.643 JLINK_IsHalted()
+T567C 002:425.992 - 0.359ms returns FALSE
+T567C 002:427.989 JLINK_IsHalted()
+T567C 002:428.380 - 0.403ms returns FALSE
+T567C 002:430.383 JLINK_IsHalted()
+T567C 002:430.751 - 0.378ms returns FALSE
+T567C 002:432.479 JLINK_IsHalted()
+T567C 002:432.863 - 0.392ms returns FALSE
+T567C 002:434.860 JLINK_IsHalted()
+T567C 002:435.244 - 0.396ms returns FALSE
+T567C 002:437.068 JLINK_IsHalted()
+T567C 002:437.500 - 0.441ms returns FALSE
+T567C 002:439.499 JLINK_IsHalted()
+T567C 002:439.879 - 0.392ms returns FALSE
+T567C 002:441.875 JLINK_IsHalted()
+T567C 002:442.254 - 0.392ms returns FALSE
+T567C 002:444.250 JLINK_IsHalted()
+T567C 002:444.621 - 0.383ms returns FALSE
+T567C 002:446.617 JLINK_IsHalted()
+T567C 002:446.995 - 0.391ms returns FALSE
+T567C 002:448.991 JLINK_IsHalted()
+T567C 002:449.368 - 0.390ms returns FALSE
+T567C 002:450.991 JLINK_IsHalted()
+T567C 002:451.370 - 0.391ms returns FALSE
+T567C 002:453.233 JLINK_IsHalted()
+T567C 002:453.631 - 0.410ms returns FALSE
+T567C 002:456.247 JLINK_IsHalted()
+T567C 002:458.913    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:459.363 - 3.129ms returns TRUE
+T567C 002:459.395 JLINK_ReadReg(R15 (PC))
+T567C 002:459.415 - 0.028ms returns 0x20000000
+T567C 002:459.436 JLINK_ClrBPEx(BPHandle = 0x00000010)
+T567C 002:459.453 - 0.024ms returns 0x00
+T567C 002:459.473 JLINK_ReadReg(R0)
+T567C 002:459.489 - 0.023ms returns 0x00000000
+T567C 002:460.500 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T567C 002:460.524   Data:  01 28 17 D0 01 25 84 F8 3C 50 02 20 84 F8 3D 00 ...
+T567C 002:460.552    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T567C 002:464.261 - 3.776ms returns 0x29C
+T567C 002:464.291 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T567C 002:464.307   Data:  00 24 14 48 00 94 01 94 02 94 03 94 81 69 41 F0 ...
+T567C 002:464.337    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T567C 002:466.578 - 2.300ms returns 0x164
+T567C 002:466.610 JLINK_WriteReg(R0, 0x08000C00)
+T567C 002:466.629 - 0.027ms returns 0x00
+T567C 002:466.647 JLINK_WriteReg(R1, 0x00000400)
+T567C 002:466.664 - 0.024ms returns 0x00
+T567C 002:466.681 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:466.697 - 0.023ms returns 0x00
+T567C 002:466.715 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:466.730 - 0.023ms returns 0x00
+T567C 002:466.748 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:466.764 - 0.023ms returns 0x00
+T567C 002:466.782 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:466.797 - 0.023ms returns 0x00
+T567C 002:466.815 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:466.831 - 0.023ms returns 0x00
+T567C 002:466.849 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:466.864 - 0.023ms returns 0x00
+T567C 002:466.882 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:466.898 - 0.023ms returns 0x00
+T567C 002:466.916 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:466.931 - 0.023ms returns 0x00
+T567C 002:466.949 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:466.964 - 0.023ms returns 0x00
+T567C 002:466.982 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:466.998 - 0.023ms returns 0x00
+T567C 002:467.016 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:467.032 - 0.023ms returns 0x00
+T567C 002:467.050 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:467.071 - 0.031ms returns 0x00
+T567C 002:467.092 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:467.108 - 0.023ms returns 0x00
+T567C 002:467.126 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T567C 002:467.142 - 0.023ms returns 0x00
+T567C 002:467.159 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:467.175 - 0.023ms returns 0x00
+T567C 002:467.193 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:467.209 - 0.023ms returns 0x00
+T567C 002:467.227 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:467.243 - 0.023ms returns 0x00
+T567C 002:467.261 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:467.277 - 0.023ms returns 0x00
+T567C 002:467.295   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:467.319 - 0.031ms returns 0x00000011
+T567C 002:467.337 JLINK_Go()
+T567C 002:467.361    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:470.602 - 3.282ms
+T567C 002:470.631 JLINK_IsHalted()
+T567C 002:470.992 - 0.371ms returns FALSE
+T567C 002:472.992 JLINK_IsHalted()
+T567C 002:473.380 - 0.402ms returns FALSE
+T567C 002:475.375 JLINK_IsHalted()
+T567C 002:475.755 - 0.392ms returns FALSE
+T567C 002:477.750 JLINK_IsHalted()
+T567C 002:478.140 - 0.402ms returns FALSE
+T567C 002:480.137 JLINK_IsHalted()
+T567C 002:480.495 - 0.371ms returns FALSE
+T567C 002:482.491 JLINK_IsHalted()
+T567C 002:482.935 - 0.457ms returns FALSE
+T567C 002:484.557 JLINK_IsHalted()
+T567C 002:485.015 - 0.471ms returns FALSE
+T567C 002:486.758 JLINK_IsHalted()
+T567C 002:487.141 - 0.395ms returns FALSE
+T567C 002:489.135 JLINK_IsHalted()
+T567C 002:489.491 - 0.368ms returns FALSE
+T567C 002:491.278 JLINK_IsHalted()
+T567C 002:491.629 - 0.364ms returns FALSE
+T567C 002:493.625 JLINK_IsHalted()
+T567C 002:493.993 - 0.380ms returns FALSE
+T567C 002:495.642 JLINK_IsHalted()
+T567C 002:495.993 - 0.363ms returns FALSE
+T567C 002:497.649 JLINK_IsHalted()
+T567C 002:498.049 - 0.415ms returns FALSE
+T567C 002:500.040 JLINK_IsHalted()
+T567C 002:500.502 - 0.474ms returns FALSE
+T567C 002:502.501 JLINK_IsHalted()
+T567C 002:505.223    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:505.620 - 3.132ms returns TRUE
+T567C 002:505.647 JLINK_ReadReg(R15 (PC))
+T567C 002:505.666 - 0.028ms returns 0x20000000
+T567C 002:505.685 JLINK_ClrBPEx(BPHandle = 0x00000011)
+T567C 002:505.702 - 0.024ms returns 0x00
+T567C 002:505.720 JLINK_ReadReg(R0)
+T567C 002:505.736 - 0.023ms returns 0x00000000
+T567C 002:507.124 JLINK_WriteMem(0x20000164, 0x029C Bytes, ...)
+T567C 002:507.144   Data:  05 D0 B8 42 03 D0 A0 42 01 D0 A8 42 03 D1 22 F0 ...
+T567C 002:507.167    -- CPU_WriteMem(668 bytes @ 0x20000164)
+T567C 002:510.847 - 3.737ms returns 0x29C
+T567C 002:510.880 JLINK_WriteMem(0x20000400, 0x0164 Bytes, ...)
+T567C 002:510.896   Data:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF ...
+T567C 002:510.926    -- CPU_WriteMem(356 bytes @ 0x20000400)
+T567C 002:513.139 - 2.272ms returns 0x164
+T567C 002:513.255 JLINK_WriteReg(R0, 0x08001000)
+T567C 002:513.305 - 0.070ms returns 0x00
+T567C 002:513.345 JLINK_WriteReg(R1, 0x000001E4)
+T567C 002:513.365 - 0.029ms returns 0x00
+T567C 002:513.387 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:513.406 - 0.028ms returns 0x00
+T567C 002:513.437 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:513.464 - 0.036ms returns 0x00
+T567C 002:513.485 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:513.503 - 0.027ms returns 0x00
+T567C 002:513.525 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:513.543 - 0.027ms returns 0x00
+T567C 002:513.564 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:513.582 - 0.027ms returns 0x00
+T567C 002:513.603 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:513.622 - 0.027ms returns 0x00
+T567C 002:513.643 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:513.661 - 0.027ms returns 0x00
+T567C 002:513.682 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:513.700 - 0.027ms returns 0x00
+T567C 002:513.721 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:513.740 - 0.027ms returns 0x00
+T567C 002:513.761 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:513.780 - 0.028ms returns 0x00
+T567C 002:513.801 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:513.819 - 0.027ms returns 0x00
+T567C 002:513.841 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:513.868 - 0.037ms returns 0x00
+T567C 002:513.889 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:513.908 - 0.027ms returns 0x00
+T567C 002:513.929 JLINK_WriteReg(R15 (PC), 0x200000F4)
+T567C 002:513.948 - 0.027ms returns 0x00
+T567C 002:513.969 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:513.987 - 0.027ms returns 0x00
+T567C 002:514.009 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:514.027 - 0.027ms returns 0x00
+T567C 002:514.048 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:514.067 - 0.027ms returns 0x00
+T567C 002:514.088 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:514.116 - 0.043ms returns 0x00
+T567C 002:514.145   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:514.174 - 0.038ms returns 0x00000012
+T567C 002:514.195 JLINK_Go()
+T567C 002:514.224    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:517.363 - 3.188ms
+T567C 002:517.398 JLINK_IsHalted()
+T567C 002:517.746 - 0.360ms returns FALSE
+T567C 002:522.828 JLINK_IsHalted()
+T567C 002:523.269 - 0.454ms returns FALSE
+T567C 002:525.262 JLINK_IsHalted()
+T567C 002:525.621 - 0.372ms returns FALSE
+T567C 002:527.620 JLINK_IsHalted()
+T567C 002:527.994 - 0.386ms returns FALSE
+T567C 002:529.616 JLINK_IsHalted()
+T567C 002:530.135 - 0.529ms returns FALSE
+T567C 002:532.134 JLINK_IsHalted()
+T567C 002:534.812    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:535.249 - 3.126ms returns TRUE
+T567C 002:535.274 JLINK_ReadReg(R15 (PC))
+T567C 002:535.294 - 0.027ms returns 0x20000000
+T567C 002:535.313 JLINK_ClrBPEx(BPHandle = 0x00000012)
+T567C 002:535.330 - 0.024ms returns 0x00
+T567C 002:535.348 JLINK_ReadReg(R0)
+T567C 002:535.365 - 0.023ms returns 0x00000000
+T567C 002:535.387 JLINK_WriteReg(R0, 0x00000002)
+T567C 002:535.403 - 0.024ms returns 0x00
+T567C 002:535.421 JLINK_WriteReg(R1, 0x000001E4)
+T567C 002:535.437 - 0.023ms returns 0x00
+T567C 002:535.455 JLINK_WriteReg(R2, 0x20000164)
+T567C 002:535.471 - 0.023ms returns 0x00
+T567C 002:535.489 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:535.504 - 0.023ms returns 0x00
+T567C 002:535.522 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:535.538 - 0.023ms returns 0x00
+T567C 002:535.556 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:535.571 - 0.023ms returns 0x00
+T567C 002:535.589 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:535.605 - 0.023ms returns 0x00
+T567C 002:535.622 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:535.638 - 0.023ms returns 0x00
+T567C 002:535.656 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:535.674 - 0.025ms returns 0x00
+T567C 002:535.692 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:535.708 - 0.023ms returns 0x00
+T567C 002:535.725 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:535.741 - 0.023ms returns 0x00
+T567C 002:535.759 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:535.775 - 0.023ms returns 0x00
+T567C 002:535.792 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:535.808 - 0.023ms returns 0x00
+T567C 002:535.826 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:535.842 - 0.023ms returns 0x00
+T567C 002:535.859 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:535.875 - 0.026ms returns 0x00
+T567C 002:535.894 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T567C 002:535.905 - 0.016ms returns 0x00
+T567C 002:535.917 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:535.928 - 0.016ms returns 0x00
+T567C 002:535.940 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:535.951 - 0.016ms returns 0x00
+T567C 002:535.963 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:535.974 - 0.016ms returns 0x00
+T567C 002:535.987 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:535.997 - 0.016ms returns 0x00
+T567C 002:536.016   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:536.035 - 0.030ms returns 0x00000013
+T567C 002:536.050 JLINK_Go()
+T567C 002:536.069    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:539.140 - 3.105ms
+T567C 002:539.173 JLINK_IsHalted()
+T567C 002:541.923    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:542.375 - 3.214ms returns TRUE
+T567C 002:542.405 JLINK_ReadReg(R15 (PC))
+T567C 002:542.424 - 0.027ms returns 0x20000000
+T567C 002:542.445 JLINK_ClrBPEx(BPHandle = 0x00000013)
+T567C 002:542.461 - 0.027ms returns 0x00
+T567C 002:542.489 JLINK_ReadReg(R0)
+T567C 002:542.506 - 0.024ms returns 0x00000000
+T567C 002:602.452 JLINK_WriteMem(0x20000000, 0x0164 Bytes, ...)
+T567C 002:602.476   Data:  00 BE 0A E0 0D 78 2D 06 68 40 08 24 40 00 00 D3 ...
+T567C 002:602.509    -- CPU_WriteMem(356 bytes @ 0x20000000)
+T567C 002:604.810 - 2.381ms returns 0x164
+T567C 002:604.904 JLINK_WriteReg(R0, 0x08000000)
+T567C 002:604.933 - 0.039ms returns 0x00
+T567C 002:604.956 JLINK_WriteReg(R1, 0x007A1200)
+T567C 002:604.976 - 0.029ms returns 0x00
+T567C 002:604.997 JLINK_WriteReg(R2, 0x00000003)
+T567C 002:605.016 - 0.028ms returns 0x00
+T567C 002:605.037 JLINK_WriteReg(R3, 0x00000000)
+T567C 002:605.056 - 0.027ms returns 0x00
+T567C 002:605.077 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:605.095 - 0.027ms returns 0x00
+T567C 002:605.116 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:605.134 - 0.027ms returns 0x00
+T567C 002:605.156 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:605.174 - 0.027ms returns 0x00
+T567C 002:605.195 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:605.213 - 0.027ms returns 0x00
+T567C 002:605.234 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:605.253 - 0.027ms returns 0x00
+T567C 002:605.274 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:605.292 - 0.032ms returns 0x00
+T567C 002:605.319 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:605.337 - 0.027ms returns 0x00
+T567C 002:605.358 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:605.376 - 0.027ms returns 0x00
+T567C 002:605.397 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:605.416 - 0.027ms returns 0x00
+T567C 002:605.437 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:605.459 - 0.031ms returns 0x00
+T567C 002:605.480 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:605.499 - 0.027ms returns 0x00
+T567C 002:605.520 JLINK_WriteReg(R15 (PC), 0x20000038)
+T567C 002:605.539 - 0.029ms returns 0x00
+T567C 002:605.561 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:605.580 - 0.028ms returns 0x00
+T567C 002:605.601 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:605.620 - 0.028ms returns 0x00
+T567C 002:605.641 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:605.660 - 0.027ms returns 0x00
+T567C 002:605.681 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:605.699 - 0.027ms returns 0x00
+T567C 002:605.722   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:605.756    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:606.333 - 0.626ms returns 0x00000014
+T567C 002:606.360 JLINK_Go()
+T567C 002:606.376    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T567C 002:606.761    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:609.862 - 3.516ms
+T567C 002:609.888 JLINK_IsHalted()
+T567C 002:612.539    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:612.996 - 3.121ms returns TRUE
+T567C 002:613.023 JLINK_ReadReg(R15 (PC))
+T567C 002:613.041 - 0.024ms returns 0x20000000
+T567C 002:613.057 JLINK_ClrBPEx(BPHandle = 0x00000014)
+T567C 002:613.072 - 0.021ms returns 0x00
+T567C 002:613.088 JLINK_ReadReg(R0)
+T567C 002:613.101 - 0.020ms returns 0x00000000
+T567C 002:613.120 JLINK_WriteReg(R0, 0xFFFFFFFF)
+T567C 002:613.134 - 0.020ms returns 0x00
+T567C 002:613.149 JLINK_WriteReg(R1, 0x08000000)
+T567C 002:613.162 - 0.019ms returns 0x00
+T567C 002:613.177 JLINK_WriteReg(R2, 0x000011E4)
+T567C 002:613.190 - 0.020ms returns 0x00
+T567C 002:613.205 JLINK_WriteReg(R3, 0x04C11DB7)
+T567C 002:613.219 - 0.019ms returns 0x00
+T567C 002:613.234 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:613.247 - 0.019ms returns 0x00
+T567C 002:613.262 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:613.275 - 0.019ms returns 0x00
+T567C 002:613.290 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:613.303 - 0.019ms returns 0x00
+T567C 002:613.318 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:613.332 - 0.019ms returns 0x00
+T567C 002:613.346 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:613.360 - 0.019ms returns 0x00
+T567C 002:613.375 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:613.388 - 0.019ms returns 0x00
+T567C 002:613.403 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:613.416 - 0.019ms returns 0x00
+T567C 002:613.431 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:613.444 - 0.019ms returns 0x00
+T567C 002:613.463 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:613.479 - 0.022ms returns 0x00
+T567C 002:613.494 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:613.509 - 0.028ms returns 0x00
+T567C 002:613.538 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:613.552 - 0.020ms returns 0x00
+T567C 002:613.567 JLINK_WriteReg(R15 (PC), 0x20000002)
+T567C 002:613.580 - 0.019ms returns 0x00
+T567C 002:613.595 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:613.608 - 0.023ms returns 0x00
+T567C 002:613.627 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:613.641 - 0.019ms returns 0x00
+T567C 002:613.656 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:613.669 - 0.019ms returns 0x00
+T567C 002:613.684 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:613.697 - 0.020ms returns 0x00
+T567C 002:613.713   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:613.733 - 0.026ms returns 0x00000015
+T567C 002:613.748 JLINK_Go()
+T567C 002:613.768    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:616.733 - 2.999ms
+T567C 002:616.760 JLINK_IsHalted()
+T567C 002:617.141 - 0.397ms returns FALSE
+T567C 002:621.855 JLINK_IsHalted()
+T567C 002:622.254 - 0.414ms returns FALSE
+T567C 002:624.056 JLINK_IsHalted()
+T567C 002:624.491 - 0.449ms returns FALSE
+T567C 002:625.776 JLINK_IsHalted()
+T567C 002:626.254 - 0.490ms returns FALSE
+T567C 002:627.794 JLINK_IsHalted()
+T567C 002:628.252 - 0.471ms returns FALSE
+T567C 002:629.796 JLINK_IsHalted()
+T567C 002:630.252 - 0.469ms returns FALSE
+T567C 002:632.045 JLINK_IsHalted()
+T567C 002:632.503 - 0.469ms returns FALSE
+T567C 002:634.499 JLINK_IsHalted()
+T567C 002:634.870 - 0.383ms returns FALSE
+T567C 002:636.866 JLINK_IsHalted()
+T567C 002:637.253 - 0.399ms returns FALSE
+T567C 002:639.335 JLINK_IsHalted()
+T567C 002:639.737 - 0.411ms returns FALSE
+T567C 002:641.379 JLINK_IsHalted()
+T567C 002:641.745 - 0.378ms returns FALSE
+T567C 002:643.845 JLINK_IsHalted()
+T567C 002:644.254 - 0.421ms returns FALSE
+T567C 002:646.250 JLINK_IsHalted()
+T567C 002:646.616 - 0.378ms returns FALSE
+T567C 002:648.250 JLINK_IsHalted()
+T567C 002:648.658 - 0.420ms returns FALSE
+T567C 002:650.654 JLINK_IsHalted()
+T567C 002:651.003 - 0.361ms returns FALSE
+T567C 002:652.999 JLINK_IsHalted()
+T567C 002:653.367 - 0.380ms returns FALSE
+T567C 002:655.061 JLINK_IsHalted()
+T567C 002:655.514 - 0.471ms returns FALSE
+T567C 002:657.514 JLINK_IsHalted()
+T567C 002:657.870 - 0.368ms returns FALSE
+T567C 002:659.786 JLINK_IsHalted()
+T567C 002:660.250 - 0.475ms returns FALSE
+T567C 002:661.786 JLINK_IsHalted()
+T567C 002:662.252 - 0.476ms returns FALSE
+T567C 002:664.249 JLINK_IsHalted()
+T567C 002:664.620 - 0.383ms returns FALSE
+T567C 002:666.615 JLINK_IsHalted()
+T567C 002:669.287    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:669.766 - 3.204ms returns TRUE
+T567C 002:669.855 JLINK_ReadReg(R15 (PC))
+T567C 002:669.882 - 0.037ms returns 0x20000000
+T567C 002:669.908 JLINK_ClrBPEx(BPHandle = 0x00000015)
+T567C 002:669.938 - 0.048ms returns 0x00
+T567C 002:669.992 JLINK_ReadReg(R0)
+T567C 002:670.012 - 0.031ms returns 0x7E871182
+T567C 002:671.515 JLINK_WriteReg(R0, 0x00000003)
+T567C 002:671.539 - 0.030ms returns 0x00
+T567C 002:671.553 JLINK_WriteReg(R1, 0x08000000)
+T567C 002:671.565 - 0.017ms returns 0x00
+T567C 002:671.577 JLINK_WriteReg(R2, 0x000011E4)
+T567C 002:671.589 - 0.016ms returns 0x00
+T567C 002:671.601 JLINK_WriteReg(R3, 0x04C11DB7)
+T567C 002:671.612 - 0.016ms returns 0x00
+T567C 002:671.625 JLINK_WriteReg(R4, 0x00000000)
+T567C 002:671.635 - 0.016ms returns 0x00
+T567C 002:671.648 JLINK_WriteReg(R5, 0x00000000)
+T567C 002:671.659 - 0.016ms returns 0x00
+T567C 002:671.671 JLINK_WriteReg(R6, 0x00000000)
+T567C 002:671.682 - 0.016ms returns 0x00
+T567C 002:671.695 JLINK_WriteReg(R7, 0x00000000)
+T567C 002:671.706 - 0.016ms returns 0x00
+T567C 002:671.718 JLINK_WriteReg(R8, 0x00000000)
+T567C 002:671.729 - 0.016ms returns 0x00
+T567C 002:671.742 JLINK_WriteReg(R9, 0x20000160)
+T567C 002:671.752 - 0.016ms returns 0x00
+T567C 002:671.765 JLINK_WriteReg(R10, 0x00000000)
+T567C 002:671.776 - 0.016ms returns 0x00
+T567C 002:671.789 JLINK_WriteReg(R11, 0x00000000)
+T567C 002:671.807 - 0.024ms returns 0x00
+T567C 002:671.820 JLINK_WriteReg(R12, 0x00000000)
+T567C 002:671.831 - 0.016ms returns 0x00
+T567C 002:671.843 JLINK_WriteReg(R13 (SP), 0x20001000)
+T567C 002:671.855 - 0.016ms returns 0x00
+T567C 002:671.867 JLINK_WriteReg(R14, 0x20000001)
+T567C 002:671.878 - 0.016ms returns 0x00
+T567C 002:671.891 JLINK_WriteReg(R15 (PC), 0x2000006A)
+T567C 002:671.902 - 0.016ms returns 0x00
+T567C 002:671.914 JLINK_WriteReg(XPSR, 0x01000000)
+T567C 002:671.925 - 0.016ms returns 0x00
+T567C 002:671.938 JLINK_WriteReg(MSP, 0x20001000)
+T567C 002:671.949 - 0.016ms returns 0x00
+T567C 002:671.961 JLINK_WriteReg(PSP, 0x20001000)
+T567C 002:671.972 - 0.016ms returns 0x00
+T567C 002:671.985 JLINK_WriteReg(CFBP, 0x00000000)
+T567C 002:671.997 - 0.018ms returns 0x00
+T567C 002:672.011   JLINK_SetBPEx(Addr = 0x20000000, Type = 0xFFFFFFF2)
+T567C 002:672.028 - 0.022ms returns 0x00000016
+T567C 002:672.040 JLINK_Go()
+T567C 002:672.059    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:675.138 - 3.112ms
+T567C 002:675.165 JLINK_IsHalted()
+T567C 002:677.785    -- CPU_ReadMem(2 bytes @ 0x20000000)
+T567C 002:678.251 - 3.099ms returns TRUE
+T567C 002:678.279 JLINK_ReadReg(R15 (PC))
+T567C 002:678.300 - 0.030ms returns 0x20000000
+T567C 002:678.321 JLINK_ClrBPEx(BPHandle = 0x00000016)
+T567C 002:678.339 - 0.027ms returns 0x00
+T567C 002:678.360 JLINK_ReadReg(R0)
+T567C 002:678.378 - 0.026ms returns 0x00000000
+T567C 002:734.875 JLINK_WriteMemEx(0x20000000, 0x0002 Bytes, ..., Flags = 0x02000000)
+T567C 002:734.917   Data:  FE E7
+T567C 002:734.949    -- CPU_WriteMem(2 bytes @ 0x20000000)
+T567C 002:735.391 - 0.526ms returns 0x02
+T567C 002:735.417 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T567C 002:735.428 - 0.016ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T567C 002:735.441 JLINK_Reset()
+T567C 002:735.460    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 002:735.897    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 002:739.196   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T567C 002:742.552   Reset: Reset device via AIRCR.SYSRESETREQ.
+T567C 002:742.582    -- CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T567C 002:795.057    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 002:795.546    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 002:796.045    -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T567C 002:796.525    -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T567C 002:802.436    -- CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T567C 002:805.567    -- CPU_WriteMem(4 bytes @ 0xE0002000)
+T567C 002:806.020    -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T567C 002:806.374    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:806.763 - 71.337ms
+T567C 002:806.805 JLINK_Go()
+T567C 002:806.837    -- CPU_ReadMem(4 bytes @ 0xE0001000)
+T567C 002:807.256    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T567C 002:807.283    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T567C 002:807.302    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T567C 002:807.320    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T567C 002:807.339    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T567C 002:807.358    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T567C 002:808.744    -- CPU_WriteMem(4 bytes @ 0xE0001004)
+T567C 002:809.602 - 2.808ms
+T567C 002:823.141 JLINK_Close()
+T567C 002:823.736   CPU is running
+T567C 002:823.763    -- CPU_WriteMem(4 bytes @ 0xE0002008)
+T567C 002:824.624   CPU is running
+T567C 002:824.648    -- CPU_WriteMem(4 bytes @ 0xE000200C)
+T567C 002:825.518   CPU is running
+T567C 002:825.546    -- CPU_WriteMem(4 bytes @ 0xE0002010)
+T567C 002:826.506   CPU is running
+T567C 002:826.533    -- CPU_WriteMem(4 bytes @ 0xE0002014)
+T567C 002:827.499   CPU is running
+T567C 002:827.519    -- CPU_WriteMem(4 bytes @ 0xE0002018)
+T567C 002:828.379   CPU is running
+T567C 002:828.403    -- CPU_WriteMem(4 bytes @ 0xE000201C)
+T567C 002:837.231 - 14.107ms
+T567C 002:837.256   
+T567C 002:837.269   Closed

@@ -1,0 +1,15 @@
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+pwm qudong\queue.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+pwm qudong\queue.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+pwm qudong\queue.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+pwm qudong\queue.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+pwm qudong\queue.o: ../Core/Inc/FreeRTOSConfig.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+pwm qudong\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h

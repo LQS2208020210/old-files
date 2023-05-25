@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"car_miss\startup_stm32f103xb.o"
+"car_miss\main.o"
+"car_miss\gpio.o"
+"car_miss\tim.o"
+"car_miss\usart.o"
+"car_miss\stm32f1xx_it.o"
+"car_miss\stm32f1xx_hal_msp.o"
+"car_miss\stm32f1xx_hal_gpio_ex.o"
+"car_miss\stm32f1xx_hal_tim.o"
+"car_miss\stm32f1xx_hal_tim_ex.o"
+"car_miss\stm32f1xx_hal.o"
+"car_miss\stm32f1xx_hal_rcc.o"
+"car_miss\stm32f1xx_hal_rcc_ex.o"
+"car_miss\stm32f1xx_hal_gpio.o"
+"car_miss\stm32f1xx_hal_dma.o"
+"car_miss\stm32f1xx_hal_cortex.o"
+"car_miss\stm32f1xx_hal_pwr.o"
+"car_miss\stm32f1xx_hal_flash.o"
+"car_miss\stm32f1xx_hal_flash_ex.o"
+"car_miss\stm32f1xx_hal_exti.o"
+"car_miss\stm32f1xx_hal_uart.o"
+"car_miss\motor.o"
+"car_miss\system_stm32f1xx.o"
+--strict --scatter "car_miss\car_miss.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "car_miss.map" -o car_miss\car_miss.axf

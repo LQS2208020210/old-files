@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"oledd\startup_stm32f103xb.o"
+"oledd\oled.o"
+"oledd\main.o"
+"oledd\gpio.o"
+"oledd\i2c.o"
+"oledd\stm32f1xx_it.o"
+"oledd\stm32f1xx_hal_msp.o"
+"oledd\stm32f1xx_hal_gpio_ex.o"
+"oledd\stm32f1xx_hal_i2c.o"
+"oledd\stm32f1xx_hal.o"
+"oledd\stm32f1xx_hal_rcc.o"
+"oledd\stm32f1xx_hal_rcc_ex.o"
+"oledd\stm32f1xx_hal_gpio.o"
+"oledd\stm32f1xx_hal_dma.o"
+"oledd\stm32f1xx_hal_cortex.o"
+"oledd\stm32f1xx_hal_pwr.o"
+"oledd\stm32f1xx_hal_flash.o"
+"oledd\stm32f1xx_hal_flash_ex.o"
+"oledd\stm32f1xx_hal_exti.o"
+"oledd\stm32f1xx_hal_tim.o"
+"oledd\stm32f1xx_hal_tim_ex.o"
+"oledd\system_stm32f1xx.o"
+--strict --scatter "OLEDD\OLEDD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLEDD.map" -o OLEDD\OLEDD.axf

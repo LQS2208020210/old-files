@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lightup\startup_stm32f407xx.o"
+"lightup\main.o"
+"lightup\gpio.o"
+"lightup\stm32f4xx_it.o"
+"lightup\stm32f4xx_hal_msp.o"
+"lightup\stm32f4xx_hal_tim.o"
+"lightup\stm32f4xx_hal_tim_ex.o"
+"lightup\stm32f4xx_hal_rcc.o"
+"lightup\stm32f4xx_hal_rcc_ex.o"
+"lightup\stm32f4xx_hal_flash.o"
+"lightup\stm32f4xx_hal_flash_ex.o"
+"lightup\stm32f4xx_hal_flash_ramfunc.o"
+"lightup\stm32f4xx_hal_gpio.o"
+"lightup\stm32f4xx_hal_dma_ex.o"
+"lightup\stm32f4xx_hal_dma.o"
+"lightup\stm32f4xx_hal_pwr.o"
+"lightup\stm32f4xx_hal_pwr_ex.o"
+"lightup\stm32f4xx_hal_cortex.o"
+"lightup\stm32f4xx_hal.o"
+"lightup\stm32f4xx_hal_exti.o"
+"lightup\system_stm32f4xx.o"
+--strict --scatter "lightup\lightup.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lightup.map" -o lightup\lightup.axf
